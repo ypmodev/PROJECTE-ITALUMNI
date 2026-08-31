@@ -3,9 +3,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Xlumni</title>
 </head>
-<body>
-    
+<body id="inicio">
+    <header>
+        <nav class="navbar">
+
+            <div class="nav-logo">
+                <a href="#inicio" class="logo" aria-label="Tornar a l'inici">
+                    <img src="/assets/logos/main-Logo.svg" alt="">
+                </a>
+            </div>
+
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#inicio">Inici</a> </li>
+                    <li><a href="alumni-connect.html#networking">Xarxa</a></li>
+                    <li><a href="alumni-connect.html#job-opportunities">Oportunitats de feina</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-actions">
+                <a href="alumni-connect.html#events" class="button btn-outline">
+                    <img src="/assets/icons/icon-button-apuntat.svg" alt="">
+                    Apunta’t    
+                </a>
+
+                <a href="#" class="button btn-gradient">
+                    <img src="/assets/icons/profile.svg" alt="">
+                    Com et veiem?
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+     
+    <main>
+
+        <section class="hero">
+            <h1>Benvingut, Alumni</h1>
+            <p>Connectant i empoderant a la nostra comunitat global d’alumnes</p>
+            
+            <div class="hero-actions">
+                <a href="register.html" class="button btn-gradient">
+                    Uneix-te
+                </a>
+
+                <a href="#" class="button btn-outline">                    
+                    Mira què fem
+                </a>                         
+            </div>
+            
+            <img src="/assets/images/Image-hero.jpg" alt="Grup d'exalumnes de l'IT Academy conversant">
+        </section>
+
+        <section class="benefits">
+            
+            <h2>Què guanyes en formar part?</h2>
+                        
+            <div class="benefits-list">
+
+                <article class="benefit">
+                    <img src="/assets/icons/icon-hat.svg" alt="">
+                    <p>
+                        Comparteix i no perdis el contacte: Puja els teus
+                        moments importants, explica com va tot i queda amb
+                        els companys. Una xarxa per estar més a prop.
+                    </p>
+
+                    <a href="#" class="button btn-gradient" aria-label="Apunta’t per compartir">Apunta't ja</a>
+                </article>
+
+                <article class="benefit">
+                    <img src="/assets/icons/icon-comments.svg" alt="">
+                    <p>
+                        Participa en discussions: Intercanvia coneixements,
+                        punts de vista i opinions sobre temes que t'interessen.
+                    </p>
+
+                    <a href="#" class="button btn-pink-light" aria-label="Apunta’t per participar en debats">Apunta't ja</a>
+                </article>
+
+                <article class="benefit">
+                    <img
+                        src="/assets/icons/profile.svg" alt="" >
+                    <p>
+                        Xarxa Alumni: Connecta amb companys de promoció,
+                        fes noves amistats i crea records per durar tota la vida.
+                    </p>
+
+                    <a href="alumni-connect.html#networking" class="button btn-pink-light"  aria-label="Accedir a Networking">Apunta't ja</a>
+                </article>
+            </div>
+        </section>      
+            
+        <section class="testimonials">
+
+            <h2>
+                "T'ensenyem el que opinen els nostres súper-usuaris!"
+            </h2>
+
+            <div class="testimonials-list">
+
+                <article class="testimonial">
+
+                    <div class="testimonial-user">
+                        <img src="/assets/images/Avatar-1.jpg" alt="">
+                        
+                        <div>
+                            <h3>Mikel</h3>
+                            <div class="rating" aria-label="5 estrelles de 5">
+                                ★★★★★
+                            </div>
+                        </div>
+                    </div>
+
+                    <blockquote>
+                        "Gràcies a IT Alumni vaig aconseguir la feina dels meus
+                        somnis en el món tech amb el seu increïble programa de mentoria."
+                    </blockquote>
+                </article>
+
+
+                <article class="testimonial">
+                    <div class="testimonial-user">
+                        <img src="/assets/images/Avatar-2.jpg" alt="">
+                        
+                        <div>
+                            <h3>Emma</h3>
+                            <div class="rating" aria-label="5 estrelles de 5">
+                                ★★★★★
+                            </div>
+                        </div>
+                    </div>
+
+                    <blockquote>
+                        "La meva xarxa d'aquesta comunitat ha estat clau:
+                        va revolucionar la meva carrera i em va mostrar camins
+                        insospitats."
+                    </blockquote>
+                </article>
+
+
+                <article class="testimonial">
+                    <div class="testimonial-user">
+                        <img src="/assets/images/Avatar-1.jpg" alt="">
+                        
+                        <div>
+                            <h3>Laia</h3>
+                            <div class="rating" aria-label="5 estrelles de 5">
+                                ★★★★★
+                            </div>
+                        </div>
+                    </div>
+
+                    <blockquote>
+                        "IT Alumni em va donar les eines i l'autoestima per fer
+                        realitat el meu somni d'emprendre."
+                    </blockquote>
+                </article>
+
+            </div>
+
+
+            <div class="testimonials-controls">
+
+                <button type="button" aria-label="Testimoni anterior">
+                   ‹
+                </button>
+
+                <button type="button" aria-label="Testimoni següent">
+                    ›
+                </button>
+
+            </div>
+
+        </section>
+    </main>     
+     
+
+    <footer>       
+
+        <section class="footer-newsletter">
+            <h2>No et perdis res, subscriu-te!</h2>
+
+            <form>
+                <img src="/assets/icons/mail.svg" alt="">
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="El teu email"
+                    aria-label="El teu email"
+                    autocomplete="email"
+                    required
+                >
+
+                <button type="submit">
+                    Subscriu-te
+                </button>
+            </form>
+        </section>
+
+
+        <div class="footer-navigation">
+
+            <div class="footer-logo">
+                <a href="#inicio" aria-label="Tornar a l'inici">
+                    <img src="assets/logos/Logo-white.svg" alt="">
+                </a>
+            </div>
+
+
+            <nav class="footer-nav" aria-label="Navegació del peu de pàgina">
+                <ul>
+                    <li>
+                        <a href="#">Sobre nosaltres</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Funcionalitats</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Centre d'ajuda</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Contacta'ns</a>
+                    </li>
+
+                    <li>
+                        <a href="#">FAQs</a>
+                    </li>
+
+                    <li>
+                        <a href="alumni-connect.html#job-opportunities">Oportunitats laborals</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+
+        <div class="footer-lower">
+
+            <div class="footer-language">
+                <label for="language">Idioma</label>
+
+                <select id="language" name="language">
+                    <option value="ca">Català</option>
+                </select>
+            </div>
+
+
+            <div class="footer-legal">
+                <p>
+                    © 2024 Brand, Inc. • Privadesa • Termes d'ús
+                </p>
+
+                <a href="#">Mapa del lloc</a>
+            </div>
+
+
+            <nav class="footer-social" aria-label="Xarxes socials">
+                <ul>
+                    <li>
+                        <a href="#" aria-label="Facebook">
+                            <img src="/assets/logos/Logo-Facebook.svg" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" aria-label="LinkedIn">
+                            <img src="/assets/logos/Logo-LinkedIn.svg" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" aria-label="YouTube">
+                            <img src="/assets/logos/Logo-YouTube.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </footer>     
+      
 </body>
 </html>
