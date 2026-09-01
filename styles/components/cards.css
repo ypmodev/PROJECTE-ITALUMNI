@@ -1,464 +1,364 @@
-/* ========================================
-   NETWORKING - CARD - MOBILE
-   ======================================== */
-
-.mobile-networking-card {
-    width: 350px;
-    height: 100px;
-
-    background-color: #FFFFFF;
-    border-radius: 6px;
-}
-
-
-/* Nombre */
-
-.mobile-networking-card__name {
-    width: 202px;
-    height: 22px;
-
-    margin: 0;
-
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-
-    color: #171A1F;
-}
-
-
-/* Class */
-
-.mobile-networking-card__class {
-    width: 202px;
-    height: 20px;
-
-    margin: 0;
-
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 20px;
-
-    color: #9095A0;
-}
-
-
-/* Cargo / descripción */
-
-.mobile-networking-card__role {
-    width: 202px;
-    height: 20px;
-
-    margin: 0;
-
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 20px;
-
-    color: #9095A0;
-}
-
-
-/* Imagen */
-
-.mobile-networking-card__image {
-    width: 76px;
-    height: 76px;
-
-    border-radius: 4px;
-
-    background-color: #D9D9D9;
-}
 
 /* ========================================
-    NETWORKING - CARD - DESKTOP 
+   NETWORKING CARD - MOBILE
    ======================================== */
 
 .networking-card {
-    width: 154px;
-    height: 142px;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    
+    width: 100%;
+    max-width: 350px;
+    padding: 12px;
+    
     background-color: #FFFFFF;
-}
-
-
-/* Nombre */
-
-.networking-card__name {
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-
-    color: #000000;
-}
-
-
-/* Cargo / descripción */
-
-.networking-card__role {
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-
-    color: #565E6C;
-}
-
-
-/* Ubicación */
-
-.networking-card__location {
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-
-    color: #565E6C;
-}
-
-
-/* ========================================
-  JOB OPPORTUNITY - CARD -  MOBILE 
-   ======================================== */
-
-.mobile-job-card {
-    position: relative;
-
-    width: 350px;
-    height: 136px;
-
-    background-color: #FFFFFF;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #DEE1E6;
     border-radius: 6px;
 }
 
+/* contenedor de información */
+.networking-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
 
-/* Título */
-
-.mobile-job-card__title {
-    position: absolute;
-
-    width: 202px;
-    height: 22px;
-
-    top: 12px;
-    left: 12px;
-
+/* Tipografía */
+.networking-card__name {
     margin: 0;
-
     font-family: "Source Sans Pro", sans-serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 22px;
-
     color: #171A1F;
 }
 
-
-/* Empresa / descripción */
-
-.mobile-job-card__company {
-    position: absolute;
-
-    width: 202px;
-    height: 20px;
-
-    top: 40px;
-    left: 12px;
-
+.networking-card__class,
+.networking-card__role,
+.networking-card__location {
     margin: 0;
-
     font-family: "Source Sans Pro", sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 20px;
-
     color: #9095A0;
 }
-
-
-/* Localización / fecha */
-
-.mobile-job-card__details {
-    position: absolute;
-
-    width: 202px;
-    height: 20px;
-
-    top: 66px;
-    left: 12px;
-
-    margin: 0;
-
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 20px;
-
-    color: #9095A0;
-}
-
 
 /* Imagen */
+.networking-card__image {
+    width: 76px;
+    height: 76px;
+    object-fit: cover;
+    border-radius: 4px;
+    background-color: #D9D9D9;
+    flex-shrink: 0;
+}
 
-.mobile-job-card__image {
-    position: absolute;
+/* botón oculto */
+.networking-card__action {
+    display: none;
+}
 
+/* ===============
+   DESKTOP 
+   ===============*/
+@media (min-width: 768px) {
+    
+    .networking-card {
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 154px;
+        padding: 0;
+        border: none; /* Elimina borde si en desktop va libre */
+        background-color: transparent;
+    }
+    /*Tipografía*/
+    .networking-card__name {
+        font-size: 16px;
+        line-height: 26px;
+        color: #000000;
+    }
+
+    .networking-card__role,
+    .networking-card__location {
+        font-size: 14px;
+        line-height: 22px;
+        color: #565E6C;
+    }
+
+    /* información oculta */
+    .networking-card__image,
+    .networking-card__class {
+        display: none;
+    }
+
+    /* botón */
+    .networking-card__action {
+        display: inline-flex;
+        margin-top: 8px;
+    }
+}
+
+
+
+
+
+
+/* ========================================
+   JOB OPPORTUNITY CARD 
+   ======================================== */
+
+/* Contenedor principal */
+.job-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    
+    width: 100%;
+    max-width: 350px;
+    padding: 12px;
+    
+    background-color: #FFFFFF;
+    border: 1px solid #DEE1E6;
+    border-radius: 6px;
+}
+
+/* contenedor de información */
+.job-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+
+/* Tipografía */
+.job-card__title {
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #171A1F;
+}
+
+.job-card__company,
+.job-card__details {
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #9095A0;
+}
+
+/* Botón */
+.job-card__action {
+    align-self: flex-start; 
+    margin-top: 4px;
+}
+
+/* Imagen */
+.job-card__image {
     width: 112px;
     height: 112px;
-
-    top: 12px;
-    left: 226px;
-
-    border-radius: 4px;
-
-    background-color: #D9D9D9;
-}
-
-/* ========================================
-  JOB OPPORTUNITY - CARD -  DESKTOP 
-   ======================================== */
-
-.job-card {
-    position: relative;
-
-    width: 416px;
-    height: 166px;
-
-    background-color: #FFFFFF;
-    border: 1px solid #FFFFFF;
-    border-radius: 6px;
-}
-
-
-/* Título */
-
-.job-card__title {
-    position: absolute;
-
-    width: 208px;
-    height: 30px;
-
-    top: 16px;
-    left: 16px;
-
-    margin: 0;
-
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-
-    color: #171A1F;
-}
-
-
-/* Empresa / descripción */
-
-.job-card__company {
-    position: absolute;
-
-    width: 208px;
-    height: 22px;
-
-    top: 54px;
-    left: 16px;
-
-    margin: 0;
-
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-
-    color: #9095A0;
-}
-
-
-/* Fecha */
-
-.job-card__date {
-    position: absolute;
-
-    width: 208px;
-    height: 22px;
-
-    top: 92px;
-    left: 16px;
-
-    margin: 0;
-
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-
-    color: #9095A0;
-}
-
-
-/* Imagen */
-
-.job-card__image {
-    position: absolute;
-
-    width: 160px;
-    height: 134px;
-
-    top: 16px;
-    left: 240px;
-
-    border-radius: 4px;
-
-    border: 1px solid #CE0A86;
-}
-
-
-
-/* ========================================
-   WELCOME - TESTIMONIAL CARD -  DESKTOP 
-   ======================================== */
-
-.testimonial-card {
-    position: relative;
-
-    width: 371px;
-    height: 214px;
-
-    background-color: #FFFFFF;
-
-    border: 1px solid #DEE1E6;
-    border-radius: 16px;
-}
-
-
-/*AVATAR */
-
-.testimonial-card__avatar {
-    position: absolute;
-
-    width: 64px;
-    height: 64px;
-
-    top: 24px;
-    left: 24px;
-
-    border-radius: 32px;
-
-    background-color: #F1D1E8;
-
     object-fit: cover;
+    border-radius: 4px;
+    background-color: #D9D9D9;
+    flex-shrink: 0;
 }
 
 
-/*NOMBRE*/
+/* ===========
+   DESKTOP
+   ===========*/
+@media (min-width: 768px) {
+    .job-card {
+        max-width: 416px;
+        padding: 16px;
+        gap: 16px;
+    }
 
-.testimonial-card__name {
-    position: absolute;
+    .job-card__title {
+        font-size: 20px;
+        line-height: 30px;
+    }
 
-    width: 235px;
-    height: 36px;
+    .job-card__company,
+    .job-card__details {
+        font-size: 14px;
+        line-height: 22px;
+    }
 
-    top: 24px;
-    left: 112px;
-
-    margin: 0;
-
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 36px;
-
-    color: #323842;
-}
-
-
-/*RATING*/
-
-.testimonial-card__rating {
-    position: absolute;
-
-    width: 100px;
-    height: 20px;
-
-    top: 60px;
-    left: 112px;
-
-    display: flex;
-}
-
-
-.testimonial-card__star {
-    width: 20px;
-    height: 20px;
-
-    display: block;
-}
-
-
-/*TEXTO-OPINIÓN*/
-
-.testimonial-card__text {
-    position: absolute;
-
-    width: 323px;
-    height: 78px;
-
-    top: 112px;
-    left: 24px;
-
-    margin: 0;
-
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-
-    color: #171A1F;
+    .job-card__image {
+        width: 160px;
+        height: 134px;
+    }
 }
 
 
 /* ========================================
-   WELCOME - BENEFIT CARD - DESKTOP
+   WELCOME - BENEFIT CARD (Mobile-First)
    ======================================== */
 
+/* Contenedor principal */
 .benefit-card {
-    width: 300px;
-    height: 238px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    width: 100%;
+    max-width: 320px;
+    padding: 24px 20px;
 
     background-color: #FFFFFF;
     border: 1px solid #BCC1CA;
     border-radius: 16px;
-
     text-align: center;
 }
 
-/* ICON */
-
+/* Icono */
 .benefit-card__icon {
     width: 32px;
     height: 32px;
-
-    display: block;
-    margin: 0 auto;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
-/* TEXTO */
-
+/* Descripción */
 .benefit-card__text {
-    width: 300px;
-    height: 104px;
-
-    margin: 16px 0 0;
-
+    margin: 0;
     font-family: "Source Sans Pro", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
-
     color: #565E6C;
+}
+
+/* Botón*/
+.benefit-card__action {
+    margin-top: auto; 
+}
+
+
+/* ===============
+   DESKTOP 
+   ===============*/
+@media (min-width: 768px) {
+    .benefit-card {
+        max-width: 300px;
+        padding: 28px 24px;
+        gap: 20px;
+    }
+}
+
+
+/* ========================================
+   TESTIMONIAL CARD (Mobile-First)
+   ======================================== */
+
+/* Contenedor principal */
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    width: 100%;
+    max-width: 320px;
+    padding: 20px;
+
+    background-color: #FFFFFF;
+    border: 1px solid #DEE1E6;
+    border-radius: 16px;
+}
+
+/* Cabecera: Avatar a la izquierda, Nombre/Rating a la derecha */
+.testimonial-card__header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* contenedor nombre y estrellas */
+.testimonial-card__user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Avatar */
+.testimonial-card__avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #F1D1E8;
+    flex-shrink: 0;
+}
+
+/* Nombre del usuario */
+.testimonial-card__name {
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #323842;
+}
+
+/* Contenedor de estrellas */
+.testimonial-card__rating {
+    display: flex;
+    gap: 2px;
+}
+
+.testimonial-card__star {
+    width: 16px;
+    height: 16px;
+}
+
+/* Texto de la opinión */
+.testimonial-card__text {
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #171A1F;
+}
+
+
+/* ==========
+   DESKTOP
+   ========== */
+@media (min-width: 768px) {
+    .testimonial-card {
+        max-width: 371px;
+        padding: 24px;
+        gap: 20px;
+    }
+
+    .testimonial-card__avatar {
+        width: 64px;
+        height: 64px;
+    }
+
+    .testimonial-card__name {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .testimonial-card__star {
+        width: 20px;
+        height: 20px;
+    }
+
+    .testimonial-card__text {
+        font-size: 16px;
+        line-height: 26px;
+    }
 }
