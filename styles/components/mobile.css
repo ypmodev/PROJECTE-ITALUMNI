@@ -1,0 +1,129 @@
+/* =========================
+   MOBILE TOP NAV
+   ========================= */
+
+.mobile-header {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Título */
+
+.mobile-header__title{
+    width: 46px;
+    height: 28px;
+
+    margin: 0;
+
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+
+    color: #000000;
+}
+
+/* Icono de estadísticas */
+
+.mobile-header__statistics{
+    width: 28px;
+    height: 28px;
+}
+
+
+/* Avatar */
+
+.mobile-header__avatar {
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+}
+
+/* Buscador */
+
+.mobile-search {
+    width: 349px;
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #F3F4F6;
+    border: 1px solid transparent;
+    border-radius: 6px;
+}
+
+/* Icono de búsqueda */
+
+.mobile-search__icon {
+    width: 20px;
+    height: 20px;
+
+    margin-left: 16px;
+}
+
+/* Placeholder */
+.mobile-search__input::placeholder {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #BCC1CA;
+}
+
+
+
+
+/* ========================================
+   MOBILE BOTTOM NAVIGATION
+   ======================================== */
+
+.mobile-bottom-nav {
+    display: flex;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+
+/* Elemento de navegación */
+
+.mobile-bottom-nav__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    color: #565E6C;
+}
+
+
+/* Icono */
+
+.mobile-bottom-nav__icon {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* Texto */
+
+.mobile-bottom-nav__text {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+
+    color: #565E6C;
+}
+
+
+/* Estado activo */
+
+.mobile-bottom-nav__item.is-active .mobile-bottom-nav__text {
+    font-weight: 700;
+    color: #CE0A86;
+}
