@@ -1,7 +1,7 @@
-
+git rm styles/components/buttons.css styles/components/cards.css
 /* ========================================
-   NETWORKING CARD - MOBILE
-   ======================================== */
+   NETWORKING - CARD - MOBILE
+======================================== */
 
 .networking-card {
     display: flex;
@@ -62,11 +62,11 @@
     display: none;
 }
 
-/* ===============
-   DESKTOP 
-   ===============*/
-@media (min-width: 768px) {
-    
+/*==========================
+   NETWORKING - CARD - TABLET
+==========================*/
+
+@media (min-width: 768px) {    
     .networking-card {
         flex-direction: column;
         align-items: flex-start;
@@ -75,6 +75,7 @@
         border: none; /* Elimina borde si en desktop va libre */
         background-color: transparent;
     }
+
     /*Tipografía*/
     .networking-card__name {
         font-size: 16px;
@@ -103,13 +104,27 @@
 }
 
 
+/* ==========================
+   NETWORKING - CARD - DESKTOP
+============================*/
+
+@media (min-width: 1024px) {
+    .networking-card {
+        max-width: 200px; 
+    }
+
+    .networking-card__name {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
 
 
 
 
 /* ========================================
-   JOB OPPORTUNITY CARD 
-   ======================================== */
+   JOB OPPORTUNITY - CARD - MOBILE
+======================================== */
 
 /* Contenedor principal */
 .job-card {
@@ -172,9 +187,10 @@
 }
 
 
-/* ===========
-   DESKTOP
-   ===========*/
+/* =============================
+ JOB OPPORTUNITY - CARD - TABLET
+================================*/
+
 @media (min-width: 768px) {
     .job-card {
         max-width: 416px;
@@ -199,10 +215,31 @@
     }
 }
 
+/* ================================
+   JOB OPPORTUNITY - CARD - DESKTOP
+==================================*/
+@media (min-width: 1024px) {
+    .job-card {
+        max-width: 480px;
+        padding: 20px;
+    }
 
-/* ========================================
-   WELCOME - BENEFIT CARD (Mobile-First)
-   ======================================== */
+    .job-card__title {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .job-card__image {
+        width: 180px;
+        height: 150px;
+    }
+}
+
+
+
+/*=======================================
+   WELCOME - BENEFIT CARD - MOBILE
+======================================== */
 
 /* Contenedor principal */
 .benefit-card {
@@ -245,9 +282,10 @@
 }
 
 
-/* ===============
-   DESKTOP 
-   ===============*/
+/* ================================
+   WELCOME - BENEFIT CARD - TABLET
+==================================*/
+
 @media (min-width: 768px) {
     .benefit-card {
         max-width: 300px;
@@ -256,10 +294,31 @@
     }
 }
 
+/* ================================
+   WELCOME - BENEFIT CARD - DESKTOP 
+================================*/
+@media (min-width: 1024px) {
+    .benefit-card {
+        max-width: 350px;
+        padding: 32px 28px;
+    }
+
+    .benefit-card__icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .benefit-card__text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+
 
 /* ========================================
-   TESTIMONIAL CARD (Mobile-First)
-   ======================================== */
+   WELCOME - TESTIMONIAL CARD - MOBILE
+======================================== */
 
 /* Contenedor principal */
 .testimonial-card {
@@ -276,7 +335,6 @@
     border-radius: 16px;
 }
 
-/* Cabecera: Avatar a la izquierda, Nombre/Rating a la derecha */
 .testimonial-card__header {
     display: flex;
     align-items: center;
@@ -332,9 +390,9 @@
 }
 
 
-/* ==========
-   DESKTOP
-   ========== */
+/* ===================================
+   WELCOME - TESTIMONIAL CARD - TABLET 
+   ==================================*/
 @media (min-width: 768px) {
     .testimonial-card {
         max-width: 371px;
@@ -360,5 +418,20 @@
     .testimonial-card__text {
         font-size: 16px;
         line-height: 26px;
+    }
+}
+
+/* ====================================
+   WELCOME - TESTIMONIAL CARD - DESKTOP
+====================================*/
+@media (min-width: 1024px) {
+    .testimonial-card {
+        max-width: 420px;
+        padding: 28px;
+    }
+
+    .testimonial-card__text {
+        font-size: 18px;
+        line-height: 28px;
     }
 }

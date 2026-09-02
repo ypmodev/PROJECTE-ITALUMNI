@@ -60,12 +60,13 @@
     outline-offset: 2px;
 }
 
-/* =========
-   DESKTOP
-   =========*/
+/* ==========================
+   TABLET (min-width: 768px)
+   ==========================*/
 @media (min-width: 768px) {
     .btn {
-        gap: 8px;    
+        gap: 8px;
+    
     }
 
     .btn-lg {        
@@ -76,5 +77,25 @@
     .btn img {
         width: 16px;
         height: 16px;
+    }
+}
+
+/* =============================
+   DESKTOP (min-width: 1024px)
+   =============================*/
+@media (min-width: 1024px) {
+    
+    .btn {
+        gap: 10px;
+    }
+
+    .btn-lg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .btn img {
+        width: 18px;
+        height: 18px;
     }
 }
