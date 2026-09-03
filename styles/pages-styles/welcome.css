@@ -1,0 +1,51 @@
+  
+/*================
+WELCOME - MOBILE  
+==================*/
+/* ========================================
+   WELCOME PAGE - MOBILE BASE (Mobile-First)
+======================================== */
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+}
+
+.welcome-header {
+    width: 285px;
+    height: 61px;
+    margin-top: 40px;
+}
+
+.welcome-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.welcome-text {
+    width: 339px;
+    max-width: 100%;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #1D2128;
+    margin: 0 auto;
+}
+
+/* Enlace al componente de botón con gradiente para móvil */
+.welcome-container .btn-gradient {
+    width: 324px;
+    height: 52px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
