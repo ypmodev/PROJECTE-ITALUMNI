@@ -8,12 +8,12 @@
     
     height: 36px;
     padding: 0 16px;
-    border-radius: 6px;
+    border-radius: var(--radius-md); /* 6px */
     border: 1px solid transparent;
 
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+    font-family: var(--font-family);
+    font-size: var(--font-size-md); /* 16px */
+    font-weight:var(--font-weight-md);
     line-height: 22px;
     text-decoration: none;
 
@@ -23,17 +23,18 @@
 .btn-sm {
     height: 32px;
     padding: 0 12px;
-    font-size: 12px;
+    border-radius: var(--radius-sm); /* 4px */
+    font-size: var(--font-size-sm);  /* 14px */
+    font-weight: var(--font-weight-sm);
     line-height: 20px;
-    border-radius: 4px;
 }
 
 /* Botón Grande */
 .btn-lg {
     height: 44px;
     padding: 0 20px;
-    border-radius: 10px;
-    font-size: 18px;
+    border-radius: var(--radius-lg); /* 10px */
+    font-size: var(--font-size-lg); /* 18px */
     line-height: 28px;
 }
 

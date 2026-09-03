@@ -10,9 +10,9 @@
     display: flex;
     align-items: center;
 
-    background-color: #F3F4F6;
+     background-color: var(--color-surface-alt); 
     border: 1px solid transparent;
-    border-radius: 6px;
+    border-radius: var(--radius-sm);
 }
 
 .search__icon {
@@ -28,20 +28,21 @@
     background: transparent;
     outline: none;
     padding: 0 12px 0 8px;
+    font-family: var(--font-family);
 }
 
 .search__input::placeholder {
-    font-size: 16px;
+    font-size: var(--font-size-md); 
     font-weight: 400;
-    line-height: 26px;
-    color: #BCC1CA;
+    line-height: var(--line-height-md); 
+    color: var(--color-text-muted); 
 }
 
 /* ================
   SEARCH - TABLET
 ================= */
 
-@media (min-width: 768px) {
+@media (min-width: var(--breakpoint-tablet)) {
     .search {
         max-width: 320px;
     }
@@ -50,7 +51,7 @@
 /* ================
   SEARCH - DESKTOP
 ================= */
-@media (min-width: 1024px) {
+@media (min-width: var(--breakpoint-desktop)) {
     .search {
         max-width: 299px;
         height: 35px;
@@ -63,8 +64,8 @@
     }
 
     .search__input::placeholder {
-        font-size: 14px;
-        line-height: 22px;
+       font-size: var(--font-size-sm); 
+    line-height: var(--line-height-sm); 
     }
 }
 
@@ -98,10 +99,10 @@
     width: 134px;
     height: 22px;
     padding: 0 8px; /* Ajuste interno simétrico */
-    background-color: #FFFFFF;
-    border: 1px solid #BCC1CA;
-    border-radius: 4px;
-    flex-shrink: 0; /* Evita que se deforme al hacer scroll */
+   background-color: var(--color-surface-base);
+    border: 1px solid var(--border-neutral);
+    border-radius: var(--radius-sm);
+    flex-shrink: 0; /* Evitar deformación al hacer scroll */
 }
 
 /* Icono*/
@@ -113,10 +114,11 @@
 
 /* texto*/
 .filter-dropdown__text {
-    font-size: 14px;
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm); /* 14px */
     font-weight: 400;
-    line-height: 22px;
-    color: #565E6C;
+    line-height: var(--line-height-md); /* 22px */
+    color: var(--color-text-secondary);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -136,34 +138,38 @@
   align-items: center;
   padding: 0 16px;
   gap: 16px;
-  border: 1px solid #BCC1CA;
-  border-radius: 6px;
-  background-color: #FFFFFF;
+  border: 1px solid var(--border-neutral);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface-base);
 }
 
 .desktop-filters-label {
   width: 45px;
   height: 22px;
-  font-size: 14px;
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
   font-weight: 400;
-  line-height: 22px;
+  line-height: var(--line-height-md);
+  color: var(--color-text-primary);
 }
 
 .desktop-filter-tab {
-  height: 22px;
-  font-size: 14px;
-  font-weight: 400;
-  background: none;
-  border: none;
-  cursor: pointer;
-  line-height: 22px;
+    height: 22px;
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm);
+    font-weight: 400;
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: var(--line-height-md);
+    color: var(--color-text-secondary);
 }
 
 
 /* ================
   FILTERS - TABLET
 ================= */
-@media (max-width: 1024px) {
+@media (max-width: var(--breakpoint-tablet)) {
   .desktop-filters{
     width: 100%;
     max-width: 381px;
@@ -179,14 +185,14 @@
 
 
 /*ocultar móvil*/
-@media (min-width: 768px) {
+@media (min-width: var(--breakpoint-tablet)) {
     .filters-mobile {
         display: none; 
     }
 }
 
 /*ocultar escritorio*/
-@media (max-width: 767px) {
+@media (max-width: var(--breakpoint-tablet)) {
     .filters-desktop {
         display: none; 
     }

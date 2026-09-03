@@ -13,13 +13,13 @@
 /* Título*/
 .mobile-header__title {
     margin: 0;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 18px;
+    font-family: var(--font-family);
+    font-size: var(--font-size-lg); /* 18px */
     font-weight: 400;
-    line-height: 28px;
-    color: #000000;
-  
-}
+    line-height: var(--line-height-lg); /* 28px */
+    color: var(--color-text-primary);
+} 
+
 
 /* Icono de estadísticas */
 .mobile-header__statistics {
@@ -52,8 +52,8 @@
     align-items: center;
     width: 100%;
     padding: 8px 0;
-    background-color: #FFFFFF;
-    border-top: 1px solid #E2E8F0;
+    background-color: var(--color-surface-base);
+    border-top: 1px solid var(--border-neutral);
     z-index: 1000;
 }
 
@@ -66,8 +66,7 @@
     justify-content: center;
     gap: 2px;
     text-decoration: none;
-    color: #565E6C; /* Color base para icono y texto */
-}
+    color: var(--color-text-secondary);}
 
 /* Icono */
 .mobile-bottom-nav__icon {
@@ -78,15 +77,15 @@
 
 /* Texto base */
 .mobile-bottom-nav__text {
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 10px;
+    font-family: var(--font-family);
+    font-size: var(--font-size-xxs); /* 10px */
     line-height: 16px;
     color: inherit;
 }
 
 /* Estado activo*/
 .mobile-bottom-nav__item--active {
-    color: #CE0A86;
+    color: var(--color-brand-primary);
     font-weight: 700;
 }
 
@@ -102,9 +101,9 @@
     justify-content: space-between;
     width: 100%;
     height: 56px;
-    padding: 0 48px; /* Figma */
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #BCC1CA;
+    padding: 0 48px; 
+    background-color: var(--color-surface-base);
+    border-bottom: 1px solid var(--border-neutral);
 }
 
 /* Contenedor logo*/
@@ -129,7 +128,7 @@
     font-size: 28px;
     font-weight: 400;
     line-height: 42px;
-    color: #000000;
+    color: var(--color-text-primary);
 }
 
 /* Menú Central */
@@ -145,11 +144,11 @@
     display: inline-flex;
     align-items: center;
     height: 100%;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 14px;
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm); 
     font-weight: 400;
-    line-height: 22px;
-    color: #565E6C;
+    line-height: var(--line-height-md); 
+    color: var(--color-text-secondary);
     text-decoration: none;
     transition: color 0.2s ease;
 }
@@ -157,7 +156,7 @@
 
 /* Estado Activo */
 .desktop-nav__link--active {
-    color: #CE0A86;
+    color: var(--color-brand-primary);
     font-weight: 700;
 }
 
@@ -168,7 +167,7 @@
     left: 0;
     width: 100%;
     height: 3px;
-    background-color: #CE0A86;
+    background-color:  var(--color-brand-primary);
     border-radius: 2px 2px 0 0;
 }
 
@@ -189,7 +188,6 @@
     width: 36px;
     height: 36px;
     border-radius: 18px;
-    border: 1px solid #424955;
     object-fit: cover;
     cursor: pointer;
 }
@@ -199,7 +197,7 @@
    TOP NAV - Tablet  
    =====================*/
 
-@media (max-width: 1023px) {
+@media (max-width: var(--breakpoint-tablet)) {
 
     .desktop-header {
         padding: 0 24px; 

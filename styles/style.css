@@ -19,24 +19,23 @@
   --color-text-inverse: #FFFFFF;
   --color-text-accent: #CE0A86;
 
-  /*SURFACE COLORS*/
-  --color-surface: #FFFFFF;
+  /*surface colors*/
+  --color-surface-base: #FFFFFF;
   --color-surface-alt: #F3F4F6;      /* inputs, fondos suaves */
   --color-surface-neutral: #D9D9D9;  /* tarjetas sin cargar */
 
-  /* BORDERS */
+  /* borders */
   --border-brand: #CE0A86;   /* outline, tabs activos */
   --border-neutral: #BCC1CA; /* input */
 
-  /*RADIO*/
+  /*radio*/
   --radius-sm: 4px;
   --radius-md: 6px;
   --radius-lg: 10px;
 
-  /* TYPOGRAPHY*/
-  --font-family-base: "Source Sans Pro", sans-serif;
+  /* tipografía*/
+  --font-family: "Source Sans Pro", sans-serif;
 
-  /* Headings */
   --font-size-h1: 64px;
   --font-weight-h1: 700;
 
@@ -46,16 +45,23 @@
   --font-size-h3: 32px;
   --font-weight-h3: 400;
 
-  /* Body text */
-  --font-size-body: 16px;
-  --font-weight-body: 400;
+  --font-size-xl: 20px;
+  --font-weight-xl: 400;
+   
+  --font-size-lg: 18px;
+  --font-weight-lg: 400;
+  
+  --font-size-md: 16px;
+  --font-weight-md: 400;
 
-  /* Small text */
-  --font-size-small: 14px;
-  --font-weight-small: 400;
+  --font-size-sm: 14px;
+  --font-weight-sm: 400;
 
-  /* Tabs active */
-  --tab-font-weight-active: 700;
+  --font-size-xs: 12px;
+  --font-weight-xs: 400;
+
+  /* active */
+  --font-weight-active: 700;
   
 
   /*BREAKPOINTS*/
@@ -77,11 +83,10 @@
 /*base por defecto*/
 body {
   margin: 0;
-  font-family: var(--font-family-base);
+  font-family: var(--font-family);
   color: var(--color-text-primary);
-  background-color: var(--color-surface);
+  background-color: var(--color-surface-base);
 }
-
 
 /*heredar tipografía global*/
 button, input, select, textarea {
@@ -101,14 +106,14 @@ a:hover, button:hover, .desktop-filter-tab:hover {
 /* Estado activo para tabs y filtros */
 .active {
   color: var(--color-text-accent); /* #CE0A86 */
-  font-weight: var(--tab-font-weight-active); /* 700 */
+  font-weight: var(--font-weight-active); /* 700 */
   position: relative;
 }
 
 .active::after {
   content: '';
   position: absolute;
-  bottom: -15px; /* igual que tu diseño original */
+  bottom: -15px; 
   left: 0;
   width: 100%;
   height: 2px;

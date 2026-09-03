@@ -13,9 +13,9 @@
     max-width: 350px;
     padding: 12px;
     
-    background-color: #FFFFFF;
-    border: 1px solid #DEE1E6;
-    border-radius: 6px;
+    background-color: var(--color-surface-base);
+     border: 1px solid var(--border-neutral);
+    border-radius: var(--radius-md);
 }
 
 /* contenedor de información */
@@ -29,22 +29,22 @@
 /* Tipografía */
 .networking-card__name {
     margin: 0;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 14px;
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm);
     font-weight: 600;
-    line-height: 22px;
-    color: #171A1F;
+    line-height: var(--line-height-md);
+    color: var(--color-text-primary);
 }
 
 .networking-card__class,
 .networking-card__role,
 .networking-card__location {
     margin: 0;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: var(--font-family);
     font-size: 12px;
     font-weight: 400;
-    line-height: 20px;
-    color: #9095A0;
+    line-height: var(--line-height-sm);
+    color: var(--color-text-muted);
 }
 
 /* Imagen */
@@ -52,8 +52,8 @@
     width: 76px;
     height: 76px;
     object-fit: cover;
-    border-radius: 4px;
-    background-color: #D9D9D9;
+     border-radius: var(--radius-sm);
+    background-color: var(--color-surface-neutral);
     flex-shrink: 0;
 }
 
@@ -72,22 +72,22 @@
         align-items: flex-start;
         max-width: 154px;
         padding: 0;
-        border: none; /* Elimina borde si en desktop va libre */
+        border: none; /* Eliminar borde */
         background-color: transparent;
     }
 
     /*Tipografía*/
     .networking-card__name {
-        font-size: 16px;
+        font-size: var(--font-size-md); /* 16px */
         line-height: 26px;
-        color: #000000;
+        color: var(--color-text-primary);
     }
 
     .networking-card__role,
     .networking-card__location {
-        font-size: 14px;
+        font-size: var(--font-size-sm); /* 14px */
         line-height: 22px;
-        color: #565E6C;
+        color: var(--color-text-secondary);
     }
 
     /* información oculta */
@@ -108,14 +108,14 @@
    NETWORKING - CARD - DESKTOP
 ============================*/
 
-@media (min-width: 1024px) {
+@media (min-width: var(--breakpoint-desktop)) {
     .networking-card {
         max-width: 200px; 
     }
 
     .networking-card__name {
-        font-size: 18px;
-        line-height: 28px;
+        font-size: var(--font-size-lg); /* 18px */
+        line-height: var(--line-height-lg); /* 28px */
     }
 }
 
@@ -137,9 +137,9 @@
     max-width: 350px;
     padding: 12px;
     
-    background-color: #FFFFFF;
-    border: 1px solid #DEE1E6;
-    border-radius: 6px;
+    background-color: var(--color-surface-base);
+    border: 1px solid var(--border-neutral);
+    border-radius: var(--radius-md);
 }
 
 /* contenedor de información */
@@ -153,21 +153,21 @@
 /* Tipografía */
 .job-card__title {
     margin: 0;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 14px;
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm); /* 14px */
     font-weight: 600;
-    line-height: 22px;
-    color: #171A1F;
+    line-height: var(--line-height-md); /* 22px */
+    color: var(--color-text-primary);
 }
 
 .job-card__company,
 .job-card__details {
     margin: 0;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 12px;
+    font-family: var(--font-family);
+    font-size: var(--font-size-xs); /* 12px */
     font-weight: 400;
-    line-height: 20px;
-    color: #9095A0;
+    line-height: var(--line-height-sm); /* 20px */
+    color: var(--color-text-muted);
 }
 
 /* Botón */
@@ -181,8 +181,8 @@
     width: 112px;
     height: 112px;
     object-fit: cover;
-    border-radius: 4px;
-    background-color: #D9D9D9;
+    border-radius: var(--radius-sm);
+    background-color: var(--color-surface-neutral);
     flex-shrink: 0;
 }
 
@@ -191,7 +191,7 @@
  JOB OPPORTUNITY - CARD - TABLET
 ================================*/
 
-@media (min-width: 768px) {
+@media (min-width: var(--breakpoint-tablet)) {
     .job-card {
         max-width: 416px;
         padding: 16px;
@@ -199,14 +199,16 @@
     }
 
     .job-card__title {
-        font-size: 20px;
+        font-size: var(--font-size-lg); /* 20px */
         line-height: 30px;
+        color: var(--color-text-primary);
     }
 
     .job-card__company,
     .job-card__details {
-        font-size: 14px;
-        line-height: 22px;
+        font-size: var(--font-size-sm); /* 14px */
+        line-height: var(--line-height-md); /* 22px */
+        color: var(--color-text-secondary);
     }
 
     .job-card__image {
@@ -218,14 +220,14 @@
 /* ================================
    JOB OPPORTUNITY - CARD - DESKTOP
 ==================================*/
-@media (min-width: 1024px) {
+@media (min-width: var(--breakpoint-desktop)) {
     .job-card {
         max-width: 480px;
         padding: 20px;
     }
 
     .job-card__title {
-        font-size: 22px;
+        font-size: var(--font-size-xl);
         line-height: 32px;
     }
 
@@ -252,8 +254,8 @@
     max-width: 320px;
     padding: 24px 20px;
 
-    background-color: #FFFFFF;
-    border: 1px solid #BCC1CA;
+    background-color: var(--color-surface-base);
+    border: 1px solid var(--border-neutral);
     border-radius: 16px;
     text-align: center;
 }
@@ -269,11 +271,11 @@
 /* Descripción */
 .benefit-card__text {
     margin: 0;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 14px;
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm); /* 14px */
     font-weight: 400;
-    line-height: 22px;
-    color: #565E6C;
+    line-height: var(--line-height-md); /* 22px */
+    color: var(--color-text-secondary);
 }
 
 /* Botón*/
@@ -286,7 +288,7 @@
    WELCOME - BENEFIT CARD - TABLET
 ==================================*/
 
-@media (min-width: 768px) {
+@media (min-width: var(--breakpoint-tablet)) {
     .benefit-card {
         max-width: 300px;
         padding: 28px 24px;
@@ -297,11 +299,12 @@
 /* ================================
    WELCOME - BENEFIT CARD - DESKTOP 
 ================================*/
-@media (min-width: 1024px) {
+@media (min-width: var(--breakpoint-desktop)) {
     .benefit-card {
         max-width: 350px;
         padding: 32px 28px;
-    }
+    
+}
 
     .benefit-card__icon {
         width: 40px;
@@ -309,8 +312,8 @@
     }
 
     .benefit-card__text {
-        font-size: 16px;
-        line-height: 24px;
+        font-size: var(--font-size-md); /* 16px */
+        line-height: var(--line-height-lg); /* 24px */
     }
 }
 
@@ -330,8 +333,8 @@
     max-width: 320px;
     padding: 20px;
 
-    background-color: #FFFFFF;
-    border: 1px solid #DEE1E6;
+    background-color: var(--color-surface-base);
+    border: 1px solid var(--border-neutral);
     border-radius: 16px;
 }
 
@@ -361,11 +364,11 @@
 /* Nombre del usuario */
 .testimonial-card__name {
     margin: 0;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 18px;
+    font-family: var(--font-family);
+    font-size: var(--font-size-lg); /* 18px */
     font-weight: 700;
     line-height: 26px;
-    color: #323842;
+    color: var(--color-text-normal);
 }
 
 /* Contenedor de estrellas */
@@ -382,18 +385,18 @@
 /* Texto de la opinión */
 .testimonial-card__text {
     margin: 0;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 14px;
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm); /* 14px */
     font-weight: 400;
-    line-height: 22px;
-    color: #171A1F;
+    line-height: var(--line-height-md); /* 22px */
+    color: var(--color-text-primary);
 }
 
 
 /* ===================================
    WELCOME - TESTIMONIAL CARD - TABLET 
    ==================================*/
-@media (min-width: 768px) {
+@media (min-width: var(--breakpoint-tablet)){
     .testimonial-card {
         max-width: 371px;
         padding: 24px;
@@ -416,7 +419,7 @@
     }
 
     .testimonial-card__text {
-        font-size: 16px;
+        font-size: var(--font-size-md); /* 16px */
         line-height: 26px;
     }
 }
