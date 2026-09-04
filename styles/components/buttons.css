@@ -1,0 +1,99 @@
+
+/* Valores por defecto */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    
+    height: 36px;
+    padding: 0 16px;
+    border-radius: var(--radius-md); /* 6px */
+    border: 1px solid transparent;
+
+    font-family: var(--font-family);
+    font-size: var(--font-size-md); /* 16px */
+    font-weight:var(--font-weight-md);
+    line-height: 22px;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+/*Botón Pequeño*/
+.btn-sm {
+    height: 32px;
+    padding: 0 12px;
+    border-radius: var(--radius-sm); /* 4px */
+    font-size: var(--font-size-sm);  /* 14px */
+    font-weight: var(--font-weight-sm);
+    line-height: 20px;
+}
+
+/* Botón Grande */
+.btn-lg {
+    height: 44px;
+    padding: 0 20px;
+    border-radius: var(--radius-lg); /* 10px */
+    font-size: var(--font-size-lg); /* 18px */
+    line-height: 28px;
+}
+
+/* Variantes de Color */
+.btn-gradient {
+   background: linear-gradient( 
+        90deg,
+        var(--color-brand-gradient-start),
+        var(--color-brand-gradient-end)
+    );
+    color: var(--color-text-inverse);
+}
+
+.btn-outline {
+    background-color: var(--color-surface-base);
+    border-color: var(--border-brand);
+    color: var(--color-brand);
+}
+
+.btn-pink-light {
+    background-color: var(--color-brand-light);
+    color: var(--color-brand);
+}
+
+/* ==========================
+   TABLET (min-width: 768px)
+   ==========================*/
+@media (min-width: var(--breakpoint-tablet)){
+    .btn {
+        gap: 8px;    
+    }
+
+    .btn-lg {        
+        font-size: 16px;
+        line-height: 26px;
+    }
+   
+    .btn img {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* =============================
+   DESKTOP (min-width: 1024px)
+   =============================*/
+@media (min-width: var(--breakpoint-desktop)) {
+    
+    .btn {
+        gap: 10px;
+    }
+
+    .btn-lg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .btn img {
+        width: 18px;
+        height: 18px;
+    }
+}

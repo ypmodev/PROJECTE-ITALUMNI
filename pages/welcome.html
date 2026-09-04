@@ -12,27 +12,26 @@
 <body id="inicio">
     <header>
         <nav class="navbar">
-            <div class="nav-logo">
-                <a href="#inicio" class="logo" aria-label="Tornar a l'inici">
-                    <img src="/assets/logos/main-Logo.svg" alt="">
-                </a>
+            <div class="nav-logo">                
+                <img src="/assets/logos/main-Logo.svg" alt="Logo ITAlumni">
+              
             </div>
 
             <div class="nav-links">
                 <ul>
                     <li><a href="#inicio">Inici</a></li>
-                    <li><a href="alumni-connect.html#networking">Xarxa</a></li>
-                    <li><a href="alumni-connect.html#job-opportunities">Oportunitats de feina</a></li>
+                    <li><a href="#" data-private="true">Xarxa</a></li>
+                    <li><a href="#" data-private="true">Oportunitats de feina</a></li>
                 </ul>
             </div>
             
             <div class="nav-actions">
-                <a href="alumni-connect.html#events" class="btn btn-outline">
+                <a href="#" class="btn btn-outline" data-private="true">
                     <img src="/assets/icons/icon-button-apuntat.svg" alt="">
                     Apunta’t    
                 </a>
 
-                <a href="#" class="btn btn-gradient">
+                <a href="#" class="btn btn-gradient" data-private="true">
                     <img src="/assets/icons/profile.svg" alt="">
                     Com et veiem?
                 </a>
@@ -41,6 +40,20 @@
     </header>
      
     <main>
+
+        <section class="welcome-mobile">
+            <img src="/assets/logos/main-Logo.svg" alt="Logo ITAlumni" class="welcome-mobile__logo">
+
+            <p class="welcome-mobile__text">
+                Connectant i empoderant a la nostra comunitat global d’alumnes
+            </p>
+
+            <a href="register.html" class="btn btn-gradient welcome-mobile__cta">
+                Uneix-te
+            </a>
+        </section>
+
+
         <section class="hero">
             <h1>Benvingut, Alumni</h1>
             <p>Connectant i empoderant a la nostra comunitat global d’alumnes</p>
@@ -50,7 +63,7 @@
                     Uneix-te
                 </a>
 
-                <a href="#" class="btn btn-outline">                    
+                <a href="construction.html" class="btn btn-outline">                    
                     Mira què fem
                 </a>                                        
             </div>
@@ -69,7 +82,7 @@
                         moments importants, explica com va tot i queda amb
                         els companys. Una xarxa per estar més a prop.
                     </p>
-                    <a href="#" class="btn btn-gradient benefit-card__action" aria-label="Apunta’t per compartir">Apunta't ja</a>
+                    <a href="#" class="btn btn-gradient benefit-card__action" data-private="true" aria-label="Apunta’t per compartir">Apunta't ja</a>
                 </article>
 
                 <article class="benefit-card">
@@ -78,7 +91,7 @@
                         Participa en discussions: Intercanvia coneixements,
                         punts de vista i opinions sobre temes que t'interessen.
                     </p>
-                    <a href="#" class="btn btn-pink-light benefit-card__action" aria-label="Apunta’t per participar en debats">Apunta't ja</a>
+                    <a href="#" class="btn btn-pink-light benefit-card__action" data-private="true" aria-label="Apunta’t per participar en debats">Apunta't ja</a>
                 </article>
 
                 <article class="benefit-card">
@@ -87,14 +100,14 @@
                         Xarxa Alumni: Connecta amb companys de promoció,
                         fes noves amistats i crea records per durar tota la vida.
                     </p>
-                    <a href="alumni-connect.html#networking" class="btn btn-pink-light benefit-card__action" aria-label="Accedir a Networking">Apunta't ja</a>
+                    <a href="#" class="btn btn-pink-light benefit-card__action" data-private="true" aria-label="Apunta’t per accedir a Networking">Apunta't ja</a>
                 </article>
             </div>
         </section>       
             
         <section class="testimonials">
             <h2>
-                "T'ensenyem el que opinen els nostres súper-usuaris!"
+                T'ensenyem el que opinen els nostres súper-usuaris!
             </h2>
 
             <div class="testimonials-list">
@@ -202,18 +215,18 @@
         <div class="footer-navigation">
             <div class="footer-logo">
                 <a href="#inicio" aria-label="Tornar a l'inici">
-                    <img src="assets/logos/Logo-white.svg" alt="">
+                    <img src="assets/logos/Logo-white.svg" alt="Logo ITAlumni">
                 </a>
             </div>
 
             <nav class="footer-nav" aria-label="Navegació del peu de pàgina">
                 <ul>
-                    <li><a href="#">Sobre nosaltres</a></li>
-                    <li><a href="#">Funcionalitats</a></li>
-                    <li><a href="#">Centre d'ajuda</a></li>
-                    <li><a href="#">Contacta'ns</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="alumni-connect.html#job-opportunities">Oportunitats laborals</a></li>
+                    <li><a href="/pages/construction.html">Sobre nosaltres</a></li>
+                    <li><a href="/pages/construction.html">Funcionalitats</a></li>
+                    <li><a href="/pages/construction.html">Centre d'ajuda</a></li>
+                    <li><a href="/pages/construction.html">Contacta'ns</a></li>
+                    <li><a href="/pages/construction.html">FAQs</a></li>
+                    <li><a href="#" data-private="true">Oportunitats laborals</a></li>
                 </ul>
             </nav>
         </div>
@@ -227,26 +240,28 @@
             </div>
 
             <div class="footer-legal">
-                <p>
-                    © 2024 Brand, Inc. • Privadesa • Termes d'ús
-                </p>
-                <a href="#">Mapa del lloc</a>
+                <p>© 2024 Brand, Inc.</p>
+
+                <a href="construction.html">Privadesa</a>
+                <a href="construction.html">Termes d'ús</a>
+
+                <a href="construction.html">Mapa del lloc</a>
             </div>
 
             <nav class="footer-social" aria-label="Xarxes socials">
                 <ul>
                     <li>
-                        <a href="#" aria-label="Facebook">
+                        <a href="construction.html" aria-label="Facebook">
                             <img src="/assets/logos/Logo-Facebook.svg" alt="">
                         </a>
                     </li>
                     <li>
-                        <a href="#" aria-label="LinkedIn">
+                        <a href="construction.html" aria-label="LinkedIn">
                             <img src="/assets/logos/Logo-LinkedIn.svg" alt="">
                         </a>
                     </li>
                     <li>
-                        <a href="#" aria-label="YouTube">
+                        <a href="construction.html"  aria-label="YouTube">
                             <img src="/assets/logos/Logo-YouTube.svg" alt="">
                         </a>
                     </li>
