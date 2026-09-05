@@ -40,6 +40,108 @@
 
 /* Variantes de Color */
 .btn-gradient {
+    background: linear-gradient(90deg, #873AAA, #DF007F);
+    color: #FFFFFF;
+}
+
+.btn-outline {
+    background-color: #FFFFFF;
+    border-color: #CE0A86;
+    color: #CE0A86;
+}
+
+.btn-pink-light {
+    background-color: #FEF0F9;
+    color: #CE0A86;
+}
+
+/* Accesibilidad (Teclado) */
+.btn:focus-visible {
+    outline: 2px solid #873AAA;
+    outline-offset: 2px;
+}
+
+/* ==========================
+   TABLET (min-width: 768px)
+   ==========================*/
+@media (min-width: 768px) {
+    .btn {
+        gap: 8px;
+    
+    }
+
+    .btn-lg {        
+        font-size: 16px;
+        line-height: 26px;
+    }
+   
+    .btn img {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* =============================
+   DESKTOP (min-width: 1024px)
+   =============================*/
+@media (min-width: 1024px) {
+    
+    .btn {
+        gap: 10px;
+    }
+
+    .btn-lg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .btn img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Valores por defecto */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    
+    height: 36px;
+    padding: 0 16px;
+    border-radius: var(--radius-md); /* 6px */
+    border: 1px solid transparent;
+
+    font-family: var(--font-family);
+    font-size: var(--font-size-md); /* 16px */
+    font-weight:var(--font-weight-md);
+    line-height: 22px;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+/*Botón Pequeño*/
+.btn-sm {
+    height: 32px;
+    padding: 0 12px;
+    border-radius: var(--radius-sm); /* 4px */
+    font-size: var(--font-size-sm);  /* 14px */
+    font-weight: var(--font-weight-sm);
+    line-height: 20px;
+}
+
+/* Botón Grande */
+.btn-lg {
+    height: 44px;
+    padding: 0 20px;
+    border-radius: var(--radius-lg); /* 10px */
+    font-size: var(--font-size-lg); /* 18px */
+    line-height: 28px;
+}
+
+/* Variantes de Color */
+.btn-gradient {
    background: linear-gradient( 
         90deg,
         var(--color-brand-gradient-start),

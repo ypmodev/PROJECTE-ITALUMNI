@@ -124,7 +124,7 @@
 /*logo-texto*/
 .desktop-header__title {
     margin: 0;
-    font-family: var(--font-family);
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 28px;
     font-weight: 400;
     line-height: 42px;
@@ -197,7 +197,7 @@
    TOP NAV - Tablet  
    =====================*/
 
-@media (max-width: var(--breakpoint-tablet)) {
+@media (min-width:768px) {
 
     .desktop-header {
         padding: 0 24px; 
