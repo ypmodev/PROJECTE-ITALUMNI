@@ -191,7 +191,7 @@
  JOB OPPORTUNITY - CARD - TABLET
 ================================*/
 
-@media (min-width: var(--breakpoint-tablet)) {
+@media (min-width: 768px) {
     .job-card {
         max-width: 416px;
         padding: 16px;
@@ -220,7 +220,7 @@
 /* ================================
    JOB OPPORTUNITY - CARD - DESKTOP
 ==================================*/
-@media (min-width: var(--breakpoint-desktop)) {
+@media (min-width: 1024px) {
     .job-card {
         max-width: 480px;
         padding: 20px;
@@ -288,7 +288,7 @@
    WELCOME - BENEFIT CARD - TABLET
 ==================================*/
 
-@media (min-width: var(--breakpoint-tablet)) {
+@media (min-width: 768px) {
     .benefit-card {
         max-width: 300px;
         padding: 28px 24px;
@@ -299,7 +299,7 @@
 /* ================================
    WELCOME - BENEFIT CARD - DESKTOP 
 ================================*/
-@media (min-width: var(--breakpoint-desktop)) {
+@media (min-width: 1024px) {
     .benefit-card {
         max-width: 350px;
         padding: 32px 28px;
@@ -396,7 +396,7 @@
 /* ===================================
    WELCOME - TESTIMONIAL CARD - TABLET 
    ==================================*/
-@media (min-width: var(--breakpoint-tablet)){
+@media (min-width: 768px){
     .testimonial-card {
         max-width: 371px;
         padding: 24px;

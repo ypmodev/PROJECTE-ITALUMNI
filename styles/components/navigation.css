@@ -197,7 +197,7 @@
    TOP NAV - Tablet  
    =====================*/
 
-@media (max-width: var(--breakpoint-tablet)) {
+@media (min-width:768px) {
 
     .desktop-header {
         padding: 0 24px; 

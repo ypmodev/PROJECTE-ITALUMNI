@@ -42,7 +42,7 @@
   SEARCH - TABLET
 ================= */
 
-@media (min-width: var(--breakpoint-tablet)) {
+@media (min-width: 768px) {
     .search {
         max-width: 320px;
     }
@@ -51,7 +51,7 @@
 /* ================
   SEARCH - DESKTOP
 ================= */
-@media (min-width: var(--breakpoint-desktop)) {
+@media (min-width: 1024px) {
     .search {
         max-width: 299px;
         height: 35px;
@@ -169,7 +169,7 @@
 /* ================
   FILTERS - TABLET
 ================= */
-@media (max-width: var(--breakpoint-tablet)) {
+@media (max-width: 768px) {
   .desktop-filters{
     width: 100%;
     max-width: 381px;
@@ -185,14 +185,14 @@
 
 
 /*ocultar móvil*/
-@media (min-width: var(--breakpoint-tablet)) {
+@media (min-width: 768px) {
     .filters-mobile {
         display: none; 
     }
 }
 
 /*ocultar escritorio*/
-@media (max-width: var(--breakpoint-tablet)) {
+@media (max-width: 768px) {
     .filters-desktop {
         display: none; 
     }
