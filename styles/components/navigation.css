@@ -74,6 +74,20 @@
     height: 24px;
     color: inherit;
 }
+    .mobile-bottom-nav__icon--active {
+    display: none;
+    }
+
+    .mobile-bottom-nav__item--active .mobile-bottom-nav__icon--default {
+        display: none;
+    }
+
+    .mobile-bottom-nav__item--active .mobile-bottom-nav__icon--active {
+        display: block;
+    }
+
+    
+
 
 /* Texto base */
 .mobile-bottom-nav__text {
