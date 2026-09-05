@@ -169,7 +169,7 @@
 /* ================
   FILTERS - TABLET
 ================= */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .desktop-filters{
     width: 100%;
     max-width: 381px;
@@ -193,7 +193,7 @@
 
 /*ocultar escritorio*/
 @media (max-width: 768px) {
-    .filters-desktop {
+    .desktop-filters {
         display: none; 
     }
 }

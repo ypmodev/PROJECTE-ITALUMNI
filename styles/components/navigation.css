@@ -78,7 +78,7 @@
 /* Texto base */
 .mobile-bottom-nav__text {
     font-family: var(--font-family);
-    font-size: var(--font-size-xxs); /* 10px */
+    font-size: var(--font-size-xs); /* 10px */
     line-height: 16px;
     color: inherit;
 }

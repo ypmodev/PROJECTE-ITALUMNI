@@ -6,7 +6,7 @@
 :root {
 
   /* BRAND COLORS*/
-  --color-brand: #CE0A86;
+  --color-brand-primary: #CE0A86;
   --color-brand-light: #FEF0F9;
   --color-brand-gradient-start: #873AAA;
   --color-brand-gradient-end: #DF007F;

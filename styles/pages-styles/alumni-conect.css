@@ -1,0 +1,354 @@
+.tab-section {
+    display: none;
+}
+ 
+.tab-section.is-active {
+    display: block;
+}
+ 
+.mobile-header__leading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+ 
+.mobile-header__back {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+ 
+.mobile-header__back img {
+    width: 20px;
+    height: 20px;
+}
+ 
+.mobile-header__actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.home-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px;
+    padding-bottom: 88px; /* deixa espai per sobre del mobile-bottom-nav fixed */
+}
+ 
+.home-mobile__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+ 
+.home-desktop {
+    display: none;
+}
+ 
+.home-hero-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+ 
+    padding: 20px;
+    background-color: var(--color-surface-alt);
+    border-radius: var(--radius-md);
+}
+ 
+.home-hero-card__title {
+    margin: 0;
+    font-family: var(--font-family);
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--color-text-primary);
+}
+ 
+.home-hero-card__text {
+    margin: 0;
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+ 
+@media (min-width: 768px) {
+    .home-mobile {
+        display: none;
+    }
+ 
+    .home-desktop {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding: 40px 64px;
+    }
+ 
+    .home-desktop__cards {
+        display: flex;
+        gap: 24px;
+    }
+ 
+    .home-hero-card--lg {
+        flex: 1;
+        padding: 32px;
+        gap: 16px;
+    }
+ 
+    .home-hero-card--lg .home-hero-card__title {
+        font-size: var(--font-size-xl);
+    }
+ 
+    .home-hero-card--lg .home-hero-card__text {
+        font-size: var(--font-size-md);
+        max-width: 420px;
+    }
+}
+
+.networking-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    padding-bottom: 88px;
+}
+ 
+.networking-mobile__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+ 
+.networking-desktop {
+    display: none;
+}
+ 
+@media (min-width: 768px) {
+    .networking-mobile {
+        display: none;
+    }
+ 
+    .networking-desktop {
+        display: block;
+        padding: 32px 40px;
+    }
+ 
+    .networking-desktop__toolbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 32px;
+        flex-wrap: wrap;
+    }
+ 
+    .networking-filters {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+ 
+    .networking-desktop__grid {
+        display: grid;
+        grid-template-columns: 1fr 280px;
+        gap: 40px;
+        align-items: start;
+    }
+ 
+    .networking-desktop__main {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+ 
+    .networking-top-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+ 
+    .networking-activity__title,
+    .networking-suggestions__title {
+        margin: 0 0 16px;
+        font-family: var(--font-family);
+        font-size: var(--font-size-md);
+        font-weight: 700;
+        color: var(--color-text-primary);
+    }
+ 
+    .networking-activity__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-family: var(--font-family);
+        font-size: var(--font-size-sm);
+        color: var(--color-text-secondary);
+    }
+ 
+    .networking-suggestions__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+ 
+@media (min-width: 1024px) {
+    .networking-desktop {
+        padding: 40px 64px;
+    }
+ 
+    .networking-desktop__grid {
+        grid-template-columns: 1fr 320px;
+        gap: 56px;
+    }
+}
+
+.networking-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    padding-bottom: 88px;
+}
+ 
+.networking-mobile__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+ 
+.networking-desktop {
+    display: none;
+}
+ 
+@media (min-width: 768px) {
+    .networking-mobile {
+        display: none;
+    }
+ 
+    .networking-desktop {
+        display: block;
+        padding: 32px 40px;
+    }
+ 
+    .networking-desktop__toolbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 32px;
+        flex-wrap: wrap;
+    }
+ 
+    .networking-filters {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+ 
+    .networking-desktop__grid {
+        display: grid;
+        grid-template-columns: 1fr 280px;
+        gap: 40px;
+        align-items: start;
+    }
+ 
+    .networking-desktop__main {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+ 
+    .networking-top-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+ 
+    .networking-activity__title,
+    .networking-suggestions__title {
+        margin: 0 0 16px;
+        font-family: var(--font-family);
+        font-size: var(--font-size-md);
+        font-weight: 700;
+        color: var(--color-text-primary);
+    }
+ 
+    .networking-activity__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-family: var(--font-family);
+        font-size: var(--font-size-sm);
+        color: var(--color-text-secondary);
+    }
+ 
+    .networking-suggestions__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+ 
+@media (min-width: 1024px) {
+    .networking-desktop {
+        padding: 40px 64px;
+    }
+ 
+    .networking-desktop__grid {
+        grid-template-columns: 1fr 320px;
+        gap: 56px;
+    }
+}
+
+.list-state {
+    list-style: none;
+    padding: 24px 20px;
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm);
+    border-radius: var(--radius-md);
+}
+ 
+.list-state--loading {
+    color: var(--color-text-secondary);
+    background-color: var(--color-surface-alt);
+}
+ 
+.list-state--error {
+    color: #B3261E;
+    background-color: #FBEAE9;
+}
+ 
+.list-state--empty {
+    color: var(--color-text-secondary);
+    background-color: var(--color-surface-alt);
+}
