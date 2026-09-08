@@ -23,12 +23,7 @@
 }
 
 .navbar,
-.hero
-.benefit-card 
-.footer 
-.testimonials
-.footer-newsletter
-{
+.hero{
   display: none;
 }
 
@@ -41,7 +36,7 @@
   }
 
   .hero {
-    display: none;
+    display: flex;
   }
 
   .welcome-mobile {
