@@ -6,7 +6,7 @@
 :root {
 
   /* BRAND COLORS*/
-  --color-brand-primary: #CE0A86;
+  --color-brand: #CE0A86;
   --color-brand-light: #FEF0F9;
   --color-brand-gradient-start: #873AAA;
   --color-brand-gradient-end: #DF007F;
@@ -62,11 +62,6 @@
 
   /* active */
   --font-weight-active: 700;
-  
-  /* line heights */
-  --line-height-sm: 20px;
-  --line-height-md: 22px;
-  --line-height-lg: 28px;
   
 
 }
