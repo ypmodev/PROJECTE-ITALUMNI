@@ -37,7 +37,7 @@
     flex-direction: column;
     gap: 24px;
     padding: 20px;
-    padding-bottom: 88px; /* deixa espai per sobre del mobile-bottom-nav fixed */
+    padding-bottom: 88px; 
 }
  
 .home-mobile__cards {
