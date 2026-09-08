@@ -74,11 +74,25 @@
     height: 24px;
     color: inherit;
 }
+    .mobile-bottom-nav__icon--active {
+    display: none;
+    }
+
+    .mobile-bottom-nav__item--active .mobile-bottom-nav__icon--default {
+        display: none;
+    }
+
+    .mobile-bottom-nav__item--active .mobile-bottom-nav__icon--active {
+        display: block;
+    }
+
+    
+
 
 /* Texto base */
 .mobile-bottom-nav__text {
     font-family: var(--font-family);
-    font-size: var(--font-size-xxs); /* 10px */
+    font-size: var(--font-size-xs); /* 10px */
     line-height: 16px;
     color: inherit;
 }

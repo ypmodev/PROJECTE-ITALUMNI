@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "name": "Jane Smith",
+    "avatar": "/assets/images/Avatar-2.jpg",
+    "classYear": 2018,
+    "role": "Co-Founder at ABC Inc",
+    "location": "New York, NY",
+    "connected": true
+  },
+  {
+    "id": 2,
+    "name": "John Doe",
+    "avatar": "/assets/images/Avatar-2.jpg",
+    "classYear": 2010,
+    "role": "CEO at TechSolutions Inc.",
+    "location": "San Francisco, CA",
+    "connected": true
+  },
+  {
+    "id": 3,
+    "name": "Alice Johnson",
+    "avatar": "/assets/images/Avatar-2.jpg",
+    "classYear": 2016,
+    "role": "Senior Developer at Tech Solutions",
+    "location": "Remote",
+    "connected": true
+  },
+  {
+    "id": 4,
+    "name": "David Brown",
+    "avatar": "/assets/images/Avatar-2.jpg",
+    "classYear": 2014,
+    "role": "Marketing Specialist at Brand Co",
+    "location": "Chicago, IL",
+    "connected": true
+  },
+  {
+    "id": 5,
+    "name": "Sarah Johnson",
+    "avatar": "/assets/images/Avatar-2.jpg",
+    "classYear": 2015,
+    "role": "Marketing Director at GreenWave",
+    "location": "Austin, TX",
+    "connected": false
+  },
+  {
+    "id": 6,
+    "name": "Michael Brown",
+    "avatar": "/assets/images/Avatar-2.jpg",
+    "classYear": 2008,
+    "role": "Founder of EduLearn Academy",
+    "location": "Boston, MA",
+    "connected": false
+  },
+  {
+    "id": 7,
+    "name": "Emily Davis",
+    "avatar": "/assets/images/Avatar-2.jpg",
+    "classYear": 2012,
+    "role": "Research Scientist at BioTech Labs",
+    "location": "Seattle, WA",
+    "connected": false
+  },
+  {
+    "id": 8,
+    "name": "James Lee",
+    "avatar": "/assets/images/Avatar-2.jpg",
+    "classYear": 2005,
+    "role": "Managing Partner at Lee & Associates",
+    "location": "Los Angeles, CA",
+    "connected": false
+  }
+]
+
