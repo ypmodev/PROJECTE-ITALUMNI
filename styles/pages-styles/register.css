@@ -4,7 +4,8 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding: 40px 20px;
+    padding: 16px 4vw;
+    box-sizing: border-box;
     background-color: var(--color-surface-base);
 }
 
@@ -12,35 +13,34 @@
     width: 100%;
     max-width: 400px;
     background-color: var(--color-surface-base);
-    border-radius: 1px;
-    border-color: #BCC1CA; 
-    height: 80%;   
+    border-radius: 16px;
+    padding: 32px 24px;
     
+    box-sizing: border-box;
 }
 
 .register-card__title {
     margin: 0 0 8px;
     text-align: center;
-    font-family: var(--font-family);
-    font-size: 24px;
+    font-size: var(--font-size-xl);
     font-weight: 700;
     color: var(--color-text-primary);
 }
-
-/* Oculto en mobile */
-.register-card__subtitle {
+ 
+.register-card__subtitle {    
     display: none;
 }
 
 
-/* ======================
-   2) FORMULARIO
-   ===================== */
+/* ========
+FORMULARIO
+=============== */
 .register-form {
     display: flex;
     flex-direction: column;
     gap: 14px;
     margin-top: 16px;
+    width: 100%;
 }
 
 .form-field {
@@ -53,8 +53,7 @@
     top: 50%;
     transform: translateY(-50%);
     width: 16px;
-    height: 16px;
-    opacity: 0.6;
+    height: 16px;   
     pointer-events: none;
 }
 
@@ -71,7 +70,7 @@
 }
 
 .form-field__input::placeholder {
-    color: var(--color-text-secondary);
+    color: var(--color-text-muted);
 }
 
 .form-field__input:focus-visible {
@@ -110,7 +109,7 @@
     margin-top: 4px;
 }
 
-/* Separador con línea a cada lado */
+/* Separador "o" con línea a cada lado */
 .register-form__divider {
     display: flex;
     align-items: center;
@@ -157,13 +156,13 @@
 }
 
 .btn-social--apple {
-    background-color: #FDEEEE;
+    background-color: #FEF0F9;
     border-color: #F5C6C6;
     color: #c42a1c;
 }
 
 .btn-social--google {
-    background-color: #FDEEEE;
+    background-color: #FDF2F2;
     border-color: #F5C6C6;
     color: #EA4335;
 }
@@ -189,36 +188,93 @@
 }
 
 
-/* =========================================
-   TABLET / DESKTOP (min-width: 768px)
-   ========================================= */
+/* ============================================================
+   TABLET 
+   ============================================================ */
 @media (min-width: 768px) {
 
-    .register-page {
+    .register-form{
+        width: 80%;
+         margin: 0 auto;
+    }
+
+    .register-page {      
         background-image: url('/assets/images/Imagen-fondo.jpg');
         background-size: cover;
         background-position: center;
-        padding: 60px 40px;
+        padding: 2vh 4vw;
     }
 
     .register-card {
-        max-width: 40%;
-        height: 80%;
-        padding: 40px 48px;
-        
-       
+       width: 65vw;
+        max-width: none;
+        height: clamp(600px, 80vh, 750px);
     }
 
     .register-card__title {
-        font-size: 28px;
+        font-size: var(--font-size-h3);
     }
 
     .register-card__subtitle {
         display: block;
         margin: 0 0 20px;
-        text-align: center;
-        font-family: var(--font-family);
-        font-size: 14px;
-        color: var(--color-text-secondary);
+        text-align: center;    
+        font-size: var(--font-size-sm);
+        color: var(--color-text-primary);
+    }
+    .register-form {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .register-form__submit {       
+        font-size: var(--font-size-sm);
+    }
+
+}
+
+/* ============================================================
+   DESKTOP
+   ============================================================ */
+@media (min-width: 1200px) {
+
+    .register-page {
+        padding: 1vh 3vw;
+    }
+
+    .register-card {
+        width: 40vw;
+        max-width: none;
+        height: clamp(650px, 90vh, 850px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .register-form {
+        width: 80%;
+        margin: 0 auto;
+        gap: 2.5vh;  
+        
+    }
+
+     .register-card__subtitle {          
+        font-size: var(--font-size-md);        
+    }
+
+     .register-card__title {
+        font-size: var(--font-size-h2);
+    }
+
+    .register-form__social {
+        gap: 1.5vh;
+    }
+
+    .register-form__login-link {
+        margin-top: 2vh;
+    }
+
+    .register-form__submit {       
+        font-size: var(--font-size-md);
     }
 }
