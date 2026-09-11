@@ -32,6 +32,7 @@
   --radius-sm: 4px;
   --radius-md: 6px;
   --radius-lg: 10px;
+  --radius-xl: 16px;
 
   /* tipografía*/
   --font-family: "Source Sans Pro", sans-serif;
@@ -44,6 +45,9 @@
 
   --font-size-h3: 32px;
   --font-weight-h3: 400;
+
+  --font-size-xxl: 28px;
+  --font-weight-2xl: 400;
 
   --font-size-xl: 20px;
   --font-weight-xl: 400;
@@ -63,6 +67,28 @@
   /* active */
   --font-weight-active: 700;
   
+   /* SPACING */
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-xxl: 40px;
+  --space-2xl: 48px;
+  --space-3xl: 56px;
+  --space-4xl: 64px;
+  --space-5xl: 72px;
+  --space-6xl: 80px;
+
+  /* LINE HEIGHT */
+  --line-height-xs: 16px;
+  --line-height-sm: 20px;
+  --line-height-md: 24px;
+  --line-height-lg: 28px;
+  --line-height-xl: 32px;
+  --line-height-xxl: 40px;
+  --line-height-2xl: 84px;
 
 }
 
@@ -122,4 +148,31 @@ a:hover, button:hover, .desktop-filter-tab:hover {
 :focus-visible {
   outline: 2px solid var(--color-brand-gradient-start);
   outline-offset: 2px;
+}
+
+.nav-links {
+  position: relative;
+}
+ 
+.nav-links a {
+  position: relative;
+  }
+ 
+.nav-links a.active {
+  color: var(--color-text-accent);
+  font-weight: var(--font-weight-active);
+}
+ 
+.nav-links a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -12px; 
+   left: 0;
+  width: 100%;
+  height: 4px; 
+  border-radius: 2px;
+  background-color: var(--color-text-accent);
+  background-image: url('/assets/icons/bar-active.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
