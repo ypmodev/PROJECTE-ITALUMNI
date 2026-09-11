@@ -19,20 +19,20 @@
 
             <div class="nav-links">
                 <ul>
-                    <li><a href="#inicio">Inici</a></li>
+                    <li><a href="#inicio" class="active">Inici</a></li>
                     <li><a href="#" data-private="true">Xarxa</a></li>
                     <li><a href="#" data-private="true">Oportunitats de feina</a></li>
                 </ul>
             </div>
             
             <div class="nav-actions">
-                <a href="#" class="btn btn-outline" data-private="true">
+                <a href="#" class="btn btn-outline btn-header"  data-private="true">
                     <img src="/assets/icons/icon-button-apuntat.svg" alt="">
                     Apunta’t    
                 </a>
 
-                <a href="#" class="btn btn-gradient" data-private="true">
-                    <img src="/assets/icons/profile.svg" alt="">
+                <a href="#" class="btn btn-gradient btn-header"  data-private="true">
+                    <img src="/assets/icons/profile-white.svg" alt="">
                     Com et veiem?
                 </a>
             </div>
@@ -48,7 +48,7 @@
                 Connectant i empoderant a la nostra comunitat global d’alumnes
             </p>
 
-            <a href="register.html" class="btn btn-gradient welcome-mobile__cta">
+            <a href="register.html" class="btn btn-gradient welcome-mobile__btn">
                 Uneix-te
             </a>
         </section>
@@ -181,10 +181,10 @@
 
             <div class="testimonials-controls">
                 <button type="button" aria-label="Testimoni anterior">
-                   ‹
+                   <img src="/assets/icons/Back-Button.svg" alt="">
                 </button>
                 <button type="button" aria-label="Testimoni següent">
-                    ›
+                   <img src="/assets/icons/Next-Button.svg" alt="">
                 </button>
             </div>
         </section>
@@ -195,7 +195,7 @@
             <h2>No et perdis res, subscriu-te!</h2>
 
             <form>
-                <img src="/assets/icons/mail.svg" alt="">
+                <img src="/assets/icons/mail-white.svg" alt="">
                 <input
                     type="email"
                     id="email"
@@ -215,7 +215,7 @@
         <div class="footer-navigation">
             <div class="footer-logo">
                 <a href="#inicio" aria-label="Tornar a l'inici">
-                    <img src="assets/logos/Logo-white.svg" alt="Logo ITAlumni">
+                    <img src="/assets/logos/Logo-white.svg" alt="Logo ITAlumni">
                 </a>
             </div>
 
@@ -233,8 +233,7 @@
 
         <div class="footer-lower">
             <div class="footer-language">
-                <label for="language">Idioma</label>
-                <select id="language" name="language">
+                    <select id="language" name="language">
                     <option value="ca">Català</option>
                 </select>
             </div>
@@ -268,6 +267,42 @@
                 </ul>
             </nav>
         </div>
-    </footer>     
+    </footer> 
+
+
+
+
+    <div class="modal" id="accessModal" aria-hidden="true">
+
+    <div class="modal__content">
+
+        <button class="modal__close" type="button" aria-label="Tancar">
+            ×
+        </button>
+
+        <h2>Accés restringit</h2>
+
+        <p>
+            Aquesta funcionalitat és exclusiva per a alumnes registrats.
+        </p>
+
+        <div class="modal__actions">
+
+            <a href="register.html" class="btn btn-gradient">
+                Crear un compte
+            </a>
+
+            <a href="login.html" class="btn btn-outline">
+                Iniciar sessió
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+    
+    <script src="/scripts/welcome.js"></script>    
+
 </body>
 </html>

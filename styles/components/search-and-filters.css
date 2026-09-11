@@ -51,7 +51,7 @@
 /* ================
   SEARCH - DESKTOP
 ================= */
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .search {
         max-width: 299px;
         height: 35px;
@@ -99,7 +99,7 @@
     width: 134px;
     height: 22px;
     padding: 0 8px; /* Ajuste interno simétrico */
-   background-color: var(--color-surface-base);
+    background-color: var(--color-surface-base);
     border: 1px solid var(--border-neutral);
     border-radius: var(--radius-sm);
     flex-shrink: 0; /* Evitar deformación al hacer scroll */
@@ -193,7 +193,7 @@
 
 /*ocultar escritorio*/
 @media (max-width: 768px) {
-    .filters-desktop {
+    .desktop-filters{
         display: none; 
     }
 }
