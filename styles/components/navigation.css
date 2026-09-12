@@ -66,27 +66,28 @@
     justify-content: center;
     gap: 2px;
     text-decoration: none;
-    color: var(--color-text-secondary);}
+    color: var(--color-text-secondary);
+}
 
 /* Icono */
 .mobile-bottom-nav__icon {
     width: 24px;
     height: 24px;
     color: inherit;
+    border: none;
 }
-    .mobile-bottom-nav__icon--active {
+
+.mobile-bottom-nav__icon--active {
     display: none;
-    }
+}
 
-    .mobile-bottom-nav__item--active .mobile-bottom-nav__icon--default {
-        display: none;
-    }
+.mobile-bottom-nav__item--active .mobile-bottom-nav__icon--default {
+    display: none;
+}
 
-    .mobile-bottom-nav__item--active .mobile-bottom-nav__icon--active {
-        display: block;
-    }
-
-    
+.mobile-bottom-nav__item--active .mobile-bottom-nav__icon--active {
+    display: block;
+}
 
 
 /* Texto base */
@@ -97,9 +98,9 @@
     color: inherit;
 }
 
-/* Estado activo*/
+/* Estado activo — pinta texto + icono (icon hereda color via currentColor si aplica) */
 .mobile-bottom-nav__item--active {
-    color: var(--color-brand-primary);
+    color: var(--color-brand);
     font-weight: 700;
 }
 
@@ -117,7 +118,7 @@
     height: 56px;
     padding: 0 48px; 
     background-color: var(--color-surface-base);
-    border-bottom: 1px solid var(--border-neutral);
+    
 }
 
 /* Contenedor logo*/
@@ -151,6 +152,7 @@
     align-items: center;
     gap: 32px; 
     height: 100%;
+    
 }
 
 .desktop-nav__link {
@@ -168,9 +170,9 @@
 }
 
 
-/* Estado Activo */
+/* Estado Activo  */
 .desktop-nav__link--active {
-    color: var(--color-brand-primary);
+    color: var(--color-brand);
     font-weight: 700;
 }
 
@@ -181,7 +183,7 @@
     left: 0;
     width: 100%;
     height: 3px;
-    background-color:  var(--color-brand-primary);
+    background-color: var(--color-brand);
     border-radius: 2px 2px 0 0;
 }
 
@@ -211,7 +213,7 @@
    TOP NAV - Tablet  
    =====================*/
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
 
     .desktop-header {
         padding: 0 24px; 
@@ -219,17 +221,18 @@
 
     .desktop-nav {
         gap: 16px; 
+        
     }
 }
 
 /* Ocultar escritorio en móvil */
 @media (max-width: 767px) {
-        .desktop-header {
+    .desktop-header {
         display: none;
     }
 }
 
- /* Ocultar móvil en tablet/escritorio*/
+/* Ocultar móvil en tablet/escritorio*/
 @media (min-width: 768px) {   
     .mobile-header,
     .mobile-bottom-nav {

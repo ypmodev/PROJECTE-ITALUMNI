@@ -433,3 +433,82 @@
     }
 }
 
+/* ========================================
+   HOME - CARD - MOBILE
+======================================== */
+
+.home-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+
+    background-color: var(--color-surface-base);
+    border: 1px solid var(--border-neutral);
+    border-radius: var(--radius-md);
+}
+
+/* Título */
+.home-card__title {
+    margin: 0;
+
+    font-family: var(--font-family);
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    line-height: var(--line-height-lg);
+    color: var(--color-text-primary);
+}
+
+/* Descripción */
+.home-card__text {
+    margin: 0;
+
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm);
+    font-weight: 400;
+    line-height: var(--line-height-md);
+    color: var(--color-text-secondary);
+}
+
+/* Botón */
+.home-card__action {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+
+/* ========================================
+   HOME - CARD - TABLET
+======================================== */
+
+@media (min-width: 768px) {
+    .home-card {
+        max-width: 300px;
+        padding: 24px;
+    }
+
+    .home-card__title {
+        font-size: var(--font-size-xl);
+        line-height: 30px;
+    }
+
+    .home-card__text {
+        font-size: var(--font-size-md);
+        line-height: var(--line-height-lg);
+    }
+}
+
+
+/* ========================================
+   HOME - CARD - DESKTOP
+======================================== */
+
+@media (min-width: 1200px) {
+    .home-card {
+        max-width: 350px;
+        padding: 28px;
+    }
+}
