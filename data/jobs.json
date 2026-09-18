@@ -1,1 +1,107 @@
 
+[
+  {
+    "id": 1,
+    "title": "Software Engineer",
+    "company": "TechSolutions Inc.",
+    "location": "Barcelona (remot)",
+    "contractType": "Jornada completa",
+    "stack": "JavaScript, React, Node.js",
+    "postedAgo": "Fa 3 dies",
+    "image": "/assets/images/Image-hero.jpg",
+    "applicationType": "direct",
+    "externalUrl": null,
+    "ctaText": "Apply Now"
+  },
+  {
+    "id": 2,
+    "title": "Product Manager",
+    "company": "XYZ Corp",
+    "location": "Barcelona",
+    "contractType": "Jornada completa",
+    "stack": "Agile, Scrum, Product Strategy",
+    "postedAgo": "Fa 1 setmana",
+    "image": "/assets/images/Image-hero.jpg",
+    "applicationType": "external",
+    "externalUrl": "https://www.linkedin.com/jobs/",
+    "ctaText": "Learn More"
+  },
+  {
+    "id": 3,
+    "title": "Data Analyst",
+    "company": "GreenWave",
+    "location": "Remot",
+    "contractType": "Mitja jornada",
+    "stack": "SQL, Python, Power BI",
+    "postedAgo": "Fa 2 dies",
+    "image": "/assets/images/Image-hero.jpg",
+    "applicationType": "external",
+    "externalUrl": "https://www.infojobs.net/",
+    "ctaText": "View Details"
+  },
+  {
+    "id": 4,
+    "title": "UX Designer",
+    "company": "Brand Co",
+    "location": "Barcelona (híbrid)",
+    "contractType": "Jornada completa",
+    "stack": "Figma, Design Systems, User Research",
+    "postedAgo": "Fa 5 dies",
+    "image": "/assets/images/Image-hero.jpg",
+    "applicationType": "direct",
+    "externalUrl": null,
+    "ctaText": "Apply"
+  },
+  {
+    "id": 5,
+    "title": "Marketing Lead",
+    "company": "EduLearn Academy",
+    "location": "Barcelona",
+    "contractType": "Jornada completa",
+    "stack": "SEO, Growth, Content Strategy",
+    "postedAgo": "Fa 1 dia",
+    "image": "/assets/images/Image-hero.jpg",
+    "applicationType": "external",
+    "externalUrl": "https://www.indeed.com/",
+    "ctaText": "Get Started"
+  },
+  {
+    "id": 6,
+    "title": "HR Specialist",
+    "company": "Lee & Associates",
+    "location": "Remot",
+    "contractType": "Mitja jornada",
+    "stack": "Recruiting, Onboarding, HRIS",
+    "postedAgo": "Fa 4 dies",
+    "image": "/assets/images/Image-hero.jpg",
+    "applicationType": "external",
+    "externalUrl": "https://www.linkedin.com/jobs/",
+    "ctaText": "Discover More"
+  },
+  {
+    "id": 7,
+    "title": "Clinical Data Analyst",
+    "company": "BioTech Labs",
+    "location": "Barcelona",
+    "contractType": "Jornada completa",
+    "stack": "SQL, R, Clinical Trials",
+    "postedAgo": "Fa 6 dies",
+    "image": "/assets/images/Image-hero.jpg",
+    "applicationType": "direct",
+    "externalUrl": null,
+    "ctaText": "Apply Now"
+  },
+  {
+    "id": 8,
+    "title": "Content Writer",
+    "company": "TechSolutions Inc.",
+    "location": "Remot",
+    "contractType": "Freelance",
+    "stack": "Copywriting, SEO, CMS",
+    "postedAgo": "Fa 2 setmanes",
+    "image": "/assets/images/Image-hero.jpg",
+    "applicationType": "direct",
+    "externalUrl": null,
+    "ctaText": "Apply Now"
+  }
+]
