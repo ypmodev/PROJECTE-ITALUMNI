@@ -512,3 +512,126 @@
         padding: 28px;
     }
 }
+
+
+/* =========================
+   EVENT CARD
+========================= */
+
+.event-card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+    max-width: 350px;
+    min-height: 150px;
+    padding: 12px;
+    background-color: var(--color-surface-base);
+    border: 1px solid var(--border-neutral);
+    border-radius: var(--radius-md);
+}
+
+.event-card__content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    gap: 6px;
+}
+
+.event-card__title-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.event-card__title {
+    margin: 0;
+    color: var(--color-text-primary);
+    font-size: var(--font-size-md);
+    font-weight: 700;
+    line-height: var(--line-height-md);
+}
+
+.event-card__favorite {
+    flex-shrink: 0;
+    color: var(--color-brand);
+    font-size: 22px;
+    line-height: 1;
+}
+
+.event-card__details {
+    margin: 0;
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
+}
+
+.event-card__description {
+    margin: 0;
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
+}
+
+.event-card__action {
+    align-self: flex-start;
+    margin-top: 4px;
+}
+
+.event-card__image {
+    flex-shrink: 0;
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 768px) {
+    .event-card {
+        max-width: none;
+        min-height: 170px;
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .event-card__image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .event-card__title {
+        font-size: var(--font-size-lg);
+        line-height: var(--line-height-lg);
+    }
+}
+
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 1200px) {
+    .event-card {
+        min-height: 190px;
+        padding: 20px;
+    }
+
+    .event-card__image {
+        width: 140px;
+        height: 140px;
+    }
+
+    .event-card__title {
+        font-size: var(--font-size-xl);
+        line-height: var(--line-height-xl);
+    }
+}

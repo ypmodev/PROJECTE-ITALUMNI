@@ -68,7 +68,7 @@
         
     <main>
         <!--section HOME-->
-            <section id="home" class="tab-section is-active" data-tab-section="home">
+            <section id="home" class="tab-section" data-tab-section="home">
             
             <div class="home-mobile">
                 <div class="search">
@@ -82,7 +82,7 @@
                 </div>
 
 
-        <!--HOME - MMOBILE-->
+        <!--HOME - MOBILE-->
         
                 <div class="home-mobile__cards">
 
@@ -95,7 +95,7 @@
                             Connecta amb altres Alumni i amplia la teva xarxa professional.
                         </p>
 
-                        <a href="#networking" class="btn btn-outline home-card__action">
+                        <a href="#networking" data-tab="networking" class="btn btn-outline home-card__action" >
                             Explora
                         </a>
                     </article>
@@ -109,7 +109,7 @@
                             Descobreix noves oportunitats de feina adaptades al teu perfil.
                         </p>
 
-                        <a href="#job-opportunities" class="btn btn-outline home-card__action">
+                        <a href="#job-opportunities" data-tab="job-opportunities" class="btn btn-outline home-card__action">
                             Cerca ofertes
                         </a>
                     </article>
@@ -123,7 +123,7 @@
                             Descobreix esdeveniments, xerrades i activitats de la comunitat Alumni.
                         </p>
 
-                        <a href="#events" class="btn btn-outline home-card__action">
+                        <a href="#events"  data-tab="events" class="btn btn-outline home-card__action">
                             Veure esdeveniments
                         </a>
                     </article>
@@ -148,7 +148,7 @@
                             Connecta amb altres Alumni, troba mentors i amplia la teva xarxa professional
                             dins la comunitat IT Academy.
                         </p>
-                        <a href="#networking" class="btn btn-outline home-card__action">Explora la xarxa</a>
+                        <a href="#networking" data-tab="networking" class="btn btn-outline home-card__action">Explora la xarxa</a>
                     </article>
  
                     <article class="home-card home-card--lg">
@@ -158,7 +158,7 @@
                             Descobreix ofertes de feina publicades per tècnics i empreses col·laboradores,
                             filtrades pel teu perfil.
                         </p>
-                        <a href="#job-opportunities" class="btn btn-outline home-card__action">Cerca ofertes</a>
+                        <a href="#job-opportunities" data-tab="job-opportunities" class="btn btn-outline home-card__action">Cerca ofertes</a>
                     </article>
 
                     <article class="home-card home-card--lg">
@@ -167,7 +167,7 @@
                         <p class="home-card__text">
                             Descobreix esdeveniments, xerrades i activitats de la comunitat Alumni.
                         </p>
-                        <a href="#events" class="btn btn-outline home-card__action">
+                        <a href="#events" data-tab="events" class="btn btn-outline home-card__action">
                             Veure esdeveniments
                         </a>
                     </article>
@@ -197,15 +197,90 @@
  
             <!-- ---------- Networking mobile ---------- -->
             <div class="networking-mobile">
-                <div class="search">
-                    <img src="/assets/icons/search.svg" alt="" class="search__icon">
-                    <input type="search" class="search__input" placeholder="Cerca Alumni..." aria-label="Cerca Alumni">
-                </div>
- 
-                <ul class="networking-mobile__list" id="networking-mobile-list" aria-live="polite">
-                    
-                </ul>
-            </div>
+
+    <div class="search">
+        <img src="/assets/icons/search.svg"
+             alt=""
+             class="search__icon">
+
+        <input
+            type="search"
+            class="search__input"
+            placeholder="Cerca Alumni..."
+            aria-label="Cerca Alumni"
+        >
+    </div>
+
+
+    <!-- FILTERS MOBILE -->
+    <div class="networking-filters-mobile">
+
+        <button
+            type="button"
+            class="networking-filter-mobile btn-filter-activities"
+            data-networking-filter="activities"
+        >
+            <img
+                src="/assets/icons/icon-filter.svg"
+                alt=""
+                class="networking-filter-mobile__icon"
+            >
+
+            <span>Recent Activity</span>
+
+            <span class="networking-filter-mobile__arrow">⌄</span>
+        </button>
+
+
+        <button
+            type="button"
+            class="networking-filter-mobile btn-filter-populars"
+            data-networking-filter="populars"
+        >
+            <img
+                src="/assets/icons/icon-filter.svg"
+                alt=""
+                class="networking-filter-mobile__icon"
+            >
+
+            <span>Popular</span>
+
+            <span class="networking-filter-mobile__arrow">⌄</span>
+        </button>
+
+
+        <button
+            type="button"
+            class="networking-filter-mobile"
+            data-networking-filter="mes-connectats"
+        >
+            <img
+                src="/assets/icons/icon-filter.svg"
+                alt=""
+                class="networking-filter-mobile__icon"
+            >
+
+            <span>Most Connected</span>
+
+            <span class="networking-filter-mobile__arrow">⌄</span>
+        </button>
+
+    </div>
+
+
+    <ul
+        class="networking-mobile__list"
+        id="networking-mobile-list"
+        aria-live="polite">
+    </ul>
+
+    <ul
+    class="networking-filters__list"
+    id="networking-mobile-filters-list"
+    aria-live="polite">
+</ul>
+
+</div>
  
             <!-- ---------- Networking desktop ---------- -->
             <div class="networking-desktop">
@@ -218,9 +293,9 @@
  
                     <div class="networking-filters">
                         <span class="desktop-filters-label">Filtres:</span>
-                        <button type="button" class="desktop-filter-tab">Activitat recent</button>
-                        <button type="button" class="desktop-filter-tab active">Populars</button>
-                        <button type="button" class="desktop-filter-tab">Més connectats</button>
+                        <button type="button" class="desktop-filter-tab btn-filter-activities">Activitat recent</button>
+                        <button type="button" class="desktop-filter-tab btn-filter-populars">Populars</button>
+                        <button type="button" class="desktop-filter-tab btn-filter-mes-connectats">Més connectats</button>
                     </div>
                 </div>
  
@@ -229,17 +304,7 @@
                     <div class="networking-desktop__main">
                         <ul class="networking-top-list" id="networking-top-list" aria-live="polite"></ul>
  
-                        <section class="networking-activity">
-                            <h2 class="networking-activity__title">Activitat recent</h2>
-                            <ul class="networking-activity__list">
-                                <li>Jane Smith ha començat a seguir John Doe</li>
-                                <li>David Brown i John Doe han connectat</li>
-                                <li>John Doe ha compartit l'article "Top 10 Product Management Tips"</li>
-                                <li>Jane Smith i David Brown han connectat</li>
-                            </ul>
-                        </section>
-                    </div>
- 
+                         
                     <aside class="networking-suggestions">
                         <h2 class="networking-suggestions__title">Suggeriments per a tu</h2>
                         <ul class="networking-suggestions__list" id="networking-suggestions-list" aria-live="polite">
@@ -248,6 +313,16 @@
                     </aside>
  
                 </div>
+
+                <section class="networking-filters">
+                            
+                            <ul class="networking-filters__list" id="networking-desktop-filters-list">
+                               
+                            </ul>
+                        </section>
+                    </div>
+
+                
             </div>
         </section>
  
@@ -569,7 +644,8 @@
             <span class="mobile-bottom-nav__text">Esdeveniments</span>
         </a>
     </nav>
-
+    <script src="/scripts/components.js" defer></script>
+    <script src="/scripts/alumni-connect/home.js" defer></script>
     <script src="/scripts/alumni-connect/networking.js" defer></script>
     <script src="/scripts/alumni-connect/job-opportunity.js" defer></script>
     <script src="/scripts/alumni-connect/events.js" defer></script>
