@@ -1,34 +1,33 @@
 .construction {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 80vh;
-    padding: 40px 20px;
-    text-align: center;
-    gap: 24px;
-    background-color: var(--color-surface-base);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 40px 20px;
+  text-align: center;
+  gap: 24px;
+  background-color: var(--color-surface-base);
 }
 
 .construction__logo {
-    width: 120px;
-    height: auto;
+  width: 120px;
+  height: auto;
 }
 
 .construction__title {
-    font-family: var(--font-family);
-    font-size: var(--font-size-xl);
-    font-weight: 700;
-    color: var(--color-text-primary);
+  font-family: var(--font-family);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
 }
 
 .construction__text {
-    font-family: var(--font-family);
-    font-size: var(--font-size-md);
-    color: var(--color-text-secondary);
+  font-family: var(--font-family);
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
 }
 
 .construction__btn {
-    margin-top: 16px;
+  margin-top: 16px;
 }
-   

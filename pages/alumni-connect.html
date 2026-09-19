@@ -1,655 +1,847 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ca">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alumni Connect</title>
-    
-    <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="/styles/components/buttons.css">
-    <link rel="stylesheet" href="/styles/components/cards.css">
-    <link rel="stylesheet" href="/styles/components/navigation.css">
-    <link rel="stylesheet" href="/styles/components/search-and-filters.css">
-    <link rel="stylesheet" href="/styles/pages-styles/alumni-connect.css">
 
-</head>
-<body>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/components/buttons.css" />
+    <link rel="stylesheet" href="/styles/components/cards.css" />
+    <link rel="stylesheet" href="/styles/components/navigation.css" />
+    <link rel="stylesheet" href="/styles/components/search-and-filters.css" />
+    <link rel="stylesheet" href="/styles/pages-styles/alumni-connect.css" />
+  </head>
+  <body>
     <header class="mobile-header">
+      <div class="mobile-header__leading">
+        <a
+          href="#home"
+          class="mobile-header__back"
+          id="mobile-back-btn"
+          aria-label="Tornar a l'inici"
+          hidden
+        >
+          <img src="/assets/icons/arrow-left.svg" alt="" />
+        </a>
 
-        <div class="mobile-header__leading">
-            <a href="#home" class="mobile-header__back" id="mobile-back-btn" aria-label="Tornar a l'inici" hidden>
-                <img src="/assets/icons/arrow-left.svg" alt="">
-            </a>
+        <h1 class="mobile-header__title" id="mobile-header-title">Inici</h1>
+      </div>
 
-            <h1 class="mobile-header__title" id="mobile-header-title">Inici</h1>
+      <div class="mobile-header__actions">
+        <a href="/pages/construction.html" aria-label="Estadístiques">
+          <img
+            src="/assets/icons/statistics.svg"
+            alt=""
+            class="mobile-header__statistics"
+          />
+        </a>
 
-        </div>
- 
-        <div class="mobile-header__actions">
-            <a href="/pages/construction.html" aria-label="Estadístiques">
-                <img src="/assets/icons/statistics.svg" 
-                    alt="" class="mobile-header__statistics">
-            </a>
-
-            <a href="/pages/construction.html" aria-label="El meu perfil">
-                <img src="/assets/images/Avatar-2.jpg" 
-                alt="El meu perfil" class="mobile-header__avatar">
-            </a>
-        </div>
+        <a href="/pages/construction.html" aria-label="El meu perfil">
+          <img
+            src="/assets/images/Avatar-2.jpg"
+            alt="El meu perfil"
+            class="mobile-header__avatar"
+          />
+        </a>
+      </div>
     </header>
 
     <header class="desktop-header">
-        <a href="#home" class="desktop-header__brand">
-            <img src="/assets/logos/logo-alumni-conect.svg" alt="" class="desktop-header__logo">
-            <span class="desktop-header__title">Alumni Connect</span>
+      <a href="#home" class="desktop-header__brand">
+        <img
+          src="/assets/logos/logo-alumni-conect.svg"
+          alt=""
+          class="desktop-header__logo"
+        />
+        <span class="desktop-header__title">Alumni Connect</span>
+      </a>
+
+      <nav
+        class="desktop-nav"
+        aria-label="Navegació principal"
+        id="desktop-nav"
+      >
+        <a
+          href="#home"
+          class="desktop-nav__link desktop-nav__link--active"
+          data-tab="home"
+          aria-current="page"
+          >Inici</a
+        >
+        <a href="#networking" class="desktop-nav__link" data-tab="networking"
+          >Xarxa</a
+        >
+        <a
+          href="#job-opportunities"
+          class="desktop-nav__link"
+          data-tab="job-opportunities"
+          >Oportunitats de feina</a
+        >
+        <a href="#events" class="desktop-nav__link" data-tab="events"
+          >Esdeveniments</a
+        >
+      </nav>
+
+      <div class="desktop-header__actions">
+        <a href="/pages/construction.html" aria-label="El meu perfil">
+          <img
+            src="/assets/icons/search.svg"
+            alt=""
+            class="desktop-header__icon"
+          />
         </a>
- 
-        <nav class="desktop-nav" aria-label="Navegació principal" id="desktop-nav">
-            <a href="#home" class="desktop-nav__link desktop-nav__link--active" data-tab="home" aria-current="page">Inici</a>
-            <a href="#networking" class="desktop-nav__link" data-tab="networking">Xarxa</a>
-            <a href="#job-opportunities" class="desktop-nav__link" data-tab="job-opportunities">Oportunitats de feina</a>
-            <a href="#events" class="desktop-nav__link" data-tab="events">Esdeveniments</a>
-        </nav>
- 
-        <div class="desktop-header__actions">
-            <a href="/pages/construction.html" aria-label="El meu perfil">  
-                <img src="/assets/icons/search.svg" alt="" class="desktop-header__icon">
-            </a>            
-            <a href="/pages/construction.html" aria-label="Notificacions">   
-                <img src="/assets/icons/bell.svg" alt="" class="desktop-header__icon">
-            </a>           
-            <a href="/pages/construction.html" aria-label="Configuració">
-                <img src="/assets/icons/settings-gear.svg" alt="" class="desktop-header__icon">
-            </a>            
-            <img src="/assets/images/Avatar-3.jpg" alt="El meu perfil" class="desktop-header__avatar">
-        </div>
+        <a href="/pages/construction.html" aria-label="Notificacions">
+          <img
+            src="/assets/icons/bell.svg"
+            alt=""
+            class="desktop-header__icon"
+          />
+        </a>
+        <a href="/pages/construction.html" aria-label="Configuració">
+          <img
+            src="/assets/icons/settings-gear.svg"
+            alt=""
+            class="desktop-header__icon"
+          />
+        </a>
+        <img
+          src="/assets/images/Avatar-3.jpg"
+          alt="El meu perfil"
+          class="desktop-header__avatar"
+        />
+      </div>
     </header>
 
-        
     <main>
-        <!--section HOME-->
-            <section id="home" class="tab-section" data-tab-section="home">
-            
-            <div class="home-mobile">
-                <div class="search">
-                    <img src="/assets/icons/search.svg" alt="" class="search__icon">
-                    <input 
-                        type="search" 
-                        class="search__input" 
-                        placeholder="Cerca Alumni..." 
-                        aria-label="Cerca Alumni"
-                    >
-                </div>
+      <!--section HOME-->
+      <section id="home" class="tab-section" data-tab-section="home">
+        <div class="home-mobile">
+          <div class="search">
+            <img src="/assets/icons/search.svg" alt="" class="search__icon" />
+            <input
+              type="search"
+              class="search__input"
+              placeholder="Cerca Alumni..."
+              aria-label="Cerca Alumni"
+            />
+          </div>
 
+          <!--HOME - MOBILE-->
 
-        <!--HOME - MOBILE-->
-        
-                <div class="home-mobile__cards">
+          <div class="home-mobile__cards">
+            <article class="home-card">
+              <img
+                class="home-card__image"
+                src="/assets/images/card-xarxa-home.png"
+                alt=""
+              />
 
-                    <article class="home-card">
-                        <img class="home-card__image" src="/assets/images/card-xarxa-home.png" alt="">
+              <h2 class="home-card__title">Xarxa</h2>
 
-                        <h2 class="home-card__title">Xarxa</h2>
+              <p class="home-card__text">
+                Connecta amb altres Alumni i amplia la teva xarxa professional.
+              </p>
 
-                        <p class="home-card__text">
-                            Connecta amb altres Alumni i amplia la teva xarxa professional.
-                        </p>
+              <a
+                href="#networking"
+                data-tab="networking"
+                class="btn btn-outline home-card__action"
+              >
+                Explora
+              </a>
+            </article>
 
-                        <a href="#networking" data-tab="networking" class="btn btn-outline home-card__action" >
-                            Explora
-                        </a>
-                    </article>
-        
-                    <article class="home-card">
-                        <img class="home-card__image" src="/assets/images/card-feina-home.png" alt="">
+            <article class="home-card">
+              <img
+                class="home-card__image"
+                src="/assets/images/card-feina-home.png"
+                alt=""
+              />
 
-                        <h2 class="home-card__title">Oportunitats de feina</h2>
+              <h2 class="home-card__title">Oportunitats de feina</h2>
 
-                        <p class="home-card__text">
-                            Descobreix noves oportunitats de feina adaptades al teu perfil.
-                        </p>
+              <p class="home-card__text">
+                Descobreix noves oportunitats de feina adaptades al teu perfil.
+              </p>
 
-                        <a href="#job-opportunities" data-tab="job-opportunities" class="btn btn-outline home-card__action">
-                            Cerca ofertes
-                        </a>
-                    </article>
+              <a
+                href="#job-opportunities"
+                data-tab="job-opportunities"
+                class="btn btn-outline home-card__action"
+              >
+                Cerca ofertes
+              </a>
+            </article>
 
-                    <article class="home-card">
-                        <img class="home-card__image" src="/assets/images/card-esdeveniments-home.png" alt="">
+            <article class="home-card">
+              <img
+                class="home-card__image"
+                src="/assets/images/card-esdeveniments-home.png"
+                alt=""
+              />
 
-                        <h2 class="home-card__title">Esdeveniments</h2>
+              <h2 class="home-card__title">Esdeveniments</h2>
 
-                        <p class="home-card__text">
-                            Descobreix esdeveniments, xerrades i activitats de la comunitat Alumni.
-                        </p>
+              <p class="home-card__text">
+                Descobreix esdeveniments, xerrades i activitats de la comunitat
+                Alumni.
+              </p>
 
-                        <a href="#events"  data-tab="events" class="btn btn-outline home-card__action">
-                            Veure esdeveniments
-                        </a>
-                    </article>
-                            
-                </div>
+              <a
+                href="#events"
+                data-tab="events"
+                class="btn btn-outline home-card__action"
+              >
+                Veure esdeveniments
+              </a>
+            </article>
+          </div>
+        </div>
+
+        <!--HOME - DESKTOP-->
+
+        <div class="home-desktop">
+          <div class="search">
+            <img src="/assets/icons/search.svg" alt="" class="search__icon" />
+            <input
+              type="search"
+              class="search__input"
+              placeholder="Cerca Alumni..."
+              aria-label="Cerca"
+            />
+          </div>
+
+          <div class="home-desktop__cards">
+            <article class="home-card home-card--lg">
+              <img
+                class="home-card__image"
+                src="/assets/images/card-xarxa-home.png"
+                alt=""
+              />
+              <h2 class="home-card__title">Xarxa</h2>
+              <p class="home-card__text">
+                Connecta amb altres Alumni, troba mentors i amplia la teva xarxa
+                professional dins la comunitat IT Academy.
+              </p>
+              <a
+                href="#networking"
+                data-tab="networking"
+                class="btn btn-outline home-card__action"
+                >Explora la xarxa</a
+              >
+            </article>
+
+            <article class="home-card home-card--lg">
+              <img
+                class="home-card__image"
+                src="/assets/images/card-feina-home.png"
+                alt=""
+              />
+              <h2 class="home-card__title">Oportunitats de feina</h2>
+              <p class="home-card__text">
+                Descobreix ofertes de feina publicades per tècnics i empreses
+                col·laboradores, filtrades pel teu perfil.
+              </p>
+              <a
+                href="#job-opportunities"
+                data-tab="job-opportunities"
+                class="btn btn-outline home-card__action"
+                >Cerca ofertes</a
+              >
+            </article>
+
+            <article class="home-card home-card--lg">
+              <img
+                class="home-card__image"
+                src="/assets/images/card-esdeveniments-home.png"
+                alt=""
+              />
+              <h2 class="home-card__title">Esdeveniments</h2>
+              <p class="home-card__text">
+                Descobreix esdeveniments, xerrades i activitats de la comunitat
+                Alumni.
+              </p>
+              <a
+                href="#events"
+                data-tab="events"
+                class="btn btn-outline home-card__action"
+              >
+                Veure esdeveniments
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- Networking-template-card ---------- -->
+
+      <section
+        id="networking"
+        class="tab-section"
+        data-tab-section="networking"
+      >
+        <template id="networking-card-template">
+          <article class="networking-card">
+            <img class="networking-card__image" alt="" />
+            <div class="networking-card__content">
+              <h3 class="networking-card__name"></h3>
+              <p class="networking-card__class"></p>
+              <p class="networking-card__role"></p>
+              <p class="networking-card__location"></p>
             </div>
+            <a href="#" class="btn btn-pink networking-card__action"></a>
+          </article>
+        </template>
 
+        <!-- ---------- Networking mobile ---------- -->
+        <div class="networking-mobile">
+          <div class="search">
+            <img src="/assets/icons/search.svg" alt="" class="search__icon" />
 
-            <!--HOME - DESKTOP-->
+            <input
+              type="search"
+              class="search__input"
+              placeholder="Cerca Alumni..."
+              aria-label="Cerca Alumni"
+            />
+          </div>
 
-            <div class="home-desktop">
-                <div class="search">
-                    <img src="/assets/icons/search.svg" alt="" class="search__icon">
-                    <input type="search" class="search__input" placeholder="Cerca Alumni..." aria-label="Cerca">
-                </div>
- 
-                <div class="home-desktop__cards">
-                    <article class="home-card home-card--lg">
-                        <img class="home-card__image" src="/assets/images/card-xarxa-home.png" alt="">
-                        <h2 class="home-card__title">Xarxa</h2>
-                        <p class="home-card__text">
-                            Connecta amb altres Alumni, troba mentors i amplia la teva xarxa professional
-                            dins la comunitat IT Academy.
-                        </p>
-                        <a href="#networking" data-tab="networking" class="btn btn-outline home-card__action">Explora la xarxa</a>
-                    </article>
- 
-                    <article class="home-card home-card--lg">
-                        <img class="home-card__image" src="/assets/images/card-feina-home.png" alt="">
-                        <h2 class="home-card__title">Oportunitats de feina</h2>
-                        <p class="home-card__text">
-                            Descobreix ofertes de feina publicades per tècnics i empreses col·laboradores,
-                            filtrades pel teu perfil.
-                        </p>
-                        <a href="#job-opportunities" data-tab="job-opportunities" class="btn btn-outline home-card__action">Cerca ofertes</a>
-                    </article>
-
-                    <article class="home-card home-card--lg">
-                        <img class="home-card__image" src="/assets/images/card-esdeveniments-home.png" alt="">
-                        <h2 class="home-card__title">Esdeveniments</h2>
-                        <p class="home-card__text">
-                            Descobreix esdeveniments, xerrades i activitats de la comunitat Alumni.
-                        </p>
-                        <a href="#events" data-tab="events" class="btn btn-outline home-card__action">
-                            Veure esdeveniments
-                        </a>
-                    </article>
-                </div>
-            </div>
-
-        </section>
-
-
-        <!-- ---------- Networking-template-card ---------- -->
-
-        <section id="networking" class="tab-section" data-tab-section="networking">
- 
-                <template id="networking-card-template">
-
-                <article class="networking-card">
-                    <img class="networking-card__image" alt="">
-                    <div class="networking-card__content">
-                        <h3 class="networking-card__name"></h3>
-                        <p class="networking-card__class"></p>
-                        <p class="networking-card__role"></p>
-                        <p class="networking-card__location"></p>
-                    </div>
-                    <a href="#" class="btn btn-pink networking-card__action"></a>
-                </article>
-            </template>
- 
-            <!-- ---------- Networking mobile ---------- -->
-            <div class="networking-mobile">
-
-    <div class="search">
-        <img src="/assets/icons/search.svg"
-             alt=""
-             class="search__icon">
-
-        <input
-            type="search"
-            class="search__input"
-            placeholder="Cerca Alumni..."
-            aria-label="Cerca Alumni"
-        >
-    </div>
-
-
-    <!-- FILTERS MOBILE -->
-    <div class="networking-filters-mobile">
-
-        <button
-            type="button"
-            class="networking-filter-mobile btn-filter-activities"
-            data-networking-filter="activities"
-        >
-            <img
+          <!-- FILTERS MOBILE -->
+          <div class="networking-filters-mobile">
+            <button
+              type="button"
+              class="networking-filter-mobile btn-filter-activities"
+              data-networking-filter="activities"
+            >
+              <img
                 src="/assets/icons/icon-filter.svg"
                 alt=""
                 class="networking-filter-mobile__icon"
+              />
+
+              <span>Recent Activity</span>
+
+              <span class="networking-filter-mobile__arrow">⌄</span>
+            </button>
+
+            <button
+              type="button"
+              class="networking-filter-mobile btn-filter-populars"
+              data-networking-filter="populars"
             >
-
-            <span>Recent Activity</span>
-
-            <span class="networking-filter-mobile__arrow">⌄</span>
-        </button>
-
-
-        <button
-            type="button"
-            class="networking-filter-mobile btn-filter-populars"
-            data-networking-filter="populars"
-        >
-            <img
+              <img
                 src="/assets/icons/icon-filter.svg"
                 alt=""
                 class="networking-filter-mobile__icon"
+              />
+
+              <span>Popular</span>
+
+              <span class="networking-filter-mobile__arrow">⌄</span>
+            </button>
+
+            <button
+              type="button"
+              class="networking-filter-mobile"
+              data-networking-filter="mes-connectats"
             >
-
-            <span>Popular</span>
-
-            <span class="networking-filter-mobile__arrow">⌄</span>
-        </button>
-
-
-        <button
-            type="button"
-            class="networking-filter-mobile"
-            data-networking-filter="mes-connectats"
-        >
-            <img
+              <img
                 src="/assets/icons/icon-filter.svg"
                 alt=""
                 class="networking-filter-mobile__icon"
-            >
+              />
 
-            <span>Most Connected</span>
+              <span>Most Connected</span>
 
-            <span class="networking-filter-mobile__arrow">⌄</span>
-        </button>
+              <span class="networking-filter-mobile__arrow">⌄</span>
+            </button>
+          </div>
 
-    </div>
+          <ul
+            class="networking-mobile__list"
+            id="networking-mobile-list"
+            aria-live="polite"
+          ></ul>
 
+          <ul
+            class="networking-filters__list"
+            id="networking-mobile-filters-list"
+            aria-live="polite"
+          ></ul>
+        </div>
 
-    <ul
-        class="networking-mobile__list"
-        id="networking-mobile-list"
-        aria-live="polite">
-    </ul>
-
-    <ul
-    class="networking-filters__list"
-    id="networking-mobile-filters-list"
-    aria-live="polite">
-</ul>
-
-</div>
- 
-            <!-- ---------- Networking desktop ---------- -->
-            <div class="networking-desktop">
- 
-                <div class="networking-desktop__toolbar">
-                    <div class="search">
-                        <img src="/assets/icons/search.svg" alt="" class="search__icon">
-                        <input type="search" class="search__input" placeholder="Cerca Alumni..." aria-label="Cerca Alumni">
-                    </div>
- 
-                    <div class="networking-filters">
-                        <span class="desktop-filters-label">Filtres:</span>
-                        <button type="button" class="desktop-filter-tab btn-filter-activities">Activitat recent</button>
-                        <button type="button" class="desktop-filter-tab btn-filter-populars">Populars</button>
-                        <button type="button" class="desktop-filter-tab btn-filter-mes-connectats">Més connectats</button>
-                    </div>
-                </div>
- 
-                <div class="networking-desktop__grid">
- 
-                    <div class="networking-desktop__main">
-                        <ul class="networking-top-list" id="networking-top-list" aria-live="polite"></ul>
- 
-                         
-                    <aside class="networking-suggestions">
-                        <h2 class="networking-suggestions__title">Suggeriments per a tu</h2>
-                        <ul class="networking-suggestions__list" id="networking-suggestions-list" aria-live="polite">
-                       
-                        </ul>
-                    </aside>
- 
-                </div>
-
-                <section class="networking-filters">
-                            
-                            <ul class="networking-filters__list" id="networking-desktop-filters-list">
-                               
-                            </ul>
-                        </section>
-                    </div>
-
-                
+        <!-- ---------- Networking desktop ---------- -->
+        <div class="networking-desktop">
+          <div class="networking-desktop__toolbar">
+            <div class="search">
+              <img src="/assets/icons/search.svg" alt="" class="search__icon" />
+              <input
+                type="search"
+                class="search__input"
+                placeholder="Cerca Alumni..."
+                aria-label="Cerca Alumni"
+              />
             </div>
-        </section>
- 
- 
-        <!-- == JOB OPPORTUNITIES -template-card ==-->
-        <section id="job-opportunities" class="tab-section" data-tab-section="job-opportunities">
- 
-                <template id="job-card-template">
-                <article class="job-card">
-                    <div class="job-card__content">
-                        <h3 class="job-card__title"></h3>
-                        <p class="job-card__company"></p>
-                        <p class="job-card__details"></p>
-                        <a href="#" class="btn btn-outline job-card__action"></a>
-                    </div>
-                    <img class="job-card__image" alt="">
-                </article>
-            </template>
- 
-            <!-- ---------- Job Opportunities mobile ---------- -->
-            <div class="job-mobile">
-                <div class="search">
-                    <img src="/assets/icons/search.svg" alt="" class="search__icon">
-                    <input type="search" class="search__input" placeholder="Cerca ofertes..." aria-label="Cerca ofertes">
-                </div>
- 
-                <div class="filters-mobile">
-                    <button type="button" class="filter-dropdown">
-                        <img src="/assets/icons/icon-filter.svg" alt="" class="filter-dropdown__icon">
-                        <span class="filter-dropdown__text">Sector</span>
-                    </button>
-                    <button type="button" class="filter-dropdown">
-                        <img src="/assets/icons/icon-filter.svg" alt="" class="filter-dropdown__icon">
-                        <span class="filter-dropdown__text">Nivell d'experiència</span>
-                    </button>
-                </div>
- 
-                <ul class="job-mobile__list" id="job-mobile-list" aria-live="polite">
-                 </ul>  
+
+            <div class="networking-filters">
+              <span class="desktop-filters-label">Filtres:</span>
+              <button
+                type="button"
+                class="desktop-filter-tab btn-filter-activities"
+              >
+                Activitat recent
+              </button>
+              <button
+                type="button"
+                class="desktop-filter-tab btn-filter-populars"
+              >
+                Populars
+              </button>
+              <button
+                type="button"
+                class="desktop-filter-tab btn-filter-mes-connectats"
+              >
+                Més connectats
+              </button>
             </div>
- 
-            <!-- ---------- Job Opportunities desktop ---------- -->
-            <div class="job-desktop">
-                <div class="job-desktop__heading">
-                    <h2>Feina</h2>
-                    <button type="button" class="btn btn-outline btn-sm" aria-haspopup="true">
-                        Tots ▾
-                    </button>
-                </div>
- 
-                <ul class="job-desktop__grid" id="job-desktop-grid" aria-live="polite">
-                   
-                </ul>
-            </div>
-        </section>
- 
+          </div>
 
-        <!-- ---------- Eventos ---------- -->
-        <section id="events" class="tab-section" data-tab-section="events" aria-labelledby="events-title">
-            <div class="events-page">
+          <div class="networking-desktop__grid">
+            <div class="networking-desktop__main">
+              <ul
+                class="networking-top-list"
+                id="networking-top-list"
+                aria-live="polite"
+              ></ul>
 
-                <div class="events-page__header">
-                    <h2 id="events-title" class="events-page__title">
-                        Esdeveniments i activitats
-                    </h2>
-
-                    <div class="events-page__search">
-                        <div class="search" role="search">
-                            <img
-                                src="/assets/icons/search.svg"
-                                alt=""
-                                class="search__icon"
-                            >
-                            <input
-                                type="search"
-                                id="events-search"
-                                class="search__input"
-                                placeholder="Cerca Esdeveniments..."
-                                aria-label="Cerca Esdeveniments"
-                            >
-                        </div>
-                    </div>
-
-                    <div
-                        class="filters-mobile"
-                        aria-label="Filtres d'esdeveniments"
-                    >
-                        <button
-                            type="button"
-                            class="filter-dropdown"
-                            data-filter="date"
-                        >
-                            <img
-                                src="/assets/icons/icon-filter.svg"
-                                alt=""
-                                class="filter-dropdown__icon"
-                            >
-                            <span class="filter-dropdown__text">Data</span>
-                        </button>
-
-                        <button
-                            type="button"
-                            class="filter-dropdown"
-                            data-filter="type"
-                        >
-                            <img
-                                src="/assets/icons/icon-filter.svg"
-                                alt=""
-                                class="filter-dropdown__icon"
-                            >
-                            <span class="filter-dropdown__text">Tipus</span>
-                        </button>
-                    </div>
-
-                    <div
-                        class="desktop-filters"
-                        aria-label="Filtres d'esdeveniments"
-                    >
-                        <span class="desktop-filters-label">Filtres:</span>
-
-                        <button
-                            type="button"
-                            class="desktop-filter-tab"
-                            data-filter="date"
-                        >Data</button>
-
-                        <button
-                            type="button"
-                            class="desktop-filter-tab"
-                            data-filter="type"
-                        >Tipus</button>
-                    </div>
-                </div>
-
-                <!-- Calendari visual del mes actual.
-                     Els únics dies amb esdeveniments són 18, 24 i 29. -->
-                <div
-                    class="events-calendar"
-                    aria-label="Calendari de setembre de 2026"
-                >
-                    <div class="events-calendar__header">
-                        <h3 class="events-calendar__month">
-                            Setembre 2026
-                        </h3>
-                    </div>
-
-                    <div
-                        class="events-calendar__weekdays"
-                        aria-hidden="true"
-                    >
-                        <span>Dl</span>
-                        <span>Dt</span>
-                        <span>Dc</span>
-                        <span>Dj</span>
-                        <span>Dv</span>
-                        <span>Ds</span>
-                        <span>Dg</span>
-                    </div>
-
-                    <div class="events-calendar__days">
-                        <span></span>
-                        <span>1</span>
-                        <span>2</span>
-                        <span>3</span>
-                        <span>4</span>
-                        <span>5</span>
-                        <span>6</span>
-                        <span>7</span>
-                        <span>8</span>
-                        <span>9</span>
-                        <span>10</span>
-                        <span>11</span>
-                        <span>12</span>
-                        <span>13</span>
-                        <span>14</span>
-                        <span>15</span>
-                        <span>16</span>
-                        <span>17</span>
-                        <span class="events-calendar__day--has-event">18</span>
-                        <span>19</span>
-                        <span>20</span>
-                        <span>21</span>
-                        <span>22</span>
-                        <span>23</span>
-                        <span class="events-calendar__day--has-event">24</span>
-                        <span>25</span>
-                        <span>26</span>
-                        <span>27</span>
-                        <span>28</span>
-                        <span class="events-calendar__day--has-event">29</span>
-                        <span>30</span>
-                    </div>
-                </div>
-
-                <h2 class="events-page__list-title">
-                    Esdeveniments
+              <aside class="networking-suggestions">
+                <h2 class="networking-suggestions__title">
+                  Suggeriments per a tu
                 </h2>
-
-                <!-- One responsive list for both mobile and desktop -->
-                <div
-                    id="events-list"
-                    class="events-list"
-                    aria-live="polite"
-                ></div>
-
+                <ul
+                  class="networking-suggestions__list"
+                  id="networking-suggestions-list"
+                  aria-live="polite"
+                ></ul>
+              </aside>
             </div>
 
-            <!-- One reusable event card for all screen sizes -->
-            <template id="event-card-template">
-                <article class="event-card">
-                    <div class="event-card__content">
-                        <div class="event-card__title-row">
-                            <h3 class="event-card__title"></h3>
+            <div class="networking-filters">
+              <ul
+                class="networking-filters__list"
+                id="networking-desktop-filters-list"
+              ></ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                            <!-- Visual only. Level 3 favorites are out of scope. -->
-                            <span
-                                class="event-card__favorite"
-                                aria-hidden="true"
-                            >♡</span>
-                        </div>
+      <!-- == JOB OPPORTUNITIES -template-card ==-->
+      <section
+        id="job-opportunities"
+        class="tab-section"
+        data-tab-section="job-opportunities"
+      >
+        <template id="job-card-template">
+          <article class="job-card">
+            <div class="job-card__content">
+              <h3 class="job-card__stack"></h3>
+              <p class="job-card__title"></p>
+              <p class="job-card__details"></p>
+              <a href="#" class="btn btn-outline job-card__action"></a>
+            </div>
+            <img class="job-card__image" alt="" />
+          </article>
+        </template>
 
-                        <p class="event-card__details"></p>
-                        <p class="event-card__description"></p>
+        <!-- ---------- Job Opportunities mobile ---------- -->
+        <div class="job-mobile">
+          <div class="search">
+            <img src="/assets/icons/search.svg" alt="" class="search__icon" />
+            <input
+              type="search"
+              class="search__input"
+              placeholder="Cerca ofertes..."
+              aria-label="Cerca ofertes"
+            />
+          </div>
 
-                        <a
-                            href="#"
-                            class="btn btn-outline event-card__action"
-                        >Veure més</a>
-                    </div>
+          <div class="filters-mobile">
+            <button
+              type="button"
+              class="job-filter-mobile"
+              data-job-filter="stack"
+            >
+              <img
+                src="/assets/icons/icon-filter.svg"
+                alt=""
+                class="job-filter-mobile__icon"
+              />
+              <span>Stack</span>
+              <span class="job-filter-mobile__arrow">⌄</span>
+            </button>
 
-                    <img
-                        class="event-card__image"
-                        src=""
-                        alt=""
-                    >
-                </article>
-            </template>
-        </section>
+            <button
+              type="button"
+              class="job-filter-mobile"
+              data-job-filter="contractType"
+            >
+              <img
+                src="/assets/icons/icon-filter.svg"
+                alt=""
+                class="job-filter-mobile__icon"
+              />
+              <span>Tipus de contracte</span>
+              <span class="job-filter-mobile__arrow">⌄</span>
+            </button>
 
+            <button
+              type="button"
+              class="job-filter-mobile"
+              data-job-filter="location"
+            >
+              <img
+                src="/assets/icons/icon-filter.svg"
+                alt=""
+                class="job-filter-mobile__icon"
+              />
+              <span>Localització</span>
+              <span class="job-filter-mobile__arrow">⌄</span>
+            </button>
+          </div>
+
+          <ul
+            class="job-mobile__list"
+            id="job-mobile-list"
+            aria-live="polite"
+          ></ul>
+        </div>
+
+        <!-- ---------- Job Opportunities desktop ---------- -->
+        <div class="job-desktop">
+          <div class="job-desktop__toolbar">
+            <div class="job-desktop__actions">
+              <div class="search">
+                <img
+                  src="/assets/icons/search.svg"
+                  alt=""
+                  class="search__icon"
+                />
+
+                <input
+                  type="search"
+                  class="search__input"
+                  placeholder="Cerca ofertes..."
+                  aria-label="Cerca ofertes"
+                />
+              </div>
+            </div>
+
+            <div class="job-filters">
+              <span class="desktop-filters-label">Filtres:</span>
+              <div class="job-filter-wrapper">
+                <button
+                  type="button"
+                  class="desktop-filter-tab job-filter-stack"
+                  data-job-filter="stack"
+                >
+                  Stack
+                </button>
+                <ul
+                  class="job-filter-options"
+                  data-filter-options="stack"
+                  hidden
+                >
+                  <li><button type="button">Limpiar filtro</button></li>
+                  <li><button type="button">Frontend</button></li>
+                  <li><button type="button">Backend</button></li>
+                  <li><button type="button">Hoja Stack</button></li>
+                  <li><button type="button">Mobile</button></li>
+                  <li><button type="button">Fecha</button></li>
+                  <li><button type="button">DevOps</button></li>
+                </ul>
+              </div>
+
+              <div class="job-filter-wrapper">
+                <button
+                  type="button"
+                  class="desktop-filter-tab job-filter-contract"
+                  data-job-filter="contractType"
+                >
+                  Tipus de contracte
+                </button>
+                <ul
+                  class="job-filter-options"
+                  data-filter-options="contractType"
+                  hidden
+                >
+                  <li><button type="button">Limpiar filtro</button></li>
+                  <li><button type="button">Jornada completa</button></li>
+                  <li><button type="button">Media jornada</button></li>
+                </ul>
+              </div>
+
+              <div class="job-filter-wrapper">
+                <button
+                  type="button"
+                  class="desktop-filter-tab job-filter-location"
+                  data-job-filter="location"
+                >
+                  Localització
+                </button>
+                <ul
+                  class="job-filter-options"
+                  data-filter-options="location"
+                  hidden
+                >
+                  <li><button type="button">Limpiar filtro</button></li>
+                  <!-- opciones de localización -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <ul
+            class="job-desktop__grid"
+            id="job-desktop-grid"
+            aria-live="polite"
+          ></ul>
+        </div>
+      </section>
+      <!-- ---------- Eventos ---------- -->
+      <section
+        id="events"
+        class="tab-section"
+        data-tab-section="events"
+        aria-labelledby="events-title"
+      >
+        <div class="events-page">
+          <div class="events-page__header">
+            <h2 id="events-title" class="events-page__title">
+              Esdeveniments i activitats
+            </h2>
+
+            <div class="events-page__search">
+              <div class="search" role="search">
+                <img
+                  src="/assets/icons/search.svg"
+                  alt=""
+                  class="search__icon"
+                />
+                <input
+                  type="search"
+                  id="events-search"
+                  class="search__input"
+                  placeholder="Cerca Esdeveniments..."
+                  aria-label="Cerca Esdeveniments"
+                />
+              </div>
+            </div>
+
+            <div class="filters-mobile" aria-label="Filtres d'esdeveniments">
+              <button type="button" class="filter-dropdown" data-filter="date">
+                <img
+                  src="/assets/icons/icon-filter.svg"
+                  alt=""
+                  class="filter-dropdown__icon"
+                />
+                <span class="filter-dropdown__text">Data</span>
+              </button>
+
+              <button type="button" class="filter-dropdown" data-filter="type">
+                <img
+                  src="/assets/icons/icon-filter.svg"
+                  alt=""
+                  class="filter-dropdown__icon"
+                />
+                <span class="filter-dropdown__text">Tipus</span>
+              </button>
+            </div>
+
+            <div class="desktop-filters" aria-label="Filtres d'esdeveniments">
+              <span class="desktop-filters-label">Filtres:</span>
+
+              <button
+                type="button"
+                class="desktop-filter-tab"
+                data-filter="date"
+              >
+                Data
+              </button>
+
+              <button
+                type="button"
+                class="desktop-filter-tab"
+                data-filter="type"
+              >
+                Tipus
+              </button>
+            </div>
+          </div>
+
+          <!-- Calendari visual del mes actual.
+                     Els únics dies amb esdeveniments són 18, 24 i 29. -->
+          <div
+            class="events-calendar"
+            aria-label="Calendari de setembre de 2026"
+          >
+            <div class="events-calendar__header">
+              <h3 class="events-calendar__month">Setembre 2026</h3>
+            </div>
+
+            <div class="events-calendar__weekdays" aria-hidden="true">
+              <span>Dl</span>
+              <span>Dt</span>
+              <span>Dc</span>
+              <span>Dj</span>
+              <span>Dv</span>
+              <span>Ds</span>
+              <span>Dg</span>
+            </div>
+
+            <div class="events-calendar__days">
+              <span></span>
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>5</span>
+              <span>6</span>
+              <span>7</span>
+              <span>8</span>
+              <span>9</span>
+              <span>10</span>
+              <span>11</span>
+              <span>12</span>
+              <span>13</span>
+              <span>14</span>
+              <span>15</span>
+              <span>16</span>
+              <span>17</span>
+              <span class="events-calendar__day--has-event">18</span>
+              <span>19</span>
+              <span>20</span>
+              <span>21</span>
+              <span>22</span>
+              <span>23</span>
+              <span class="events-calendar__day--has-event">24</span>
+              <span>25</span>
+              <span>26</span>
+              <span>27</span>
+              <span>28</span>
+              <span class="events-calendar__day--has-event">29</span>
+              <span>30</span>
+            </div>
+          </div>
+
+          <h2 class="events-page__list-title">Esdeveniments</h2>
+
+          <!-- One responsive list for both mobile and desktop -->
+          <div id="events-list" class="events-list" aria-live="polite"></div>
+        </div>
+
+        <!-- One reusable event card for all screen sizes -->
+        <template id="event-card-template">
+          <article class="event-card">
+            <div class="event-card__content">
+              <div class="event-card__title-row">
+                <h3 class="event-card__title"></h3>
+
+                <!-- Visual only. Level 3 favorites are out of scope. -->
+                <span class="event-card__favorite" aria-hidden="true">♡</span>
+              </div>
+
+              <p class="event-card__details"></p>
+              <p class="event-card__description"></p>
+
+              <a href="#" class="btn btn-outline event-card__action"
+                >Veure més</a
+              >
+            </div>
+          </article>
+        </template>
+      </section>
     </main>
- 
- 
+
     <!-- ==== MOBILE BOTTOM NAV ====== -->
     <nav
-        class="mobile-bottom-nav"
-        aria-label="Navegació principal"
-        id="mobile-bottom-nav"
+      class="mobile-bottom-nav"
+      aria-label="Navegació principal"
+      id="mobile-bottom-nav"
     >
-        <a
-            href="#home"
-            class="mobile-bottom-nav__item mobile-bottom-nav__item--active"
-            data-tab="home"
-            aria-current="page"
-        >
-            <img
-                src="/assets/icons/home.svg"
-                alt=""
-                class="mobile-bottom-nav__icon mobile-bottom-nav__icon--default"
-            >
-            <img
-                src="/assets/icons/home-active.svg"
-                alt=""
-                class="mobile-bottom-nav__icon mobile-bottom-nav__icon--active"
-            >
-            <span class="mobile-bottom-nav__text">Inici</span>
-        </a>
+      <a
+        href="#home"
+        class="mobile-bottom-nav__item mobile-bottom-nav__item--active"
+        data-tab="home"
+        aria-current="page"
+      >
+        <img
+          src="/assets/icons/home.svg"
+          alt=""
+          class="mobile-bottom-nav__icon mobile-bottom-nav__icon--default"
+        />
+        <img
+          src="/assets/icons/home-active.svg"
+          alt=""
+          class="mobile-bottom-nav__icon mobile-bottom-nav__icon--active"
+        />
+        <span class="mobile-bottom-nav__text">Inici</span>
+      </a>
 
-        <a
-            href="#networking"
-            class="mobile-bottom-nav__item"
-            data-tab="networking"
-        >
-            <img
-                src="/assets/icons/networking.svg"
-                alt=""
-                class="mobile-bottom-nav__icon mobile-bottom-nav__icon--default"
-            >
-            <img
-                src="/assets/icons/networking-active.svg"
-                alt=""
-                class="mobile-bottom-nav__icon mobile-bottom-nav__icon--active"
-            >
-            <span class="mobile-bottom-nav__text">Xarxa</span>
-        </a>
+      <a
+        href="#networking"
+        class="mobile-bottom-nav__item"
+        data-tab="networking"
+      >
+        <img
+          src="/assets/icons/networking.svg"
+          alt=""
+          class="mobile-bottom-nav__icon mobile-bottom-nav__icon--default"
+        />
+        <img
+          src="/assets/icons/networking-active.svg"
+          alt=""
+          class="mobile-bottom-nav__icon mobile-bottom-nav__icon--active"
+        />
+        <span class="mobile-bottom-nav__text">Xarxa</span>
+      </a>
 
-        <a
-            href="#job-opportunities"
-            class="mobile-bottom-nav__item"
-            data-tab="job-opportunities"
-        >
-            <img
-                src="/assets/icons/job-portal.svg"
-                alt=""
-                class="mobile-bottom-nav__icon mobile-bottom-nav__icon--default"
-            >
-            <img
-                src="/assets/icons/job-portal-active.svg"
-                alt=""
-                class="mobile-bottom-nav__icon mobile-bottom-nav__icon--active"
-            >
-            <span class="mobile-bottom-nav__text">Feines</span>
-        </a>
+      <a
+        href="#job-opportunities"
+        class="mobile-bottom-nav__item"
+        data-tab="job-opportunities"
+      >
+        <img
+          src="/assets/icons/job-portal.svg"
+          alt=""
+          class="mobile-bottom-nav__icon mobile-bottom-nav__icon--default"
+        />
+        <img
+          src="/assets/icons/job-portal-active.svg"
+          alt=""
+          class="mobile-bottom-nav__icon mobile-bottom-nav__icon--active"
+        />
+        <span class="mobile-bottom-nav__text">Feines</span>
+      </a>
 
-        <a
-            href="#events"
-            class="mobile-bottom-nav__item"
-            data-tab="events"
-        >
-            <img
-                src="/assets/icons/Events.svg"
-                alt=""
-                class="mobile-bottom-nav__icon mobile-bottom-nav__icon--default"
-            >
-            <img
-                src="/assets/icons/Events-active.svg"
-                alt=""
-                class="mobile-bottom-nav__icon mobile-bottom-nav__icon--active"
-            >
-            <span class="mobile-bottom-nav__text">Esdeveniments</span>
-        </a>
+      <a href="#events" class="mobile-bottom-nav__item" data-tab="events">
+        <img
+          src="/assets/icons/Events.svg"
+          alt=""
+          class="mobile-bottom-nav__icon mobile-bottom-nav__icon--default"
+        />
+        <img
+          src="/assets/icons/Events-active.svg"
+          alt=""
+          class="mobile-bottom-nav__icon mobile-bottom-nav__icon--active"
+        />
+        <span class="mobile-bottom-nav__text">Esdeveniments</span>
+      </a>
     </nav>
-    <script src="/scripts/components.js" defer></script>
+    <script src="/scripts/utils.js" defer></script>
     <script src="/scripts/alumni-connect/home.js" defer></script>
     <script src="/scripts/alumni-connect/networking.js" defer></script>
     <script src="/scripts/alumni-connect/job-opportunity.js" defer></script>
-    <script src="/scripts/alumni-connect/events.js" defer></script>
     <script src="/scripts/alumni-connect/alumni-connect.js" defer></script>
-    
-</body>
+  </body>
 </html>

@@ -3,62 +3,62 @@
 ======================================== */
 
 .networking-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
 
-    width: 100%;
-    max-width: 350px;
-    padding: 12px;
+  width: 100%;
+  max-width: 350px;
+  padding: 12px;
 
-    background-color: var(--color-surface-base);
-    border: 1px solid var(--border-neutral);
-    border-radius: var(--radius-md);
+  background-color: var(--color-surface-base);
+  border: 1px solid var(--border-neutral);
+  border-radius: var(--radius-md);
 }
 
 /* contenedor de información */
 .networking-card__content {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
 }
 
 /* Tipografía */
 .networking-card__name {
-    margin: 0;
-    font-family: var(--font-family);
-    font-size: var(--font-size-sm);
-    font-weight: 600;
-    line-height: var(--line-height-md);
-    color: var(--color-text-primary);
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  line-height: var(--line-height-md);
+  color: var(--color-text-primary);
 }
 
 .networking-card__class,
 .networking-card__role,
 .networking-card__location {
-    margin: 0;
-    font-family: var(--font-family);
-    font-size: 12px;
-    font-weight: 400;
-    line-height: var(--line-height-sm);
-    color: var(--color-text-muted);
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: var(--line-height-sm);
+  color: var(--color-text-muted);
 }
 
 /* Imagen */
 .networking-card__image {
-    width: 76px;
-    height: 76px;
-    object-fit: cover;
-    border-radius: var(--radius-sm);
-    background-color: var(--color-surface-neutral);
-    flex-shrink: 0;
+  width: 76px;
+  height: 76px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface-neutral);
+  flex-shrink: 0;
 }
 
 /* botón oculto */
 .networking-card__action {
-    display: none;
+  display: none;
 }
 
 /*==========================
@@ -66,40 +66,40 @@
 ==========================*/
 
 @media (min-width: 768px) {
-    .networking-card {
-        flex-direction: column;
-        align-items: flex-start;
-        max-width: 154px;
-        padding: 0;
-        border: none; /* Eliminar borde */
-        background-color: transparent;
-    }
+  .networking-card {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 154px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
 
-    /* Tipografía */
-    .networking-card__name {
-        font-size: var(--font-size-md); /* 16px */
-        line-height: 26px;
-        color: var(--color-text-primary);
-    }
+  /* Tipografía */
+  .networking-card__name {
+    font-size: var(--font-size-md);
+    line-height: 26px;
+    color: var(--color-text-primary);
+  }
 
-    .networking-card__role,
-    .networking-card__location {
-        font-size: var(--font-size-sm); /* 14px */
-        line-height: 22px;
-        color: var(--color-text-secondary);
-    }
+  .networking-card__role,
+  .networking-card__location {
+    font-size: var(--font-size-sm);
+    line-height: 22px;
+    color: var(--color-text-secondary);
+  }
 
-    /* información oculta */
-    .networking-card__image,
-    .networking-card__class {
-        display: none;
-    }
+  /* información oculta */
+  .networking-card__image,
+  .networking-card__class {
+    display: none;
+  }
 
-    /* botón */
-    .networking-card__action {
-        display: inline-flex;
-        margin-top: 8px;
-    }
+  /* botón */
+  .networking-card__action {
+    display: inline-flex;
+    margin-top: 8px;
+  }
 }
 
 /* ==========================
@@ -107,16 +107,15 @@
 ============================*/
 
 @media (min-width: 1200px) {
-    .networking-card {
-        max-width: 200px;
-    }
+  .networking-card {
+    max-width: 200px;
+  }
 
-    .networking-card__name {
-        font-size: var(--font-size-lg); /* 18px */
-        line-height: var(--line-height-lg); /* 28px */
-    }
+  .networking-card__name {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-lg);
+  }
 }
-
 
 /* ========================================
    JOB OPPORTUNITY - CARD - MOBILE
@@ -124,62 +123,60 @@
 
 /* Contenedor principal */
 .job-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
 
-    width: 100%;
-    max-width: 350px;
-    padding: 12px;
+  width: 100%;
+  max-width: 350px;
+  padding: 12px;
 
-    background-color: var(--color-surface-base);
-    border: 1px solid var(--border-neutral);
-    border-radius: var(--radius-md);
+  background-color: var(--color-surface-base);
+  border: 1px solid var(--border-neutral);
+  border-radius: var(--radius-md);
 }
 
-/* contenedor de información */
 .job-card__content {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
 }
 
 /* Tipografía */
 .job-card__title {
-    margin: 0;
-    font-family: var(--font-family);
-    font-size: var(--font-size-sm); /* 14px */
-    font-weight: 600;
-    line-height: var(--line-height-md); /* 22px */
-    color: var(--color-text-primary);
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size-xs);
+  font-weight: 400;
+  line-height: var(--line-height-sm);
+  color: var(--color-text-muted);
 }
 
-.job-card__company,
 .job-card__details {
-    margin: 0;
-    font-family: var(--font-family);
-    font-size: var(--font-size-xs); /* 12px */
-    font-weight: 400;
-    line-height: var(--line-height-sm); /* 20px */
-    color: var(--color-text-muted);
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size-xs);
+  font-weight: 400;
+  line-height: var(--line-height-sm);
+  color: var(--color-text-muted);
 }
 
 /* Botón */
 .job-card__action {
-    align-self: flex-start;
-    margin-top: 4px;
+  align-self: flex-start;
+  margin-top: 4px;
 }
 
 /* Imagen */
 .job-card__image {
-    width: 112px;
-    height: 112px;
-    object-fit: cover;
-    border-radius: var(--radius-sm);
-    background-color: var(--color-surface-neutral);
-    flex-shrink: 0;
+  width: 112px;
+  height: 112px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface-neutral);
+  flex-shrink: 0;
 }
 
 /* =============================
@@ -187,29 +184,39 @@
 ================================*/
 
 @media (min-width: 768px) {
-    .job-card {
-        max-width: 416px;
-        padding: 16px;
-        gap: 16px;
-    }
+  .job-card {
+    max-width: 416px;
+    min-height: 166px;
+    padding: 16px;
+    gap: 16px;
 
-    .job-card__title {
-        font-size: var(--font-size-lg); /* 20px */
-        line-height: 30px;
-        color: var(--color-text-primary);
-    }
+    border-radius: 6px;
+    border: none;
 
-    .job-card__company,
-    .job-card__details {
-        font-size: var(--font-size-sm); /* 14px */
-        line-height: var(--line-height-md); /* 22px */
-        color: var(--color-text-secondary);
-    }
+    box-shadow:
+      0 0 1px 0 rgba(23, 26, 31, 0.07),
+      0 0 2px 0 rgba(23, 26, 31, 0.12);
+  }
 
-    .job-card__image {
-        width: 160px;
-        height: 134px;
-    }
+  .job-card__title {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-md);
+    font-weight: 400;
+    color: var(--color-text-secondary);
+  }
+
+  .job-card__details {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-md);
+    font-weight: 400;
+    color: var(--color-text-secondary);
+  }
+
+  .job-card__image {
+    width: 160px;
+    height: 134px;
+    border-radius: 4px;
+  }
 }
 
 /* ================================
@@ -217,22 +224,30 @@
 ==================================*/
 
 @media (min-width: 1200px) {
-    .job-card {
-        max-width: 480px;
-        padding: 20px;
-    }
+  .job-card {
+    max-width: 480px;
+    padding: 20px;
+  }
 
-    .job-card__title {
-        font-size: var(--font-size-xl);
-        line-height: 32px;
-    }
+  .job-card__title {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-lg);
+    font-weight: 400;
+    color: var(--color-text-secondary);
+  }
 
-    .job-card__image {
-        width: 180px;
-        height: 150px;
-    }
+  .job-card__details {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-lg);
+    font-weight: 400;
+    color: var(--color-text-secondary);
+  }
+
+  .job-card__image {
+    width: 180px;
+    height: 150px;
+  }
 }
-
 
 /*=======================================
    WELCOME - BENEFIT CARD - MOBILE
@@ -240,42 +255,42 @@
 
 /* Contenedor principal */
 .benefit-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 
-    width: 100%;
-    max-width: 320px;
-    padding: 24px 20px;
+  width: 100%;
+  max-width: 320px;
+  padding: 24px 20px;
 
-    background-color: var(--color-surface-base);
-    border: 1px solid var(--border-neutral);
-    border-radius: 16px;
-    text-align: center;
+  background-color: var(--color-surface-base);
+  border: 1px solid var(--border-neutral);
+  border-radius: 16px;
+  text-align: center;
 }
 
 /* Icono */
 .benefit-card__icon {
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
-    flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 /* Descripción */
 .benefit-card__text {
-    margin: 0;
-    font-family: var(--font-family);
-    font-size: var(--font-size-sm); /* 14px */
-    font-weight: 400;
-    line-height: var(--line-height-md); /* 22px */
-    color: var(--color-text-secondary);
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+  line-height: var(--line-height-md);
+  color: var(--color-text-secondary);
 }
 
 /* Botón */
 .benefit-card__action {
-    margin-top: auto;
+  margin-top: auto;
 }
 
 /* ================================
@@ -283,11 +298,11 @@
 ==================================*/
 
 @media (min-width: 768px) {
-    .benefit-card {
-        max-width: 300px;
-        padding: 28px 24px;
-        gap: 20px;
-    }
+  .benefit-card {
+    max-width: 300px;
+    padding: 28px 24px;
+    gap: 20px;
+  }
 }
 
 /* ================================
@@ -295,22 +310,21 @@
 ================================*/
 
 @media (min-width: 1200px) {
-    .benefit-card {
-        max-width: 350px;
-        padding: 32px 28px;
-    }
+  .benefit-card {
+    max-width: 350px;
+    padding: 32px 28px;
+  }
 
-    .benefit-card__icon {
-        width: 40px;
-        height: 40px;
-    }
+  .benefit-card__icon {
+    width: 40px;
+    height: 40px;
+  }
 
-    .benefit-card__text {
-        font-size: var(--font-size-md); /* 16px */
-        line-height: var(--line-height-lg); /* 24px */
-    }
+  .benefit-card__text {
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-lg);
+  }
 }
-
 
 /* ========================================
    WELCOME - TESTIMONIAL CARD - MOBILE
@@ -318,71 +332,71 @@
 
 /* Contenedor principal */
 .testimonial-card {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
-    width: 100%;
-    max-width: 320px;
-    padding: 20px;
+  width: 100%;
+  max-width: 320px;
+  padding: 20px;
 
-    background-color: var(--color-surface-base);
-    border: 1px solid var(--border-neutral);
-    border-radius: 16px;
+  background-color: var(--color-surface-base);
+  border: 1px solid var(--border-neutral);
+  border-radius: 16px;
 }
 
 .testimonial-card__header {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 /* contenedor nombre y estrellas */
 .testimonial-card__user-info {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 /* Avatar */
 .testimonial-card__avatar {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    object-fit: cover;
-    background-color: #F1D1E8;
-    flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #f1d1e8;
+  flex-shrink: 0;
 }
 
 /* Nombre del usuario */
 .testimonial-card__name {
-    margin: 0;
-    font-family: var(--font-family);
-    font-size: var(--font-size-lg); /* 18px */
-    font-weight: 700;
-    line-height: 26px;
-    color: var(--color-text-normal);
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  line-height: 26px;
+  color: var(--color-text-normal);
 }
 
 /* Contenedor de estrellas */
 .testimonial-card__rating {
-    display: flex;
-    gap: 2px;
+  display: flex;
+  gap: 2px;
 }
 
 .testimonial-card__star {
-    width: 16px;
-    height: 16px;
+  width: 16px;
+  height: 16px;
 }
 
 /* Texto de la opinión */
 .testimonial-card__text {
-    margin: 0;
-    font-family: var(--font-family);
-    font-size: var(--font-size-sm); /* 14px */
-    font-weight: 400;
-    line-height: var(--line-height-md); /* 22px */
-    color: var(--color-text-primary);
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+  line-height: var(--line-height-md);
+  color: var(--color-text-primary);
 }
 
 /* ===================================
@@ -390,31 +404,31 @@
    ==================================*/
 
 @media (min-width: 768px) {
-    .testimonial-card {
-        max-width: 371px;
-        padding: 24px;
-        gap: 20px;
-    }
+  .testimonial-card {
+    max-width: 371px;
+    padding: 24px;
+    gap: 20px;
+  }
 
-    .testimonial-card__avatar {
-        width: 64px;
-        height: 64px;
-    }
+  .testimonial-card__avatar {
+    width: 64px;
+    height: 64px;
+  }
 
-    .testimonial-card__name {
-        font-size: 24px;
-        line-height: 36px;
-    }
+  .testimonial-card__name {
+    font-size: 24px;
+    line-height: 36px;
+  }
 
-    .testimonial-card__star {
-        width: 20px;
-        height: 20px;
-    }
+  .testimonial-card__star {
+    width: 20px;
+    height: 20px;
+  }
 
-    .testimonial-card__text {
-        font-size: var(--font-size-md); /* 16px */
-        line-height: 26px;
-    }
+  .testimonial-card__text {
+    font-size: var(--font-size-md);
+    line-height: 26px;
+  }
 }
 
 /* ====================================
@@ -422,15 +436,15 @@
 ====================================*/
 
 @media (min-width: 1200px) {
-    .testimonial-card {
-        max-width: 420px;
-        padding: 28px;
-    }
+  .testimonial-card {
+    max-width: 420px;
+    padding: 28px;
+  }
 
-    .testimonial-card__text {
-        font-size: var(--font-size-lg); /* 18px */
-        line-height: var(--line-height-lg); /* 28px */
-    }
+  .testimonial-card__text {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-lg);
+  }
 }
 
 /* ========================================
@@ -438,200 +452,195 @@
 ======================================== */
 
 .home-card {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 
-    width: 100%;
-    max-width: 350px;
-    padding: 20px;
+  width: 100%;
+  max-width: 350px;
+  padding: 20px;
 
-    background-color: var(--color-surface-base);
-    border: 1px solid var(--border-neutral);
-    border-radius: var(--radius-md);
+  background-color: var(--color-surface-base);
+  border: 1px solid var(--border-neutral);
+  border-radius: var(--radius-md);
 }
 
 /* Título */
 .home-card__title {
-    margin: 0;
+  margin: 0;
 
-    font-family: var(--font-family);
-    font-size: var(--font-size-lg);
-    font-weight: 600;
-    line-height: var(--line-height-lg);
-    color: var(--color-text-primary);
+  font-family: var(--font-family);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  line-height: var(--line-height-lg);
+  color: var(--color-text-primary);
 }
 
 /* Descripción */
 .home-card__text {
-    margin: 0;
+  margin: 0;
 
-    font-family: var(--font-family);
-    font-size: var(--font-size-sm);
-    font-weight: 400;
-    line-height: var(--line-height-md);
-    color: var(--color-text-secondary);
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+  line-height: var(--line-height-md);
+  color: var(--color-text-secondary);
 }
 
 /* Botón */
 .home-card__action {
-    align-self: flex-start;
-    margin-top: auto;
+  align-self: flex-start;
+  margin-top: auto;
 }
-
 
 /* ========================================
    HOME - CARD - TABLET
 ======================================== */
 
 @media (min-width: 768px) {
-    .home-card {
-        max-width: 300px;
-        padding: 24px;
-    }
+  .home-card {
+    max-width: 300px;
+    padding: 24px;
+  }
 
-    .home-card__title {
-        font-size: var(--font-size-xl);
-        line-height: 30px;
-    }
+  .home-card__title {
+    font-size: var(--font-size-xl);
+    line-height: 30px;
+  }
 
-    .home-card__text {
-        font-size: var(--font-size-md);
-        line-height: var(--line-height-lg);
-    }
+  .home-card__text {
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-lg);
+  }
 }
-
 
 /* ========================================
    HOME - CARD - DESKTOP
 ======================================== */
 
 @media (min-width: 1200px) {
-    .home-card {
-        max-width: 350px;
-        padding: 28px;
-    }
+  .home-card {
+    max-width: 350px;
+    padding: 28px;
+  }
 }
-
 
 /* =========================
    EVENT CARD
 ========================= */
 
 .event-card {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 12px;
-    width: 100%;
-    max-width: 350px;
-    min-height: 150px;
-    padding: 12px;
-    background-color: var(--color-surface-base);
-    border: 1px solid var(--border-neutral);
-    border-radius: var(--radius-md);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  max-width: 350px;
+  min-height: 150px;
+  padding: 12px;
+  background-color: var(--color-surface-base);
+  border: 1px solid var(--border-neutral);
+  border-radius: var(--radius-md);
 }
 
 .event-card__content {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    min-width: 0;
-    gap: 6px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  gap: 6px;
 }
 
 .event-card__title-row {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 8px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
 }
 
 .event-card__title {
-    margin: 0;
-    color: var(--color-text-primary);
-    font-size: var(--font-size-md);
-    font-weight: 700;
-    line-height: var(--line-height-md);
+  margin: 0;
+  color: var(--color-text-primary);
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  line-height: var(--line-height-md);
 }
 
 .event-card__favorite {
-    flex-shrink: 0;
-    color: var(--color-brand);
-    font-size: 22px;
-    line-height: 1;
+  flex-shrink: 0;
+  color: var(--color-brand);
+  font-size: 22px;
+  line-height: 1;
 }
 
 .event-card__details {
-    margin: 0;
-    color: var(--color-text-secondary);
-    font-size: var(--font-size-sm);
-    line-height: var(--line-height-sm);
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
 }
 
 .event-card__description {
-    margin: 0;
-    color: var(--color-text-secondary);
-    font-size: var(--font-size-sm);
-    line-height: var(--line-height-sm);
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
 }
 
 .event-card__action {
-    align-self: flex-start;
-    margin-top: 4px;
+  align-self: flex-start;
+  margin-top: 4px;
 }
 
 .event-card__image {
-    flex-shrink: 0;
-    width: 96px;
-    height: 96px;
-    object-fit: cover;
-    border-radius: var(--radius-md);
+  flex-shrink: 0;
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
 }
-
 
 /* =========================
    TABLET
 ========================= */
 
 @media (min-width: 768px) {
-    .event-card {
-        max-width: none;
-        min-height: 170px;
-        gap: 16px;
-        padding: 16px;
-    }
+  .event-card {
+    max-width: none;
+    min-height: 170px;
+    gap: 16px;
+    padding: 16px;
+  }
 
-    .event-card__image {
-        width: 120px;
-        height: 120px;
-    }
+  .event-card__image {
+    width: 120px;
+    height: 120px;
+  }
 
-    .event-card__title {
-        font-size: var(--font-size-lg);
-        line-height: var(--line-height-lg);
-    }
+  .event-card__title {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-lg);
+  }
 }
-
 
 /* =========================
    DESKTOP
 ========================= */
 
 @media (min-width: 1200px) {
-    .event-card {
-        min-height: 190px;
-        padding: 20px;
-    }
+  .event-card {
+    min-height: 190px;
+    padding: 20px;
+  }
 
-    .event-card__image {
-        width: 140px;
-        height: 140px;
-    }
+  .event-card__image {
+    width: 140px;
+    height: 140px;
+  }
 
-    .event-card__title {
-        font-size: var(--font-size-xl);
-        line-height: var(--line-height-xl);
-    }
+  .event-card__title {
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-xl);
+  }
 }
