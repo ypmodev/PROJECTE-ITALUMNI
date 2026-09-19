@@ -96,7 +96,6 @@ function getFilterOptions(filter) {
 }
 
 function showFilterOptions(button, filter) {
-  // Si ya está abierto, lo cerramos
   const existingOptions = button.parentElement.querySelector(
     ".job-filter-options",
   );
@@ -116,7 +115,6 @@ function showFilterOptions(button, filter) {
 
   optionsList.classList.add("job-filter-options");
 
-  // Obtener opciones desde el JSON
   const options = getFilterOptions(filter);
 
   const clearItem = document.createElement("li");
@@ -147,8 +145,6 @@ function showFilterOptions(button, filter) {
     optionButton.textContent = option;
 
     optionButton.addEventListener("click", () => {
-      // Si volvemos a pulsar la misma opción,
-      // quitamos el filtro
       if (selectedFilters[filter] === option) {
         selectedFilters[filter] = "";
       } else {
@@ -174,7 +170,7 @@ function showFilterOptions(button, filter) {
   button.parentElement.appendChild(optionsList);
 }
 
-// Filtros desktop
+// filters desktop
 jobDesktopFilterButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const filter = button.dataset.jobFilter;
@@ -183,7 +179,7 @@ jobDesktopFilterButtons.forEach((button) => {
   });
 });
 
-// Filter mobile
+// filters mobile
 jobMobileFilterButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const filter = button.dataset.jobFilter;
@@ -198,7 +194,6 @@ updateActiveButtons(
 );
 
 // SEARCH
-
 function setupJobsSearch() {
   setupSearch(jobSearchInput, jobsData, ["title", "stack"], (resultSearch) => {
     const filteredJobs = resultSearch.filter((job) => {
@@ -230,7 +225,6 @@ async function loadDataJobs() {
       throw new Error("jobs.json no contiene un array");
     }
 
-    // Mostrar ofertas al cargar
     renderJobs(jobsData);
 
     return true;

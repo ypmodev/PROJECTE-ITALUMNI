@@ -31,7 +31,7 @@ async function loadData(url) {
   const response = await fetch(url);
 
   if (!response.ok) {
-    throw new Error("No se han podido cargar los datos");
+    throw new Error("No s'han pogut carregar les dades");
   }
 
   const data = await response.json();

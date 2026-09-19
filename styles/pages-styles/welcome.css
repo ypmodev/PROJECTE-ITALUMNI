@@ -4,7 +4,7 @@
 }
 
 /* ========================
-  visibilidad-Modo móvil
+ mobile
 ======================== */
 .navbar,
 .hero,
@@ -553,10 +553,10 @@ footer {
 }
 
 /*==================
-     DESCKTOP
+     DESKTOP
 ==================*/
 @media (min-width: 1200px) {
-  /*NAVBAR-descktop*/
+  /*NAVBAR-desktop*/
   .navbar {
     height: 56px;
     padding: 0 4rem;

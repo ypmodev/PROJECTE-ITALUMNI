@@ -1,4 +1,3 @@
-/* Valores por defecto */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -19,7 +18,7 @@
   cursor: pointer;
 }
 
-/* Botón Pequeño */
+/* Small Button */
 .btn-sm {
   height: 32px;
   padding: 0 12px;
@@ -29,7 +28,7 @@
   line-height: 20px;
 }
 
-/* Botón Grande */
+/* Large Button */
 .btn-lg {
   height: 44px;
   padding: 0 20px;
@@ -38,7 +37,7 @@
   line-height: 28px;
 }
 
-/* Variantes de Color */
+/* Color Variants */
 .btn-gradient {
   background: linear-gradient(
     90deg,
@@ -64,7 +63,7 @@
   color: var(--color-brand);
 }
 
-/* Accesibilidad (Teclado) */
+/* Accessibility (Keyboard) */
 .btn:focus-visible {
   outline: 2px solid #873aaa;
   outline-offset: 2px;

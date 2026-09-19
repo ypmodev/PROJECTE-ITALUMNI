@@ -31,7 +31,7 @@
 }
 
 /* ========
-FORMULARIO
+FORM
 =============== */
 .register-form {
   display: flex;
@@ -107,7 +107,6 @@ FORMULARIO
   margin-top: 4px;
 }
 
-/* Separador "o" con línea a cada lado */
 .register-form__divider {
   display: flex;
   align-items: center;

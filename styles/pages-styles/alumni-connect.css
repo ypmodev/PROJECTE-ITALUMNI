@@ -1,7 +1,6 @@
 /* ======================
    TAB SECTIONS
    ====================== */
-
 .tab-section {
   display: none;
 }
@@ -13,7 +12,6 @@
 /* ======================
    HEADER MOBILE   
 ====================== */
-
 .mobile-header__leading {
   display: flex;
   align-items: center;
@@ -76,7 +74,7 @@
   display: none;
 }
 
-/* GRID DE TARJETAS - HOME - MOBILE */
+/* GRID card - HOME - MOBILE */
 .home-mobile__cards {
   display: grid;
   grid-template-columns: 174px 174px;
@@ -86,7 +84,7 @@
   justify-content: center;
 }
 
-/* TARJETA HOME - MOBILE*/
+/* card HOME - MOBILE*/
 .home-card {
   width: 174px;
   height: auto;
@@ -99,7 +97,6 @@
   border-radius: var(--radius-md);
 }
 
-/* IMAGEN HOME - MOBILE*/
 .home-card__image {
   width: 174px;
   height: 156px;
@@ -110,7 +107,6 @@
   border-radius: var(--radius-md);
 }
 
-/* TÍTULO HOME - MOBILE*/
 .home-card__title {
   margin: 8px 0 0;
   font-family: var(--font-family);
@@ -120,7 +116,6 @@
   color: var(--color-text-primary);
 }
 
-/* DESCRIPCIÓN HOME - MOBILE*/
 .home-card__text {
   margin: 4px 0 0;
   font-family: var(--font-family);
@@ -132,7 +127,6 @@
   overflow: hidden;
 }
 
-/* BOTÓN HOME - MOBILE*/
 .home-card__action {
   width: 174px;
   height: 32px;
@@ -150,7 +144,6 @@
   top: -10px;
 }
 
-/*SEARCH - HOME - MOBILE*/
 .search {
   width: 100%;
   max-width: 365px;
@@ -228,7 +221,7 @@
 
 /* ==========================
    HOME - DESKTOP
-   ========================== */
+  ========================== */
 
 @media (min-width: 1200px) {
   /*desktop*/
@@ -245,7 +238,6 @@
     margin-left: auto;
   }
 
-  /*home*/
   .home-desktop {
     display: flex;
     flex-direction: column;
@@ -394,8 +386,6 @@
   background: #d9d9d9;
 }
 
-/* NOMBRE */
-
 .networking-mobile .networking-card__name {
   margin: 0 0 5px;
 
@@ -405,8 +395,6 @@
 
   color: #333333;
 }
-
-/* DATOS */
 
 .networking-mobile .networking-card__class,
 .networking-mobile .networking-card__role,
@@ -420,13 +408,9 @@
   color: #999999;
 }
 
-/* UBICACIÓN */
-
 .networking-mobile .networking-card__location {
   margin-bottom: 0;
 }
-
-/* OCULTAMOS EL BOTÓN EN MOBILE */
 
 .networking-mobile .networking-card__action {
   display: none;
@@ -490,7 +474,6 @@
   font-size: var(--font-size-sm);
   color: var(--color-text-primary);
 }
-/* Estado activo */
 
 .networking-filter-mobile.active {
   color: var(--color-text-accent);
@@ -638,8 +621,6 @@
   padding-bottom: 88px;
 }
 
-/* Lista de ofertas */
-
 .job-mobile__list {
   list-style: none;
   margin: 0;
@@ -759,7 +740,6 @@
 /* ==========================
    JOB  - TABLET
 ========================== */
-
 @media (min-width: 768px) {
   .job-desktop {
     display: block;
@@ -859,7 +839,7 @@
     line-height: var(--line-height-xs);
   }
 }
-/*desktop*/
+/*-------------desktop-------------*/
 @media (min-width: 1200px) {
   .job-desktop {
     padding: 40px 64px;
@@ -917,7 +897,6 @@
     line-height: 20px;
   }
 
-  /* TÍTULO */
   .job-desktop__grid .job-card__title {
     margin: 0;
 
@@ -950,7 +929,6 @@
    EVENTS
    ========================== */
 
-/* Contenedor general de la página */
 .events-page {
   display: flex;
   flex-direction: column;
@@ -959,7 +937,6 @@
   padding-bottom: 88px;
 }
 
-/* Cabecera: título + buscador + filtros */
 .events-page__header {
   display: flex;
   flex-direction: column;
@@ -985,12 +962,10 @@
   line-height: var(--line-height-lg);
 }
 
-/* El filtro desktop se oculta inicialmente */
 .events-page .desktop-filters {
   display: none;
 }
 
-/* Lista única para móvil y desktop */
 .events-list {
   list-style: none;
   display: flex;
@@ -1003,7 +978,6 @@
 /* ==========================
    CALENDARIO
    ========================== */
-
 .events-calendar {
   width: 100%;
   padding: 16px;
@@ -1067,7 +1041,6 @@
 /* ==========================
    EVENTS - TABLET
    ========================== */
-
 @media (min-width: 768px) {
   .events-page {
     gap: 28px;

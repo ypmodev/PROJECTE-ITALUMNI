@@ -10,7 +10,6 @@
   width: 100%;
 }
 
-/* Título*/
 .mobile-header__title {
   margin: 0;
   font-family: var(--font-family);
@@ -20,14 +19,12 @@
   color: var(--color-text-primary);
 }
 
-/* Icono de estadísticas */
 .mobile-header__statistics {
   width: 28px;
   height: 28px;
   display: block;
 }
 
-/* Avatar*/
 .mobile-header__avatar {
   width: 36px;
   height: 36px;
@@ -53,7 +50,6 @@
   z-index: 1000;
 }
 
-/* Contenedor del botón */
 .mobile-bottom-nav__item {
   flex: 1;
   display: flex;
@@ -65,7 +61,6 @@
   color: var(--color-text-secondary);
 }
 
-/* Icono */
 .mobile-bottom-nav__icon {
   width: 24px;
   height: 24px;
@@ -85,7 +80,6 @@
   display: block;
 }
 
-/* Texto base */
 .mobile-bottom-nav__text {
   font-family: var(--font-family);
   font-size: var(--font-size-xs); /* 10px */
@@ -102,7 +96,6 @@
    TOP NAV - DESKTOP 
    ================== */
 
-/* Contenedor General */
 .desktop-header {
   display: flex;
   align-items: center;
@@ -113,7 +106,6 @@
   background-color: var(--color-surface-base);
 }
 
-/* Contenedor logo*/
 .desktop-header__brand {
   display: flex;
   align-items: center;
@@ -121,14 +113,12 @@
   text-decoration: none;
 }
 
-/*logo*/
 .desktop-header__logo {
   width: 36px;
   height: 36px;
   object-fit: contain;
 }
 
-/*logo-texto*/
 .desktop-header__title {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
@@ -138,7 +128,6 @@
   color: var(--color-text-primary);
 }
 
-/* Menú Central */
 .desktop-nav {
   display: flex;
   align-items: center;
@@ -160,7 +149,6 @@
   transition: color 0.2s ease;
 }
 
-/* Estado Activo  */
 .desktop-nav__link--active {
   color: var(--color-brand);
   font-weight: 700;
@@ -177,7 +165,6 @@
   border-radius: 2px 2px 0 0;
 }
 
-/* Acciones Derecha */
 .desktop-header__actions {
   display: flex;
   align-items: center;
@@ -212,14 +199,12 @@
   }
 }
 
-/* Ocultar escritorio en móvil */
 @media (max-width: 767px) {
   .desktop-header {
     display: none;
   }
 }
 
-/* Ocultar móvil en tablet/escritorio*/
 @media (min-width: 768px) {
   .mobile-header,
   .mobile-bottom-nav {

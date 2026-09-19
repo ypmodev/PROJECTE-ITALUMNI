@@ -449,7 +449,9 @@
               <h3 class="job-card__stack"></h3>
               <p class="job-card__title"></p>
               <p class="job-card__details"></p>
-              <a href="#" class="btn btn-outline job-card__action"></a>
+              <a href="#" class="btn btn-outline job-card__action"
+                >Veure oferta</a
+              >
             </div>
             <img class="job-card__image" alt="" />
           </article>
@@ -553,7 +555,7 @@
                   data-filter-options="stack"
                   hidden
                 >
-                  <li><button type="button">Limpiar filtro</button></li>
+                  <li><button type="button">Netejar filtre</button></li>
                   <li><button type="button">Frontend</button></li>
                   <li><button type="button">Backend</button></li>
                   <li><button type="button">Hoja Stack</button></li>
@@ -576,7 +578,7 @@
                   data-filter-options="contractType"
                   hidden
                 >
-                  <li><button type="button">Limpiar filtro</button></li>
+                  <li><button type="button">Netejar filtre</button></li>
                   <li><button type="button">Jornada completa</button></li>
                   <li><button type="button">Media jornada</button></li>
                 </ul>
@@ -595,8 +597,7 @@
                   data-filter-options="location"
                   hidden
                 >
-                  <li><button type="button">Limpiar filtro</button></li>
-                  <!-- opciones de localización -->
+                  <li><button type="button">Netejar filtre</button></li>
                 </ul>
               </div>
             </div>
@@ -608,7 +609,8 @@
           ></ul>
         </div>
       </section>
-      <!-- ---------- Eventos ---------- -->
+
+      <!-- ---------- Events ---------- -->
       <section
         id="events"
         class="tab-section"
@@ -678,77 +680,23 @@
               </button>
             </div>
           </div>
+        </div>
 
-          <!-- Calendari visual del mes actual.
-                     Els únics dies amb esdeveniments són 18, 24 i 29. -->
-          <div
-            class="events-calendar"
-            aria-label="Calendari de setembre de 2026"
-          >
-            <div class="events-calendar__header">
-              <h3 class="events-calendar__month">Setembre 2026</h3>
-            </div>
-
-            <div class="events-calendar__weekdays" aria-hidden="true">
-              <span>Dl</span>
-              <span>Dt</span>
-              <span>Dc</span>
-              <span>Dj</span>
-              <span>Dv</span>
-              <span>Ds</span>
-              <span>Dg</span>
-            </div>
-
-            <div class="events-calendar__days">
-              <span></span>
-              <span>1</span>
-              <span>2</span>
-              <span>3</span>
-              <span>4</span>
-              <span>5</span>
-              <span>6</span>
-              <span>7</span>
-              <span>8</span>
-              <span>9</span>
-              <span>10</span>
-              <span>11</span>
-              <span>12</span>
-              <span>13</span>
-              <span>14</span>
-              <span>15</span>
-              <span>16</span>
-              <span>17</span>
-              <span class="events-calendar__day--has-event">18</span>
-              <span>19</span>
-              <span>20</span>
-              <span>21</span>
-              <span>22</span>
-              <span>23</span>
-              <span class="events-calendar__day--has-event">24</span>
-              <span>25</span>
-              <span>26</span>
-              <span>27</span>
-              <span>28</span>
-              <span class="events-calendar__day--has-event">29</span>
-              <span>30</span>
-            </div>
+        <div class="events-calendar" aria-label="Calendari de setembre de 2026">
+          <div class="events-calendar__header">
+            <h3 class="events-calendar__month">Setembre 2026</h3>
           </div>
 
           <h2 class="events-page__list-title">Esdeveniments</h2>
 
-          <!-- One responsive list for both mobile and desktop -->
           <div id="events-list" class="events-list" aria-live="polite"></div>
         </div>
 
-        <!-- One reusable event card for all screen sizes -->
         <template id="event-card-template">
           <article class="event-card">
             <div class="event-card__content">
               <div class="event-card__title-row">
                 <h3 class="event-card__title"></h3>
-
-                <!-- Visual only. Level 3 favorites are out of scope. -->
-                <span class="event-card__favorite" aria-hidden="true">♡</span>
               </div>
 
               <p class="event-card__details"></p>

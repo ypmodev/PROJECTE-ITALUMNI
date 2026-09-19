@@ -1,7 +1,6 @@
 /* ================
    SEARCH - MOBILE
    ================ */
-
 .search {
   width: 100%;
   max-width: 349px;
@@ -41,7 +40,6 @@
 /* ================
   SEARCH - TABLET
 ================= */
-
 @media (min-width: 768px) {
   .search {
     max-width: 320px;
@@ -72,7 +70,6 @@
 /* ================
   FILTERS - MOBILE
 ================= */
-/* Contenedor principal*/
 .filters-mobile {
   display: flex;
   justify-content: flex-start;
@@ -85,12 +82,10 @@
   padding-bottom: 4px;
 }
 
-/* Ocultar barra*/
 .filters-mobile::-webkit-scrollbar {
   display: none;
 }
 
-/* Componente individual*/
 .filter-dropdown {
   display: inline-flex;
   align-items: center;
@@ -104,14 +99,12 @@
   flex-shrink: 0; /* Evitar deformación al hacer scroll */
 }
 
-/* Icono*/
 .filter-dropdown__icon {
   width: 16px;
   height: 16px;
   flex-shrink: 0;
 }
 
-/* texto*/
 .filter-dropdown__text {
   font-family: var(--font-family);
   font-size: var(--font-size-sm); /* 14px */
@@ -126,7 +119,6 @@
 /* ================
   FILTERS - DESKTOP
 =================== */
-/*Contenedor principal*/
 .desktop-filters {
   width: 381px;
   height: 52px;
@@ -174,14 +166,12 @@
   }
 }
 
-/*ocultar móvil*/
 @media (min-width: 768px) {
   .filters-mobile {
     display: none;
   }
 }
 
-/*ocultar escritorio*/
 @media (max-width: 768px) {
   .desktop-filters {
     display: none;

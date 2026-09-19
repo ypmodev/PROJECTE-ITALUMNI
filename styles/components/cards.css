@@ -17,7 +17,6 @@
   border-radius: var(--radius-md);
 }
 
-/* contenedor de información */
 .networking-card__content {
   display: flex;
   flex-direction: column;
@@ -25,7 +24,6 @@
   flex: 1;
 }
 
-/* Tipografía */
 .networking-card__name {
   margin: 0;
   font-family: var(--font-family);
@@ -46,7 +44,6 @@
   color: var(--color-text-muted);
 }
 
-/* Imagen */
 .networking-card__image {
   width: 76px;
   height: 76px;
@@ -56,7 +53,7 @@
   flex-shrink: 0;
 }
 
-/* botón oculto */
+/* hidden button */
 .networking-card__action {
   display: none;
 }
@@ -75,7 +72,6 @@
     background-color: transparent;
   }
 
-  /* Tipografía */
   .networking-card__name {
     font-size: var(--font-size-md);
     line-height: 26px;
@@ -89,7 +85,7 @@
     color: var(--color-text-secondary);
   }
 
-  /* información oculta */
+  /* hidden information */
   .networking-card__image,
   .networking-card__class {
     display: none;
@@ -121,7 +117,6 @@
    JOB OPPORTUNITY - CARD - MOBILE
 ======================================== */
 
-/* Contenedor principal */
 .job-card {
   display: flex;
   justify-content: space-between;
@@ -144,7 +139,6 @@
   flex: 1;
 }
 
-/* Tipografía */
 .job-card__title {
   margin: 0;
   font-family: var(--font-family);
@@ -163,13 +157,11 @@
   color: var(--color-text-muted);
 }
 
-/* Botón */
 .job-card__action {
   align-self: flex-start;
   margin-top: 4px;
 }
 
-/* Imagen */
 .job-card__image {
   width: 112px;
   height: 112px;
@@ -270,7 +262,6 @@
   text-align: center;
 }
 
-/* Icono */
 .benefit-card__icon {
   width: 32px;
   height: 32px;
@@ -278,7 +269,6 @@
   flex-shrink: 0;
 }
 
-/* Descripción */
 .benefit-card__text {
   margin: 0;
   font-family: var(--font-family);
@@ -330,7 +320,6 @@
    WELCOME - TESTIMONIAL CARD - MOBILE
 ======================================== */
 
-/* Contenedor principal */
 .testimonial-card {
   display: flex;
   flex-direction: column;
@@ -351,14 +340,12 @@
   gap: 16px;
 }
 
-/* contenedor nombre y estrellas */
 .testimonial-card__user-info {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
-/* Avatar */
 .testimonial-card__avatar {
   width: 48px;
   height: 48px;
@@ -368,7 +355,6 @@
   flex-shrink: 0;
 }
 
-/* Nombre del usuario */
 .testimonial-card__name {
   margin: 0;
   font-family: var(--font-family);
@@ -378,7 +364,6 @@
   color: var(--color-text-normal);
 }
 
-/* Contenedor de estrellas */
 .testimonial-card__rating {
   display: flex;
   gap: 2px;
@@ -389,7 +374,6 @@
   height: 16px;
 }
 
-/* Texto de la opinión */
 .testimonial-card__text {
   margin: 0;
   font-family: var(--font-family);
@@ -465,7 +449,6 @@
   border-radius: var(--radius-md);
 }
 
-/* Título */
 .home-card__title {
   margin: 0;
 
@@ -476,7 +459,7 @@
   color: var(--color-text-primary);
 }
 
-/* Descripción */
+/* Description */
 .home-card__text {
   margin: 0;
 

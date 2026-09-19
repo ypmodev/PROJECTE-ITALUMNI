@@ -1,3 +1,11 @@
+# Dependencies
 node_modules/
-Thumbs.db
+
+# Environment variables
 .env
+
+# Vitest
+.vitest/
+
+# Windows
+Thumbs.db

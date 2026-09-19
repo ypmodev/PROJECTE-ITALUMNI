@@ -14,17 +14,16 @@ function showTab(tabName, updateUrl = true) {
   if (!VALID_TABS.includes(tabName)) {
     tabName = "home";
   }
-  // Ocultar todas las secciones
+
   document.querySelectorAll(".tab-section").forEach((section) => {
     section.classList.remove("is-active");
   });
-  // Mostrar la sección seleccionada
+
   const section = document.getElementById(tabName);
   if (section) {
     section.classList.add("is-active");
   }
 
-  // TÍTULO DEL HEADER MOBILE
   if (mobileTitle) {
     mobileTitle.textContent = TAB_TITLES[tabName];
   }
@@ -33,7 +32,7 @@ function showTab(tabName, updateUrl = true) {
     backButton.hidden = tabName === "home";
   }
 
-  // NAVEGACIÓN DESKTOP
+  // NAVIGATION DESKTOP
   document.querySelectorAll(".desktop-nav__link").forEach((link) => {
     link.classList.remove("desktop-nav__link--active");
     link.removeAttribute("aria-current");
@@ -48,7 +47,7 @@ function showTab(tabName, updateUrl = true) {
     desktopLink.setAttribute("aria-current", "page");
   }
 
-  // NAVEGACIÓN MOVIL
+  // NAVIGATION MOVIL
   document.querySelectorAll(".mobile-bottom-nav__item").forEach((item) => {
     item.classList.remove("mobile-bottom-nav__item--active");
     item.removeAttribute("aria-current");
@@ -68,7 +67,7 @@ function showTab(tabName, updateUrl = true) {
   }
 }
 
-// BOTONES DE NAVEGACIÓN (nav superior + bottom nav)
+// Buttons - NAVIGATION
 document.querySelectorAll("[data-tab]").forEach((tab) => {
   tab.addEventListener("click", (event) => {
     event.preventDefault();
@@ -77,7 +76,7 @@ document.querySelectorAll("[data-tab]").forEach((tab) => {
   });
 });
 
-//Botón flecha-atrás
+//button - back
 function goBack() {
   if (window.history.length > 1) {
     window.history.back();
@@ -86,7 +85,7 @@ function goBack() {
   }
 }
 
-// aIdentificar el clic del boton atrás
+// Detect the back button click
 if (backButton) {
   backButton.addEventListener("click", (event) => {
     event.preventDefault();
@@ -94,12 +93,12 @@ if (backButton) {
   });
 }
 
-// escuchar cambios en historial
+// listen for changes in history
 window.addEventListener("hashchange", () => {
   const tabName = window.location.hash.substring(1);
   showTab(tabName, false);
 });
 
-// ESTADO INICIAL
+// INITIAL STATE
 const initialTab = window.location.hash.substring(1);
 showTab(initialTab || "home", false);

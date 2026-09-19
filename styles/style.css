@@ -32,7 +32,7 @@
   --radius-lg: 10px;
   --radius-xl: 16px;
 
-  /* tipografía*/
+  /* typography*/
   --font-family: "Source Sans Pro", sans-serif;
 
   --font-size-h1: 64px;
@@ -90,17 +90,17 @@
 }
 
 /* =========================================
-   GLOBAL RESETS & BASE STYLES
+   GLOBAL RESETS - BASE STYLES
    ========================================= */
 
-/*mantener medidas*/
+/*maintain dimensions*/
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/*base por defecto*/
+/*default base*/
 body {
   margin: 0;
   font-family: var(--font-family);
@@ -108,7 +108,7 @@ body {
   background-color: var(--color-surface-base);
 }
 
-/*heredar tipografía global*/
+/*inherit global typography*/
 button,
 input,
 select,
@@ -116,7 +116,7 @@ textarea {
   font-family: inherit;
 }
 
-/* Transiciones */
+/* Transitions */
 a,
 button,
 .desktop-filter-tab,
@@ -131,7 +131,6 @@ button:hover,
   opacity: 0.85;
 }
 
-/* Estado activo para tabs y filtros */
 .active {
   color: var(--color-text-accent); /* #CE0A86 */
   font-weight: var(--font-weight-active); /* 700 */
@@ -148,7 +147,6 @@ button:hover,
   background-color: var(--color-text-accent);
 }
 
-/* Focus visible (teclado) */
 :focus-visible {
   outline: 2px solid var(--color-brand-gradient-start);
   outline-offset: 2px;

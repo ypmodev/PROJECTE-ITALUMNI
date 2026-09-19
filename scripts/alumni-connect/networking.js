@@ -180,16 +180,13 @@ filterButtonConnected.forEach((button) => {
   });
 });
 
-// ==========================
 // SEARCH
-// ==========================
-
 function setupNetworkingSearch() {
   setupSearch(searchInput, alumniData, ["name", "role"], (resultSearch) => {
     if (resultSearch.length === 0) {
       setEmptyState(
         [mobileList, topList, suggestionsList],
-        "No se han encontrado resultados.",
+        "No s'han trobat resultats.",
       );
       return;
     }
@@ -198,10 +195,7 @@ function setupNetworkingSearch() {
   });
 }
 
-// ==========================
 // LOAD DATA
-// ==========================
-
 async function loadDataNetworking() {
   setLoadingState(
     [mobileList, topList, suggestionsList],
@@ -217,17 +211,14 @@ async function loadDataNetworking() {
   } catch (error) {
     setErrorState(
       [mobileList, topList, suggestionsList],
-      "No se ha podido cargar la información.",
+      "No s'ha pogut carregar la informació",
     );
 
     return false;
   }
 }
 
-// ==========================
 // INIT
-// ==========================
-
 async function initNetworking() {
   const loaded = await loadDataNetworking();
 
