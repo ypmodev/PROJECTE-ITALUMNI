@@ -75,7 +75,6 @@ function fillAlumniCard(card, person) {
 }
 
 // FIlTERS
-
 function showResults(lista, textos) {
   lista.innerHTML = "";
 
