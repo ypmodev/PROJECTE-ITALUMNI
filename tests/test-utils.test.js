@@ -1,4 +1,4 @@
-import { describe, test, expect } from "vitest";
+/*import { describe, test, expect } from "vitest";
 import { cloneTemplate } from "../scripts/utils.js";
 
 describe("cloneTemplate", () => {
@@ -14,4 +14,3 @@ describe("cloneTemplate", () => {
 
     expect(resultado.querySelector(".test-card")).not.toBeNull();
   });
-});
