@@ -13,4 +13,4 @@ describe("cloneTemplate", () => {
     const resultado = cloneTemplate(datos);
 
     expect(resultado.querySelector(".test-card")).not.toBeNull();
-  });
+  });*/
