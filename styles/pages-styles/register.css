@@ -1,280 +1,272 @@
-
 .register-page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 16px 4vw;
-    box-sizing: border-box;
-    background-color: var(--color-surface-base);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 16px 4vw;
+  box-sizing: border-box;
+  background-color: var(--color-surface-base);
 }
 
 .register-card {
-    width: 100%;
-    max-width: 400px;
-    background-color: var(--color-surface-base);
-    border-radius: 16px;
-    padding: 32px 24px;
-    
-    box-sizing: border-box;
+  width: 100%;
+  max-width: 400px;
+  background-color: var(--color-surface-base);
+  border-radius: 16px;
+  padding: 32px 24px;
+
+  box-sizing: border-box;
 }
 
 .register-card__title {
-    margin: 0 0 8px;
-    text-align: center;
-    font-size: var(--font-size-xl);
-    font-weight: 700;
-    color: var(--color-text-primary);
-}
- 
-.register-card__subtitle {    
-    display: none;
+  margin: 0 0 8px;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
 }
 
+.register-card__subtitle {
+  display: none;
+}
 
 /* ========
-FORMULARIO
+FORM
 =============== */
 .register-form {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    margin-top: 16px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 16px;
+  width: 100%;
 }
 
 .form-field {
-    position: relative;
+  position: relative;
 }
 
 .form-field__icon {
-    position: absolute;
-    left: 14px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 16px;
-    height: 16px;   
-    pointer-events: none;
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
 }
 
 .form-field__input {
-    width: 100%;
-    height: 44px;
-    padding: 0 14px 0 40px;
-    border: 1px solid var(--border-neutral);
-    border-radius: var(--radius-sm);
-    background-color: var(--color-surface-alt);
-    font-family: var(--font-family);
-    font-size: 14px;
-    color: var(--color-text-primary);
+  width: 100%;
+  height: 44px;
+  padding: 0 14px 0 40px;
+  border: 1px solid var(--border-neutral);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface-alt);
+  font-family: var(--font-family);
+  font-size: 14px;
+  color: var(--color-text-primary);
 }
 
 .form-field__input::placeholder {
-    color: var(--color-text-muted);
+  color: var(--color-text-muted);
 }
 
 .form-field__input:focus-visible {
-    outline: 2px solid var(--color-brand-gradient-start);
-    outline-offset: 1px;
+  outline: 2px solid var(--color-brand-gradient-start);
+  outline-offset: 1px;
 }
 
 .register-form__error {
-    margin: 0;
-    font-family: var(--font-family);
-    font-size: 13px;
-    color: #B3261E;
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 13px;
+  color: #b3261e;
 }
 
 .register-form__checkbox {
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
-    font-family: var(--font-family);
-    font-size: 13px;
-    color: var(--color-text-secondary);
-    cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-family: var(--font-family);
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  cursor: pointer;
 }
 
 .register-form__checkbox input {
-    margin-top: 3px;
+  margin-top: 3px;
 }
 
 .register-form__checkbox a {
-    color: var(--color-brand);
-    text-decoration: none;
+  color: var(--color-brand);
+  text-decoration: none;
 }
 
 .register-form__submit {
-    width: 100%;
-    margin-top: 4px;
+  width: 100%;
+  margin-top: 4px;
 }
 
-/* Separador "o" con línea a cada lado */
 .register-form__divider {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin: 4px 0;
-    color: var(--color-text-secondary);
-    font-family: var(--font-family);
-    font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 4px 0;
+  color: var(--color-text-secondary);
+  font-family: var(--font-family);
+  font-size: 13px;
 }
 
 .register-form__divider::before,
 .register-form__divider::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background-color: var(--border-neutral);
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--border-neutral);
 }
 
 .register-form__social {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .btn-social {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    width: 100%;
-    height: 44px;
-    border-radius: var(--radius-sm);
-    border: 1px solid transparent;
-    font-family: var(--font-family);
-    font-size: 14px;
-    font-weight: 400;
-    text-decoration: none;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .btn-social img {
-    width: 18px;
-    height: 18px;
+  width: 18px;
+  height: 18px;
 }
 
 .btn-social--apple {
-    background-color: #FEF0F9;
-    border-color: #F5C6C6;
-    color: #c42a1c;
+  background-color: #fef0f9;
+  border-color: #f5c6c6;
+  color: #c42a1c;
 }
 
 .btn-social--google {
-    background-color: #FDF2F2;
-    border-color: #F5C6C6;
-    color: #EA4335;
+  background-color: #fdf2f2;
+  border-color: #f5c6c6;
+  color: #ea4335;
 }
 
 .btn-social--facebook {
-    background-color: #EAF2FF;
-    border-color: #C6D9F5;
-    color: #1877F2;
+  background-color: #eaf2ff;
+  border-color: #c6d9f5;
+  color: #1877f2;
 }
 
 .register-form__login-link {
-    margin: 8px 0 0;
-    text-align: center;
-    font-family: var(--font-family);
-    font-size: 13px;
-    color: var(--color-text-primary);
+  margin: 8px 0 0;
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 13px;
+  color: var(--color-text-primary);
 }
 
 .register-form__login-link a {
-    color: var(--color-brand);
-    text-decoration: none;
-    font-weight: 600;
+  color: var(--color-brand);
+  text-decoration: none;
+  font-weight: 600;
 }
-
 
 /* ============================================================
    TABLET 
    ============================================================ */
 @media (min-width: 768px) {
+  .register-form {
+    width: 80%;
+    margin: 0 auto;
+  }
 
-    .register-form{
-        width: 80%;
-         margin: 0 auto;
-    }
+  .register-page {
+    background-image: url("/assets/images/Imagen-fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 2vh 4vw;
+  }
 
-    .register-page {      
-        background-image: url('/assets/images/Imagen-fondo.jpg');
-        background-size: cover;
-        background-position: center;
-        padding: 2vh 4vw;
-    }
+  .register-card {
+    width: 65vw;
+    max-width: none;
+    height: clamp(600px, 80vh, 750px);
+  }
 
-    .register-card {
-       width: 65vw;
-        max-width: none;
-        height: clamp(600px, 80vh, 750px);
-    }
+  .register-card__title {
+    font-size: var(--font-size-h3);
+  }
 
-    .register-card__title {
-        font-size: var(--font-size-h3);
-    }
+  .register-card__subtitle {
+    display: block;
+    margin: 0 0 20px;
+    text-align: center;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
+  }
+  .register-form {
+    width: 80%;
+    margin: 0 auto;
+  }
 
-    .register-card__subtitle {
-        display: block;
-        margin: 0 0 20px;
-        text-align: center;    
-        font-size: var(--font-size-sm);
-        color: var(--color-text-primary);
-    }
-    .register-form {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .register-form__submit {       
-        font-size: var(--font-size-sm);
-    }
-
+  .register-form__submit {
+    font-size: var(--font-size-sm);
+  }
 }
 
 /* ============================================================
    DESKTOP
    ============================================================ */
 @media (min-width: 1200px) {
+  .register-page {
+    padding: 1vh 3vw;
+  }
 
-    .register-page {
-        padding: 1vh 3vw;
-    }
+  .register-card {
+    width: 40vw;
+    max-width: none;
+    height: clamp(650px, 90vh, 850px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .register-card {
-        width: 40vw;
-        max-width: none;
-        height: clamp(650px, 90vh, 850px);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+  .register-form {
+    width: 80%;
+    margin: 0 auto;
+    gap: 2.5vh;
+  }
 
-    .register-form {
-        width: 80%;
-        margin: 0 auto;
-        gap: 2.5vh;  
-        
-    }
+  .register-card__subtitle {
+    font-size: var(--font-size-md);
+  }
 
-     .register-card__subtitle {          
-        font-size: var(--font-size-md);        
-    }
+  .register-card__title {
+    font-size: var(--font-size-h2);
+  }
 
-     .register-card__title {
-        font-size: var(--font-size-h2);
-    }
+  .register-form__social {
+    gap: 1.5vh;
+  }
 
-    .register-form__social {
-        gap: 1.5vh;
-    }
+  .register-form__login-link {
+    margin-top: 2vh;
+  }
 
-    .register-form__login-link {
-        margin-top: 2vh;
-    }
-
-    .register-form__submit {       
-        font-size: var(--font-size-md);
-    }
+  .register-form__submit {
+    font-size: var(--font-size-md);
+  }
 }

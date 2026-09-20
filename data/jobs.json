@@ -1,1 +1,106 @@
-
+[
+  {
+    "id": 1,
+    "title": "Frontend Developer",
+    "company": "TechSolutions Inc.",
+    "location": "Barcelona (remot)",
+    "contractType": "Jornada completa",
+    "stack": "Frontend",
+    "postedAgo": "Fa 3 dies",
+    "image": "/assets/images/Jobs-oportunity.png",
+    "applicationType": "direct",
+    "externalUrl": null,
+    "ctaText": "Apply Now"
+  },
+  {
+    "id": 2,
+    "title": "Backend Developer",
+    "company": "XYZ Corp",
+    "location": "Barcelona",
+    "contractType": "Jornada completa",
+    "stack": "Backend",
+    "postedAgo": "Fa 1 setmana",
+    "image": "/assets/images/Jobs-oportunity.png",
+    "applicationType": "external",
+    "externalUrl": "https://www.linkedin.com/jobs/",
+    "ctaText": "Learn More"
+  },
+  {
+    "id": 3,
+    "title": "Full Stack Developer",
+    "company": "GreenWave",
+    "location": "Madrid",
+    "contractType": "Mitja jornada",
+    "stack": "Full Stack",
+    "postedAgo": "Fa 2 dies",
+    "image": "/assets/images/Jobs-oportunity.png",
+    "applicationType": "external",
+    "externalUrl": "https://www.infojobs.net/",
+    "ctaText": "View Details"
+  },
+  {
+    "id": 4,
+    "title": "Frontend Developer Junior",
+    "company": "Brand Co",
+    "location": "Madrid",
+    "contractType": "Jornada completa",
+    "stack": "Frontend",
+    "postedAgo": "Fa 5 dies",
+    "image": "/assets/images/Jobs-oportunity.png",
+    "applicationType": "direct",
+    "externalUrl": null,
+    "ctaText": "Apply"
+  },
+  {
+    "id": 5,
+    "title": "Backend Developer",
+    "company": "EduLearn Academy",
+    "location": "Barcelona",
+    "contractType": "Jornada completa",
+    "stack": "Backend",
+    "postedAgo": "Fa 1 dia",
+    "image": "/assets/images/Jobs-oportunity.png",
+    "applicationType": "external",
+    "externalUrl": "https://www.indeed.com/",
+    "ctaText": "Get Started"
+  },
+  {
+    "id": 6,
+    "title": "Mobile Developer",
+    "company": "Lee & Associates",
+    "location": "Barcelona",
+    "contractType": "Mitja jornada",
+    "stack": "Mobile",
+    "postedAgo": "Fa 4 dies",
+    "image": "/assets/images/Jobs-oportunity.png",
+    "applicationType": "external",
+    "externalUrl": "https://www.linkedin.com/jobs/",
+    "ctaText": "Discover More"
+  },
+  {
+    "id": 7,
+    "title": "Data Developer",
+    "company": "BioTech Labs",
+    "location": "Barcelona",
+    "contractType": "Jornada completa",
+    "stack": "Data",
+    "postedAgo": "Fa 6 dies",
+    "image": "/assets/images/Jobs-oportunity.png",
+    "applicationType": "direct",
+    "externalUrl": null,
+    "ctaText": "Apply Now"
+  },
+  {
+    "id": 8,
+    "title": "Full Stack",
+    "company": "TechSolutions Inc.",
+    "location": "Valencia",
+    "contractType": "Jornada completa",
+    "stack": "DevOps",
+    "postedAgo": "Fa 2 setmanes",
+    "image": "/assets/images/Jobs-oportunity.png",
+    "applicationType": "direct",
+    "externalUrl": null,
+    "ctaText": "Apply Now"
+  }
+]

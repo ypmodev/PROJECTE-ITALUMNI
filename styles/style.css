@@ -1,32 +1,30 @@
-
 /* =================
    GLOBAL VARIABLES 
    ================== */
 
 :root {
-
   /* BRAND COLORS*/
-  --color-brand: #CE0A86;
-  --color-brand-light: #FEF0F9;
-  --color-brand-gradient-start: #873AAA;
-  --color-brand-gradient-end: #DF007F;
+  --color-brand: #ce0a86;
+  --color-brand-light: #fef0f9;
+  --color-brand-gradient-start: #873aaa;
+  --color-brand-gradient-end: #df007f;
 
   /* TEXT COLORS*/
   --color-text-primary: #000000;
-  --color-text-normal: #1D2128;
-  --color-text-secondary: #565E6C;
-  --color-text-muted: #BCC1CA;
-  --color-text-inverse: #FFFFFF;
-  --color-text-accent: #CE0A86;
+  --color-text-normal: #1d2128;
+  --color-text-secondary: #565e6c;
+  --color-text-muted: #bcc1ca;
+  --color-text-inverse: #ffffff;
+  --color-text-accent: #ce0a86;
 
   /*surface colors*/
-  --color-surface-base: #FFFFFF;
-  --color-surface-alt: #F3F4F6;      /* inputs, fondos suaves */
-  --color-surface-neutral: #D9D9D9;  /* tarjetas sin cargar */
+  --color-surface-base: #ffffff;
+  --color-surface-alt: #f3f4f6; /* inputs, fondos suaves */
+  --color-surface-neutral: #d9d9d9; /* tarjetas sin cargar */
 
   /* borders */
-  --border-brand: #CE0A86;   /* outline, tabs activos */
-  --border-neutral: #BCC1CA; /* input */
+  --border-brand: #ce0a86; /* outline, tabs activos */
+  --border-neutral: #bcc1ca; /* input */
 
   /*radio*/
   --radius-sm: 4px;
@@ -34,7 +32,7 @@
   --radius-lg: 10px;
   --radius-xl: 16px;
 
-  /* tipografía*/
+  /* typography*/
   --font-family: "Source Sans Pro", sans-serif;
 
   --font-size-h1: 64px;
@@ -51,10 +49,10 @@
 
   --font-size-xl: 20px;
   --font-weight-xl: 400;
-   
+
   --font-size-lg: 18px;
   --font-weight-lg: 400;
-  
+
   --font-size-md: 16px;
   --font-weight-md: 400;
 
@@ -66,8 +64,8 @@
 
   /* active */
   --font-weight-active: 700;
-  
-   /* SPACING */
+
+  /* SPACING */
   --space-xxs: 4px;
   --space-xs: 8px;
   --space-sm: 12px;
@@ -89,21 +87,20 @@
   --line-height-xl: 32px;
   --line-height-xxl: 40px;
   --line-height-2xl: 84px;
-
 }
 
-
-
 /* =========================================
-   GLOBAL RESETS & BASE STYLES
+   GLOBAL RESETS - BASE STYLES
    ========================================= */
 
-/*mantener medidas*/
-*, *::before, *::after {
+/*maintain dimensions*/
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-/*base por defecto*/
+/*default base*/
 body {
   margin: 0;
   font-family: var(--font-family);
@@ -111,22 +108,29 @@ body {
   background-color: var(--color-surface-base);
 }
 
-/*heredar tipografía global*/
-button, input, select, textarea {
-    font-family: inherit;
+/*inherit global typography*/
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
 }
 
-/* Transiciones */
-a, button, .desktop-filter-tab, .filter-dropdown {
+/* Transitions */
+a,
+button,
+.desktop-filter-tab,
+.filter-dropdown {
   transition: all 0.2s ease-in-out;
 }
 
 /* mouse over*/
-a:hover, button:hover, .desktop-filter-tab:hover {
+a:hover,
+button:hover,
+.desktop-filter-tab:hover {
   opacity: 0.85;
 }
 
-/* Estado activo para tabs y filtros */
 .active {
   color: var(--color-text-accent); /* #CE0A86 */
   font-weight: var(--font-weight-active); /* 700 */
@@ -134,17 +138,15 @@ a:hover, button:hover, .desktop-filter-tab:hover {
 }
 
 .active::after {
-  content: '';
+  content: "";
   position: absolute;
-  bottom: -15px; 
+  bottom: -15px;
   left: 0;
   width: 100%;
   height: 2px;
   background-color: var(--color-text-accent);
 }
 
-
-/* Focus visible (teclado) */
 :focus-visible {
   outline: 2px solid var(--color-brand-gradient-start);
   outline-offset: 2px;
@@ -153,26 +155,26 @@ a:hover, button:hover, .desktop-filter-tab:hover {
 .nav-links {
   position: relative;
 }
- 
+
 .nav-links a {
   position: relative;
-  }
- 
+}
+
 .nav-links a.active {
   color: var(--color-text-accent);
   font-weight: var(--font-weight-active);
 }
- 
+
 .nav-links a.active::after {
-  content: '';
+  content: "";
   position: absolute;
-  bottom: -12px; 
-   left: 0;
+  bottom: -12px;
+  left: 0;
   width: 100%;
-  height: 4px; 
+  height: 4px;
   border-radius: 2px;
   background-color: var(--color-text-accent);
-  background-image: url('/assets/icons/bar-active.svg');
+  background-image: url("/assets/icons/bar-active.svg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
