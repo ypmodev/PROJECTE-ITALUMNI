@@ -1,9 +1,9 @@
 //Cards
-function cloneTemplate(template) {
+export function cloneTemplate(template) {
   return template.content.cloneNode(true);
 }
 
-function addCardToList(list, card) {
+export function addCardToList(list, card) {
   const item = document.createElement("li");
   item.appendChild(card);
   list.appendChild(item);

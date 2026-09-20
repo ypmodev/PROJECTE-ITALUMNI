@@ -14,4 +14,3 @@ describe("cloneTemplate", () => {
 
     expect(resultado.querySelector(".test-card")).not.toBeNull();
   });
-});*/
