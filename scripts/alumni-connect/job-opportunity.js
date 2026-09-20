@@ -1,8 +1,6 @@
 const jobTemplate = document.getElementById("job-card-template");
-
 const jobMobileList = document.getElementById("job-mobile-list");
 const jobDesktopGrid = document.getElementById("job-desktop-grid");
-
 const jobSearchInput = document.querySelectorAll(
   ".job-mobile .search__input, .job-desktop .search__input",
 );
@@ -132,6 +130,7 @@ function showFilterOptions(button, filter) {
     );
 
     showJobResults(filterJobs());
+    optionsList.remove();
   });
 
   clearItem.appendChild(clearButton);
@@ -216,7 +215,7 @@ function setupJobsSearch() {
 
 // LOAD DATA
 async function loadDataJobs() {
-  setLoadingState([jobMobileList, jobDesktopGrid], "Cargando información...");
+  setLoadingState([jobMobileList, jobDesktopGrid], "Carregant informació...");
 
   try {
     jobsData = await loadData("/data/jobs.json");
@@ -229,11 +228,11 @@ async function loadDataJobs() {
 
     return true;
   } catch (error) {
-    console.error("Error cargando las ofertas:", error);
+    console.error("Error carregant les ofertes:", error);
 
     setErrorState(
       [jobMobileList, jobDesktopGrid],
-      "No se han podido cargar las ofertas.",
+      "No s'han pogut carregar les ofertes.",
     );
 
     return false;
