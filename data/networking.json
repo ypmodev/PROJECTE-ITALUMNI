@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "Jane Smith",
+    "avatar": "/assets/images/foto.png",
+    "classYear": 2018,
+    "role": "Co-Founder at ABC Inc",
+    "location": "New York, NY",
+    "connected": true,
+    "followers": 300,
+    "connections": 150,
+    "activities": [
+      {
+        "text": "ha començat a seguir John Doe",
+        "date": "2026-09-13"
+      },
+      {
+        "text": "ha connectat amb David Brown",
+        "date": "2026-09-11"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "John Doe",
+    "avatar": "/assets/images/foto.png",
+    "classYear": 2010,
+    "role": "CEO at TechSolutions Inc.",
+    "location": "San Francisco, CA",
+    "connected": true,
+    "followers": 100,
+    "connections": 20,
+     "activities": [
+      {
+        "text": "ha actualitzat el seu perfil professional",
+        "date": "2026-09-13"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Alice Johnson",
+    "avatar": "/assets/images/foto.png",
+    "classYear": 2016,
+    "role": "Senior Developer at Tech Solutions",
+    "location": "Remote",
+    "connected": true,
+    "followers": 500,
+    "connections": 420,
+    "activities": [
+  {
+    "text": "ha connectat amb Jane Smith",
+    "date": "2026-09-12"
+  }
+  ]
+  },
+  {
+    "id": 4,
+    "name": "David Brown",
+    "avatar": "/assets/images/foto.png",
+    "classYear": 2014,
+    "role": "Marketing Specialist at Brand Co",
+    "location": "Chicago, IL",
+    "connected": true,
+    "followers": 370,
+    "connections": 190,
+     "activities": [
+      {
+        "text": "ha començat a seguir Sarah Johnson",
+        "date": "2026-09-12"
+      },
+      {
+        "text": "ha connectat amb Jane Smith",
+        "date": "2026-09-08"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Sarah Johnson",
+    "avatar": "/assets/images/foto.png",
+    "classYear": 2015,
+    "role": "Marketing Director at GreenWave",
+    "location": "Austin, TX",
+    "connected": false,
+    "followers": 25,
+    "connections": 15,
+    "activities": []
+   },
+  {
+    "id": 6,
+    "name": "Michael Brown",
+    "avatar": "/assets/images/foto.png",
+    "classYear": 2008,
+    "role": "Founder of EduLearn Academy",
+    "location": "Boston, MA",
+    "connected": false,
+    "followers": 600,
+    "connections": 527,
+     "activities": [
+      {
+        "text": "ha connectat amb Emily Davis",
+        "date": "2026-09-10"
+      },
+      {
+        "text": "ha actualitzat el seu perfil",
+        "date": "2026-09-06"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Emily Davis",
+    "avatar": "/assets/images/foto.png",
+    "classYear": 2012,
+    "role": "Research Scientist at BioTech Labs",
+    "location": "Seattle, WA",
+    "connected": false,
+    "followers": 80,
+    "connections": 60,
+     "activities": [
+      {
+        "text": "ha començat a seguir Michael Brown",
+        "date": "2026-09-09"
+      },
+      {
+        "text": "ha actualitzat el seu perfil professional",
+        "date": "2026-09-05"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "James Lee",
+    "avatar": "/assets/images/foto.png",    
+    "classYear": 2005,
+    "role": "Managing Partner at Lee & Associates",
+    "location": "Los Angeles, CA",
+    "connected": false,
+    "followers": 150,
+    "connections": 90,
+     "activities": [
+      {
+        "text": "ha connectat amb John Doe",
+        "date": "2026-09-08"
+      }
+    ]
+  }
+]
+
+
+

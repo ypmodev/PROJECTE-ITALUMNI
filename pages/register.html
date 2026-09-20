@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crea un compte | ITAlumni</title>
+
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/components/buttons.css" />
+    <link rel="stylesheet" href="/styles/pages-styles/register.css" />
+  </head>
+  <body>
+    <main class="register-page">
+      <div class="register-card">
+        <h1 class="register-card__title">Crea un compte</h1>
+
+        <p class="register-card__subtitle">
+          Uneix-te a nosaltres per connectar-te i compartir oportunitats!
+        </p>
+
+        <form class="register-form" id="register-form" novalidate>
+          <div class="form-field">
+            <img
+              src="/assets/icons/profile.svg"
+              alt=""
+              class="form-field__icon"
+            />
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              class="form-field__input"
+              placeholder="Posa el teu nom"
+              autocomplete="given-name"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <img
+              src="/assets/icons/profile.svg"
+              alt=""
+              class="form-field__icon"
+            />
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              class="form-field__input"
+              placeholder="Posa el teu cognom"
+              autocomplete="family-name"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <img src="/assets/icons/mail.svg" alt="" class="form-field__icon" />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-field__input"
+              placeholder="El teu correu electrònic"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <img
+              src="/assets/icons/padlock.svg"
+              alt=""
+              class="form-field__icon"
+            />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-field__input"
+              placeholder="Crea una contrasenya"
+              autocomplete="new-password"
+              minlength="8"
+              required
+            />
+          </div>
+
+          <p
+            class="register-form__error"
+            id="register-error"
+            role="alert"
+            hidden
+          ></p>
+
+          <label class="register-form__checkbox">
+            <input type="checkbox" id="terms" name="terms" required />
+            <span
+              >Accepto els
+              <a href="/pages/construction.html">Termes i Condicions</a></span
+            >
+          </label>
+
+          <button type="submit" class="btn btn-gradient register-form__submit">
+            Registra't
+          </button>
+
+          <div class="register-form__divider">
+            <span>o</span>
+          </div>
+
+          <div class="register-form__social">
+            <a
+              href="/pages/construction.html"
+              class="btn-social btn-social--apple"
+            >
+              <img src="/assets/icons/Apple-register.svg" alt="" />
+              Continua amb Apple
+            </a>
+
+            <a
+              href="/pages/construction.html"
+              class="btn-social btn-social--google"
+            >
+              <img src="/assets/icons/Google-register.svg" alt="" />
+              Continua amb Google
+            </a>
+
+            <a
+              href="/pages/construction.html"
+              class="btn-social btn-social--facebook"
+            >
+              <img src="/assets/logos/Logo-Facebook.svg" alt="" />
+              Continua amb Facebook
+            </a>
+          </div>
+
+          <p class="register-form__login-link">
+            Ja t'has registrat?
+            <a href="/pages/alumni-connect.html#home">Inicia sessió</a>
+          </p>
+        </form>
+      </div>
+    </main>
+
+    <script src="/scripts/utils.js" defer></script>
+    <script src="/scripts/register.js" defer></script>
+  </body>
+</html>

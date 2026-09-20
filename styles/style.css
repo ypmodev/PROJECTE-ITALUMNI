@@ -1,0 +1,180 @@
+/* =================
+   GLOBAL VARIABLES 
+   ================== */
+
+:root {
+  /* BRAND COLORS*/
+  --color-brand: #ce0a86;
+  --color-brand-light: #fef0f9;
+  --color-brand-gradient-start: #873aaa;
+  --color-brand-gradient-end: #df007f;
+
+  /* TEXT COLORS*/
+  --color-text-primary: #000000;
+  --color-text-normal: #1d2128;
+  --color-text-secondary: #565e6c;
+  --color-text-muted: #bcc1ca;
+  --color-text-inverse: #ffffff;
+  --color-text-accent: #ce0a86;
+
+  /*surface colors*/
+  --color-surface-base: #ffffff;
+  --color-surface-alt: #f3f4f6; /* inputs, fondos suaves */
+  --color-surface-neutral: #d9d9d9; /* tarjetas sin cargar */
+
+  /* borders */
+  --border-brand: #ce0a86; /* outline, tabs activos */
+  --border-neutral: #bcc1ca; /* input */
+
+  /*radio*/
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 16px;
+
+  /* typography*/
+  --font-family: "Source Sans Pro", sans-serif;
+
+  --font-size-h1: 64px;
+  --font-weight-h1: 700;
+
+  --font-size-h2: 40px;
+  --font-weight-h2: 400;
+
+  --font-size-h3: 32px;
+  --font-weight-h3: 400;
+
+  --font-size-xxl: 28px;
+  --font-weight-2xl: 400;
+
+  --font-size-xl: 20px;
+  --font-weight-xl: 400;
+
+  --font-size-lg: 18px;
+  --font-weight-lg: 400;
+
+  --font-size-md: 16px;
+  --font-weight-md: 400;
+
+  --font-size-sm: 14px;
+  --font-weight-sm: 400;
+
+  --font-size-xs: 12px;
+  --font-weight-xs: 400;
+
+  /* active */
+  --font-weight-active: 700;
+
+  /* SPACING */
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-xxl: 40px;
+  --space-2xl: 48px;
+  --space-3xl: 56px;
+  --space-4xl: 64px;
+  --space-5xl: 72px;
+  --space-6xl: 80px;
+
+  /* LINE HEIGHT */
+  --line-height-xs: 16px;
+  --line-height-sm: 20px;
+  --line-height-md: 24px;
+  --line-height-lg: 28px;
+  --line-height-xl: 32px;
+  --line-height-xxl: 40px;
+  --line-height-2xl: 84px;
+}
+
+/* =========================================
+   GLOBAL RESETS - BASE STYLES
+   ========================================= */
+
+/*maintain dimensions*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*default base*/
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  color: var(--color-text-primary);
+  background-color: var(--color-surface-base);
+}
+
+/*inherit global typography*/
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+/* Transitions */
+a,
+button,
+.desktop-filter-tab,
+.filter-dropdown {
+  transition: all 0.2s ease-in-out;
+}
+
+/* mouse over*/
+a:hover,
+button:hover,
+.desktop-filter-tab:hover {
+  opacity: 0.85;
+}
+
+.active {
+  color: var(--color-text-accent); /* #CE0A86 */
+  font-weight: var(--font-weight-active); /* 700 */
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-text-accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brand-gradient-start);
+  outline-offset: 2px;
+}
+
+.nav-links {
+  position: relative;
+}
+
+.nav-links a {
+  position: relative;
+}
+
+.nav-links a.active {
+  color: var(--color-text-accent);
+  font-weight: var(--font-weight-active);
+}
+
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--color-text-accent);
+  background-image: url("/assets/icons/bar-active.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
